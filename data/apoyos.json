@@ -1,0 +1,3174 @@
+{
+  "metadata": {
+    "fuente": "Secretaría de Desarrollo Humano y Bien Común — Chihuahua",
+    "total": 51,
+    "categorias": [
+      "alimentacion",
+      "capacitacion",
+      "desarrollo_pers",
+      "desarrollo_soc",
+      "discapacidad",
+      "economico",
+      "empleo",
+      "mayores",
+      "mujeres",
+      "ninos",
+      "tramites",
+      "transporte",
+      "vulnerabilidad"
+    ]
+  },
+  "apoyos": [
+    {
+      "id": 1,
+      "direccion_institucional": "Dirección de Cohesión Social y Participación Ciudadana",
+      "nombre_apoyo": "Apoyos Económicos a Personas en situación de Vulnerabilidad",
+      "nombre_ciudadano": "Trámites Gratuitos",
+      "descripcion_oficial": "A través de Ventanilla Única se realiza la condonación de pago de actas del Registro Civil y Constancia de Antecedentes Penales, contando con la posibilidad de condonar cinco actas y una constancia de antecedentes penales por beneficiario al día, dependiendo de la disponibilidad de condonación de pago de actas y constancias autorizadas por día.",
+      "descripcion_ciudadana": "Se puede solicitar que no te cobren tus documentos. Te pueden regalar hasta cinco actas del Registro Civil y una carta de antecedentes penales por persona al día, según los lugares que haya disponibles cada mañana.",
+      "grupo_atencion": "Población general",
+      "municipio": "Chihuahua",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "Al asisitir a ventanilla única se le otorgara la información de manera inmediata",
+      "monto": "No especificado",
+      "periodicidad": "Al asistir a ventanilla única se le otorgara la información de manera inmediata",
+      "donde_solicitar": "Atención en ventanilla única en la Dirección de Cohesión Social",
+      "requisitos": "Para el caso de la condonación de actas, adicionalmente a los requisitos generales, se solicita una copia simple de la Credencial para votar expedida por el INE por cada acta solicitada. Para el caso de la condonación de las constancias de antecedentes penales los requisitos son los siguiente:\n1) Acta de nacimiento original y copia.\n2) Comprobante de domicilio original y copia simple, en dado caso que el domicilio no coincida con la Credencial para votar expedida por el INE se deberá presentar dos copias simples de esta.\n3) la Credencial para votar expedida por el INE en original y dos copias simples de esta.",
+      "donde_entrega": "Al asisitir a ventanilla única se le otorgara la información de manera inmediata",
+      "contacto": "Ejército Mexicano 2906, Zona Centro, 31000 Chihuahua, Chih.\n\n614 429 3300 extensiones 24315, 24496 y 24598.",
+      "observaciones": "N/D",
+      "direccion_corta": "Cohesión Social",
+      "municipios_lista": [
+        "Chihuahua"
+      ],
+      "categorias": [
+        "tramites"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": "Condonación de actas",
+          "items": [
+            "Adicionalmente a los requisitos generales, se solicita una copia simple de la Credencial para votar expedida por el INE por cada acta solicitada."
+          ]
+        },
+        {
+          "titulo": "Condonación de las constancias de antecedentes penales",
+          "items": [
+            "Acta de nacimiento original y copia.",
+            "Comprobante de domicilio original y copia simple, en dado caso que el domicilio no coincida con la Credencial para votar expedida por el INE se deberá presentar dos copias simples de esta.",
+            "La Credencial para votar expedida por el INE en original y dos copias simples de esta."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "trámites",
+        "papeles",
+        "documentos",
+        "acta",
+        "actas",
+        "gratis",
+        "trámite",
+        "constancia",
+        "antecedentes penales",
+        "registro civil"
+      ]
+    },
+    {
+      "id": 2,
+      "direccion_institucional": "Dirección de Cohesión Social y Participación Ciudadana",
+      "nombre_apoyo": "Apoyos en Especie a Personas en Situación de Vulnerabilidad.",
+      "nombre_ciudadano": "Apoyos En Especie (Alimentos)",
+      "descripcion_oficial": "Son artículos en especie o platillos alimenticios que se entregan a los solicitantes y cuyo propósito es atender una necesidad básica sentida para mejorar la condición de vida de las personas en condición de vulnerabilidad.",
+      "descripcion_ciudadana": "Entrega de alimentos listos para comer o productos básicos para ayudar a las personas que más lo necesitan a cubrir sus necesidades diarias.",
+      "grupo_atencion": "Población general en situación de vulnerabilidad",
+      "municipio": "Chihuahua, Cuauhtémoc, Guadalupe, Guadalupe y Calvo, Camargo, Casas Grandes, Delicias, Guachochi, Jiménez, Madera, Aquíles Serdán, Maguarichi, Matamoros, Nonoava, Ojinaga, Bocoyna, Urique y Batopilas",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "Al asistir a ventanilla única se le otorgara la información de manera inmediata",
+      "donde_solicitar": "Atención en la Dirección de Cohesión Social o en Centros de Servicios Comunitarios: https://chihuahua.gob.mx/info/centros-de-servicios-comunitarios-integrados-csci-en-operación",
+      "requisitos": "Estudios socioeconómico, copia simple de identificación oficial y copia simple de comprobante de domicilio con una vigencia no mayor a tres meses, en el supuesto de que el domicilio señalado en la identificación oficial fuera de otra entidad federativa a la del domicilio actual del solicitante.",
+      "donde_entrega": "Atención en la Dirección de Cohesión Social o en Centros de Servicios Comunitarios: https://chihuahua.gob.mx/info/centros-de-servicios-comunitarios-integrados-csci-en-operación",
+      "contacto": "Ejército Mexicano 2906, Zona Centro, 31000 Chihuahua, Chih.\n\n614 429 3300 extensiones 24315, 24496 y 24598.",
+      "observaciones": "La Unidad responsable tendrá hasta quince días hábiles a partir de la recepción de la solicitud que se cuente con la totalidad de los documentos para la resolución de la solicitud de las personas solicitantes y una vez aceptada, se procederá al trámite de formalización para la entrega del apoyo o prestación del servicio.\nEn el caso del apoyo en especie a través de intermediarios, la Secretaría de Desarrollo y Bien Común tendrá treinta días hábiles a partir de la recepción de la solicitud para la resolución de la solicitud de las personas solicitantes, en caso de ser aceptada, se procederá a la entrega del apoyo. Cuando quien solicite el apoyo, no cuente con todos los requisitos, o bien tenga que aclarar alguna duda u observación, la Unidad Responsable tendrá hasta 5 (cinco) días hábiles para requerirle lo necesario y la persona solicitante contará con 3 (tres) días hábiles para subsanar la documentación faltante, de lo contrario se tendrá por rechazada su solicitud.",
+      "direccion_corta": "Cohesión Social",
+      "municipios_lista": [
+        "Chihuahua",
+        "Cuauhtémoc",
+        "Guadalupe",
+        "Guadalupe y Calvo",
+        "Camargo",
+        "Casas Grandes",
+        "Delicias",
+        "Guachochi",
+        "Jiménez",
+        "Madera",
+        "Aquíles Serdán",
+        "Maguarichi",
+        "Matamoros",
+        "Nonoava",
+        "Ojinaga",
+        "Bocoyna",
+        "Urique",
+        "Batopilas"
+      ],
+      "categorias": [
+        "alimentacion",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Estudios socioeconómico, copia simple de identificación oficial y copia simple de comprobante de domicilio con una vigencia no mayor a tres meses, en el supuesto de que el domicilio señalado en la identificación oficial fuera de otra entidad federativa a la del domicilio actual del solicitante."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "alimentación",
+        "comida",
+        "alimento",
+        "alimentos",
+        "despensa",
+        "despensas",
+        "canasta básica",
+        "nutrición",
+        "hambre",
+        "comer",
+        "víveres",
+        "comedor",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 3,
+      "direccion_institucional": "Dirección de Cohesión Social y Participación Ciudadana",
+      "nombre_apoyo": "Servicios para el Fortalecimiento del Tejido Social.",
+      "nombre_ciudadano": "Actividades Sociales",
+      "descripcion_oficial": "Los servicios para el fortalecimiento del tejido social tienen como características ofrecer una diversidad de opciones para el desarrollo físico y recreación cultural, que contribuyan a fortalecer la formación integral del individuo, así como a direccionar sus talentos e intereses que permitan el desarrollo íntegro de cada persona, generando un sentido de pertenencia para elevar su autoestima.",
+      "descripcion_ciudadana": "Se ofrecen actividades de ejercicio, arte y cultura para ayudar a las personas a desarrollar sus talentos, convivir con la comunidad y mejorar su autoestima.",
+      "grupo_atencion": "Población general",
+      "municipio": "Chihuahua, Cuauhtémoc, Guadalupe, Guadalupe y Calvo, Camargo, Casas Grandes, Delicias, Guachochi, Jiménez, Madera, Aquíles Serdán, Maguarichi, Matamoros, Nonoava, Ojinaga, Bocoyna, Urique y Batopilas",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "Al asisitir al espacio comunitario o llamar a la dirección se le otorgara la información de manera inmediata",
+      "monto": "No especificado",
+      "periodicidad": "Al asistir al espacio comunitario se le otorgara la información de manera inmediata",
+      "donde_solicitar": "Atención en la Dirección de Cohesión Social o en Centros de Servicios Comunitarios: https://chihuahua.gob.mx/info/centros-de-servicios-comunitarios-integrados-csci-en-operación",
+      "requisitos": "Para los servicios en los Centros de Servicios Comunitarios Integrados, el requisito será registrarse mediante identificación oficial y firma en el Listado de Asistencia de Beneficiarios y para posteriores asistencias únicamente deberá firmar el Registro de Asistencias Subsecuentes. El requisito para los servicios en espacios comunitarios es presentar la identificación oficial en la primera asistencia y firmar el Listado de Asistencia de Beneficiarios.",
+      "donde_entrega": "Actividades en Centros de Servicios Comunitarios: https://chihuahua.gob.mx/info/centros-de-servicios-comunitarios-integrados-csci-en-operación O actividades a través de comités comunitarios o espacios comunitarios",
+      "contacto": "Ejército Mexicano 2906, Zona Centro, 31000 Chihuahua, Chih.\n\n614 429 3300 extensiones 24315, 24496 y 24598.",
+      "observaciones": "N/D",
+      "direccion_corta": "Cohesión Social",
+      "municipios_lista": [
+        "Chihuahua",
+        "Cuauhtémoc",
+        "Guadalupe",
+        "Guadalupe y Calvo",
+        "Camargo",
+        "Casas Grandes",
+        "Delicias",
+        "Guachochi",
+        "Jiménez",
+        "Madera",
+        "Aquíles Serdán",
+        "Maguarichi",
+        "Matamoros",
+        "Nonoava",
+        "Ojinaga",
+        "Bocoyna",
+        "Urique",
+        "Batopilas"
+      ],
+      "categorias": [
+        "desarrollo_soc"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Para los servicios en los Centros de Servicios Comunitarios Integrados, el requisito será registrarse mediante identificación oficial y firma en el Listado de Asistencia de Beneficiarios y para posteriores asistencias únicamente deberá firmar el Registro de Asistencias Subsecuentes. El requisito para los servicios en espacios comunitarios es presentar la identificación oficial en la primera asistencia y firmar el Listado de Asistencia de Beneficiarios."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "desarrollo social",
+        "comunidad",
+        "convivencia",
+        "tejido social",
+        "vecinos",
+        "participación ciudadana",
+        "colonia",
+        "barrio"
+      ]
+    },
+    {
+      "id": 4,
+      "direccion_institucional": "Dirección de Cohesión Social y Participación Ciudadana",
+      "nombre_apoyo": "Apoyos Económicos a Organizaciones de la Sociedad Civil para la atención de las personas en situación de vulnerabilidad.",
+      "nombre_ciudadano": "Apoyo Económico Para Organizaciones De La Sociedad Civil",
+      "descripcion_oficial": "Se otorgará: a petición del solicitante, por convocatoria, o por invitación, debiendo realizar en cualquiera de los casos el convenio respectivo.\nLa organización de acuerdo con lo establecido en las presentes Reglas de Operación podrá recibir la aportación económica, dependiendo del proyecto planteado y aprobado por la Unidad Responsable, sujeto a la suficiencia presupuestal.",
+      "descripcion_ciudadana": "Las organizaciones civiles pueden recibir un apoyo económico para sus proyectos participando en convocatorias, por invitación o solicitándolo directamente, siempre y cuando firmen un contrato de acuerdo y el gobierno tenga dinero disponible para darles.",
+      "grupo_atencion": "Organizaciones de la Sociedad Civil para la atención de las personas en situación de vulnerabilidad.",
+      "municipio": "Todos los municipios",
+      "genero": "No aplica",
+      "etapa_vida": "No aplica",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Atención en la Dirección de Cohesión Social",
+      "requisitos": "a)\tOficio de solicitud dirigido a la persona titular de la Secretaría de Desarrollo Humano y Bien Común;\nb)\tProyecto original y modelo de intervención;\nc)\tPresentar original y copia de el o los documentos con los que acredite la legal existencia de la organización y la personalidad del representante (Acta Constitutiva y las modificaciones de existir y; el poder del representante legal en caso de que este haya sido otorgado por separado);\nd)\tCopia simple de la identificación oficial vigente del representante legal;\ne)\tCopia simple del comprobante de domicilio no mayor a cuatro meses del representante legal;\nf)\tCopia simple del comprobante de domicilio de la Organización con una antigüedad no mayor a 3 meses;\ng)\tCopia simple de carátula de cuenta bancaria a nombre de la Organización Civil;\nh)\tConstancia de situación fiscal actualizada con una antigüedad no mayor a 3 meses, que emite el Servicio de Administración Tributaria (SAT);\ni)\tCarta de opinión del cumplimiento de obligaciones fiscales positivo que emite el Servicio de Administración Tributaria (SAT);\nj)\tConstancia de no adeudo de obligaciones estatales que emite la Secretaría de Hacienda de Chihuahua;\nk)\tCopia simple de la constancia de registro al padrón de asociaciones de la Junta de Asistencia Social y Privada del Estado de Chihuahua;\nl)\tCopia simple de la constancia del Registro al Padrón de Asociaciones de la Junta de Asistencia Social y Privada (CLUNI) y\nm)\t Carta compromiso de comprobación por apoyo económico a organizaciones de la sociedad civil recibido.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Ejército Mexicano 2906, Zona Centro, 31000 Chihuahua, Chih.\n\n614 429 3300 extensiones 24315, 24496 y 24598.",
+      "observaciones": "La Unidad responsable tendrá hasta quince días hábiles a partir de la recepción de la solicitud que se cuente con la totalidad de los documentos para la resolución de la solicitud de las personas solicitantes y una vez aceptada, se procederá al trámite de formalización para la entrega del apoyo o prestación del servicio. Cuando quien solicite el apoyo, no cuente con todos los requisitos, o bien tenga que aclarar alguna duda u observación, la Unidad Responsable tendrá hasta 5 (cinco) días hábiles para requerirle lo necesario y la persona solicitante contará con 3 (tres) días hábiles para subsanar la documentación faltante, de lo contrario se tendrá por rechazada su solicitud.",
+      "direccion_corta": "Cohesión Social",
+      "municipios_lista": [
+        "Todos los municipios"
+      ],
+      "categorias": [
+        "economico",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Oficio de solicitud dirigido a la persona titular de la Secretaría de Desarrollo Humano y Bien Común.",
+            "Proyecto original y modelo de intervención.",
+            "Presentar original y copia de el o los documentos con los que acredite la legal existencia de la organización y la personalidad del representante (Acta Constitutiva y las modificaciones de existir y; el poder del representante legal en caso de que este haya sido otorgado por separado).",
+            "Copia simple de la identificación oficial vigente del representante legal.",
+            "Copia simple del comprobante de domicilio no mayor a cuatro meses del representante legal.",
+            "Copia simple del comprobante de domicilio de la Organización con una antigüedad no mayor a 3 meses.",
+            "Copia simple de carátula de cuenta bancaria a nombre de la Organización Civil.",
+            "Constancia de situación fiscal actualizada con una antigüedad no mayor a 3 meses, que emite el Servicio de Administración Tributaria (SAT).",
+            "Carta de opinión del cumplimiento de obligaciones fiscales positivo que emite el Servicio de Administración Tributaria (SAT).",
+            "Constancia de no adeudo de obligaciones estatales que emite la Secretaría de Hacienda de Chihuahua.",
+            "Copia simple de la constancia de registro al padrón de asociaciones de la Junta de Asistencia Social y Privada del Estado de Chihuahua.",
+            "Copia simple de la constancia del Registro al Padrón de Asociaciones de la Junta de Asistencia Social y Privada (CLUNI) y.",
+            "Carta compromiso de comprobación por apoyo económico a organizaciones de la sociedad civil recibido."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "económico",
+        "dinero",
+        "efectivo",
+        "apoyo económico",
+        "beca",
+        "subsidio",
+        "tarjeta",
+        "recurso económico",
+        "pago",
+        "ayuda económica",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 5,
+      "direccion_institucional": "Dirección de Cohesión Social y Participación Ciudadana",
+      "nombre_apoyo": "Apoyos Económicos a Personas en situación de Vulnerabilidad",
+      "nombre_ciudadano": "Apoyo Económico Para Personas En Situación De Vulnerabilidad",
+      "descripcion_oficial": "Los apoyos económicos para personas en situación de vulnerabilidad otorgados exclusivamente a través de Ventanilla Única. Deben estar destinados a satisfacer una necesidad básica sentida, como educación, alimentación, vestido, vivienda, salud, transporte, servicios funerarios, deporte y cultura.",
+      "descripcion_ciudadana": "Apoyo económico que sirve para cubrir necesidades muy importantes como escuela, comida, ropa, arreglos de la casa, salud, pasajes, gastos de funerales, deporte o cultura.",
+      "grupo_atencion": "Población general en situación de vulnerabilidad",
+      "municipio": "Chihuahua",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "Al asisitir a ventanilla única se le otorgara la información de manera inmediata",
+      "monto": "No especificado",
+      "periodicidad": "Al asistir a ventanilla única se le otorgara la información de manera inmediata",
+      "donde_solicitar": "Atención en ventanilla única en el Edificio Heroes de la Revolución",
+      "requisitos": "Estudios socioeconómico, copia simple de identificación oficial y copia simple de comprobante de domicilio con una vigencia no mayor a tres meses, en el supuesto de que el domicilio señalado en la identificación oficial fuera de otra entidad federativa a la del domicilio actual del solicitante.",
+      "donde_entrega": "Al asisitir a ventanilla única se le otorgara la información de manera inmediata",
+      "contacto": "Ejército Mexicano 2906, Zona Centro, 31000 Chihuahua, Chih.\n\n614 429 3300 extensiones 24315, 24496 y 24598.",
+      "observaciones": "N/D",
+      "direccion_corta": "Cohesión Social",
+      "municipios_lista": [
+        "Chihuahua"
+      ],
+      "categorias": [
+        "economico",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Estudios socioeconómico, copia simple de identificación oficial y copia simple de comprobante de domicilio con una vigencia no mayor a tres meses, en el supuesto de que el domicilio señalado en la identificación oficial fuera de otra entidad federativa a la del domicilio actual del solicitante."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "económico",
+        "dinero",
+        "efectivo",
+        "apoyo económico",
+        "beca",
+        "subsidio",
+        "tarjeta",
+        "recurso económico",
+        "pago",
+        "ayuda económica",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 6,
+      "direccion_institucional": "Dirección de Cohesión Social y Participación Ciudadana",
+      "nombre_apoyo": "Servicios de Atención Psicosocial y Orientación Médica.",
+      "nombre_ciudadano": "Apoyo Psicológico Y Orientación Médica Gratuita",
+      "descripcion_oficial": "La Atención Psicosocial puede otorgarse mediante servicio de acompañamiento individual o grupal, que tiene la finalidad de favorecer la prevención, recuperación o mitigación de los daños psicosociales por conducto de la Unidad Responsable. El servicio de orientación médica consiste en una valoración médica, y de ser el caso, emisión de recetas, se podrá otorgar en función de la demanda a través de las Ferias de Servicios, Centros de Servicios Comunitarios Integrados, Consultorio Móvil, Comités Comunitarios, y Oficinas de las Dirección de Cohesión Social.",
+      "descripcion_ciudadana": "Se ofrece acompañamiento emocional (individual o en grupo) para superar problemas personales, además de consultas médicas",
+      "grupo_atencion": "Población general en situación de vulnerabilidad",
+      "municipio": "Chihuahua, Cuauhtémoc, Guadalupe, Guadalupe y Calvo, Camargo, Casas Grandes, Delicias, Guachochi, Jiménez, Madera, Aquíles Serdán, Maguarichi, Matamoros, Nonoava, Ojinaga, Bocoyna, Urique y Batopilas",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "Al asisitir al espacio comunitario o llamar a la dirección se le otorgara la información de manera inmediata",
+      "monto": "No especificado",
+      "periodicidad": "Al asistir al espacio comunitario se le otorgara la información de manera inmediata",
+      "donde_solicitar": "Atención en la Dirección de Cohesión Social o en Centros de Servicios Comunitarios: https://chihuahua.gob.mx/info/centros-de-servicios-comunitarios-integrados-csci-en-operación",
+      "requisitos": "El requisito es presentar la identificación oficial en la primera asistencia y firmar el Listado de Asistencia de Beneficiarios.",
+      "donde_entrega": "Atención en la Dirección de Cohesión Social o en Centros de Servicios Comunitarios: https://chihuahua.gob.mx/info/centros-de-servicios-comunitarios-integrados-csci-en-operación",
+      "contacto": "Ejército Mexicano 2906, Zona Centro, 31000 Chihuahua, Chih.\n\n614 429 3300 extensiones 24315, 24496 y 24598.",
+      "observaciones": "N/D",
+      "direccion_corta": "Cohesión Social",
+      "municipios_lista": [
+        "Chihuahua",
+        "Cuauhtémoc",
+        "Guadalupe",
+        "Guadalupe y Calvo",
+        "Camargo",
+        "Casas Grandes",
+        "Delicias",
+        "Guachochi",
+        "Jiménez",
+        "Madera",
+        "Aquíles Serdán",
+        "Maguarichi",
+        "Matamoros",
+        "Nonoava",
+        "Ojinaga",
+        "Bocoyna",
+        "Urique",
+        "Batopilas"
+      ],
+      "categorias": [
+        "desarrollo_pers",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "El requisito es presentar la identificación oficial en la primera asistencia y firmar el Listado de Asistencia de Beneficiarios."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "desarrollo personal",
+        "terapia",
+        "psicología",
+        "psicólogo",
+        "autoestima",
+        "bienestar emocional",
+        "consejería",
+        "ayuda psicológica",
+        "salud mental",
+        "depresión",
+        "ansiedad",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 7,
+      "direccion_institucional": "Dirección de Grupos Vulnerables y Prevención a la Discriminación",
+      "nombre_apoyo": "Apoyos en especie para personas con Discapacidad",
+      "nombre_ciudadano": "Despensas Para Personas Con Discapacidad",
+      "descripcion_oficial": "Apoyo en forma de despensa alimenticia que contiene artículos de la canasta básica alimentaria.",
+      "descripcion_ciudadana": "Entrega de despensa alimentaria con artículos de la canasta básica",
+      "grupo_atencion": "Personas con discapacidad",
+      "municipio": "Todos los municipios, (excepto el municipio de Chihuahua)",
+      "genero": "Indistinto",
+      "etapa_vida": "Infancia, Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "La persona beneficiada tendrá acceso hasta 8 (ocho) apoyos alimenticios.",
+      "monto": "No especificado",
+      "periodicidad": "Bimestral o Trimestral",
+      "donde_solicitar": "Se especifica en la convocatoria",
+      "requisitos": "Se especifica en la convocatoria",
+      "donde_entrega": "Se especifica en la convocatoria",
+      "contacto": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 33 00\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "observaciones": "LIGA CONVOCATORIA\nhttps://www.chihuahua.gob.mx/info/convocatorias-y-resultados-2026",
+      "direccion_corta": "Grupos Vulnerables",
+      "municipios_lista": [
+        "Todos los municipios, (excepto el municipio de Chihuahua)"
+      ],
+      "categorias": [
+        "alimentacion",
+        "discapacidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Se especifica en la convocatoria."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "alimentación",
+        "comida",
+        "alimento",
+        "alimentos",
+        "despensa",
+        "despensas",
+        "canasta básica",
+        "nutrición",
+        "hambre",
+        "comer",
+        "víveres",
+        "comedor",
+        "discapacidad",
+        "silla de ruedas",
+        "invidente",
+        "sordo",
+        "down",
+        "autismo",
+        "capacidades diferentes",
+        "ortopédico",
+        "rehabilitación"
+      ]
+    },
+    {
+      "id": 8,
+      "direccion_institucional": "Dirección de Grupos Vulnerables y Prevención a la Discriminación",
+      "nombre_apoyo": "Servicio de Vinculación de Personas con Discapacidad a la Actividad Productiva.",
+      "nombre_ciudadano": "Vinculación Laboral Para Personas Con Discapacidad",
+      "descripcion_oficial": "Se vinculará a las personas con discapacidad solicitantes que se interesen en mejorar su economía, con las empresas y/o instituciones gubernamentales con las que se tenga acuerdo previo a través de las vacantes disponibles.",
+      "descripcion_ciudadana": "Este servicio ayuda a las personas con discapacidad que quieren trabajar a conseguir un empleo pagado en empresas o dependencias de gobierno que tienen vacantes.",
+      "grupo_atencion": "Personas con discapacidad",
+      "municipio": "Chihuahua",
+      "genero": "Indistinto",
+      "etapa_vida": "Jóvenes y Adultos",
+      "especificaciones": "Se vinculará las veces que la persona con discapacidad lo requiera",
+      "monto": "No especificado",
+      "periodicidad": "Lunes a Viernes\n8:00 a 15:00 hrs",
+      "donde_solicitar": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 33 00\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "requisitos": "a) Identificación Oficial con fotografía, en copia simple.",
+      "donde_entrega": "Centro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "contacto": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 33 00\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "observaciones": "N/D",
+      "direccion_corta": "Grupos Vulnerables",
+      "municipios_lista": [
+        "Chihuahua"
+      ],
+      "categorias": [
+        "empleo",
+        "discapacidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación Oficial con fotografía, en copia simple."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "trabajo",
+        "chamba",
+        "vacante",
+        "vacantes",
+        "bolsa de trabajo",
+        "contratación",
+        "empleo",
+        "negocio",
+        "emprendimiento",
+        "proyecto productivo",
+        "discapacidad",
+        "silla de ruedas",
+        "invidente",
+        "sordo",
+        "down",
+        "autismo",
+        "capacidades diferentes",
+        "ortopédico",
+        "rehabilitación"
+      ]
+    },
+    {
+      "id": 9,
+      "direccion_institucional": "Dirección de Grupos Vulnerables y Prevención a la Discriminación",
+      "nombre_apoyo": "Servicio para el desarrollo integral: Vinculacion Laboral",
+      "nombre_ciudadano": "Vinculación Laboral Para Personas Mayores",
+      "descripcion_oficial": "El Área de Vinculación a la Actividad Productiva vinculará, a las personas mayores solicitantes que se interesen en mejorar su economía integrandose a alguna actividad productiva remunerada, con las empresas y/o instituciones gubernamentales con las que se tenga acuerdo previo a través de las vacantes disponibles.",
+      "descripcion_ciudadana": "Este servicio ayuda a los adultos mayores que quieren trabajar a conseguir un empleo pagado en empresas o dependencias de gobierno que tienen vacantes.",
+      "grupo_atencion": "Personas mayores de 60 años de edad",
+      "municipio": "Chihuahua",
+      "genero": "Indistinto",
+      "etapa_vida": "Adultos Mayores",
+      "especificaciones": "El servicio se otorgará tantas veces como el solicitante lo requiera durante el presente ejercicio fiscal, y sujeto a la disponibilidad del recurso.",
+      "monto": "No especificado",
+      "periodicidad": "Lunes a Viernes\n8:00 a 15:00 hrs",
+      "donde_solicitar": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 33 00\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "requisitos": "a) Credencial para votar vigente en copia.",
+      "donde_entrega": "Oficinas de la Dirección de Grupos Vulnerables ubicada en calle Agustín Melgar No. 3707 Col. Nombre de Dios, 31105 en Chihuahua, Chih. teléfono (614) 429 3300 extensiones 17920 y 17904",
+      "contacto": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 33 00\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "observaciones": "N/D",
+      "direccion_corta": "Grupos Vulnerables",
+      "municipios_lista": [
+        "Chihuahua"
+      ],
+      "categorias": [
+        "empleo",
+        "mayores"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Credencial para votar vigente en copia."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "trabajo",
+        "chamba",
+        "vacante",
+        "vacantes",
+        "bolsa de trabajo",
+        "contratación",
+        "empleo",
+        "negocio",
+        "emprendimiento",
+        "proyecto productivo",
+        "personas mayores",
+        "ancianos",
+        "viejitos",
+        "tercera edad",
+        "jubilados",
+        "abuelos",
+        "abuelitos",
+        "adultos mayores",
+        "60 años"
+      ]
+    },
+    {
+      "id": 10,
+      "direccion_institucional": "Dirección de Grupos Vulnerables y Prevención a la Discriminación",
+      "nombre_apoyo": "Servicios de transporte público, adaptado",
+      "nombre_ciudadano": "Transporte Público",
+      "descripcion_oficial": "Se otorgará servicio de transporte público adaptado gratuito en las rutas establecidas en la ciudad de Chihuahua a personas con discapacidad .",
+      "descripcion_ciudadana": "Servicio de transporte público gratuito",
+      "grupo_atencion": "Personas con discapacidad",
+      "municipio": "Chihuahua",
+      "genero": "Indistinto",
+      "etapa_vida": "Infancia, Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "Se otorgará el servicio las veces que la persona con discapacidad solicitante lo requiera a libre demanda durante el turno y las rutas establecidas.",
+      "monto": "No especificado",
+      "periodicidad": "Lunes a Viernes\n7:00 a 15:00 hrs",
+      "donde_solicitar": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 33 00\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "requisitos": "No existen requisitos específicos para esta modalidad de servicio; cualquier persona con discapacidad podrá acceder a la unidad de transporte.",
+      "donde_entrega": "Cd. Chihuahua, rutas establecidas (para conocerlas comunicarse con los contactos).",
+      "contacto": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 33 00\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "observaciones": "N/D",
+      "direccion_corta": "Grupos Vulnerables",
+      "municipios_lista": [
+        "Chihuahua"
+      ],
+      "categorias": [
+        "transporte",
+        "discapacidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "No existen requisitos específicos para esta modalidad de servicio.",
+            "Cualquier persona con discapacidad podrá acceder a la unidad de transporte."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "transporte",
+        "camión",
+        "autobús",
+        "traslado",
+        "pasaje",
+        "pasajes",
+        "movilidad",
+        "transporte público",
+        "discapacidad",
+        "silla de ruedas",
+        "invidente",
+        "sordo",
+        "down",
+        "autismo",
+        "capacidades diferentes",
+        "ortopédico",
+        "rehabilitación"
+      ]
+    },
+    {
+      "id": 11,
+      "direccion_institucional": "Dirección de Grupos Vulnerables y Prevención a la Discriminación",
+      "nombre_apoyo": "Servicios para el desarrollo integral, casa de los abuelos",
+      "nombre_ciudadano": "Casa De Los Abuelos",
+      "descripcion_oficial": "A través de la casa de los abuelos se impartirán cursos y talleres gratuitos de tipo cultural, fisico, educativo y de esparcimiento entre otros, los cuales tendrán como objetivo incoporar plenamente a las personas mayores a su desarrollo personal en un marco de equidad de derechos y oportunidades.",
+      "descripcion_ciudadana": "La Casa de los Abuelos ofrece talleres gratuitos de cultura, ejercicio y educación para que los adultos mayores sigan aprendiendo, se diviertan y tengan las mismas oportunidades.",
+      "grupo_atencion": "Personas mayores de 60 años de edad",
+      "municipio": "Chihuahua, Cuauhtémoc y Parral",
+      "genero": "Indistinto",
+      "etapa_vida": "Adultos Mayores",
+      "especificaciones": "La persona solicitante podra acceder a uno o varios cursos y/o talleres de su interes, dependiendo de la disponibilidad de instuctores y foros de las aulas. La duracion y permanencia en los cursos y/o talleres dependera de la naturaleza del mismo y varía entre 60 a 120 minutos cada uno o más.",
+      "monto": "No especificado",
+      "periodicidad": "Lunes a Viernes \n8:00 a 16:00 hrs \n\nCasa Deportiva\n7:00 a 20:00 hrs",
+      "donde_solicitar": "Chihuahua: Deportiva: C.27 S/N Cd. Deportiva. Col. Altavista. Norte C. Manuel Aguilar  Saenz #521 COL. Barrio del Norte. Sur . 42A. #2008 y Jimenez Col. Pacifico. Sur Oeste C. Buenavista #8014 Col. Genaro Vazquez.\n\nCuauhtemoc: C. 62 1/2 Y Tenochtitlan Col. Tierra Nueva. \n\nHidalgo del Parral C. Venezuela # 3 Kennedy",
+      "requisitos": "a) Identificación oficial con fotografía en copia;\nb) Una copia de la CURP, en caso de que la identificación oficial no cuente con este dato;\nc) En caso de que la identificación no cuente con el domicilio actual o no se especifique, deberá presentar una copia del comprobante de domicilio, sin importar la emisión de este; y\nd) Formato Hoja de Inscripción con fotografía (Anexo 1 de las Reglas de Operacion del Programa o en la siguiente hoja de cálculo del presente archivo), el cual será otorgado por la Unidad Responsable al momento de realizar el trámite.",
+      "donde_entrega": "Chihuahua: Deportiva: C.27 S/N Cd. Deportiva. Col. Altavista. Norte C. Manuel Aguilar  Saenz #521 COL. Barrio del Norte. Sur . 42A. #2008 y Jimenez Col. Pacifico. Sur Oeste C. Buenavista #8014 Col. Genaro Vazquez. Cuauhtemoc: C. 62 1/2 Y Tenochtitlan Col. Tierra Nueva. Hidalgo del Parral C. Venezuela # 3 Kennedy",
+      "contacto": "Chihuahua: 614- 414 -8373.   Norte: 614- 421- 5547  Sur: 614- 418 - 9667  Sur Oeste: 614- 452- 2495  Cuautemoc: 625- 112- 8891 Hidalgo del Parral: 627- 523- 7220",
+      "observaciones": "N/D",
+      "direccion_corta": "Grupos Vulnerables",
+      "municipios_lista": [
+        "Chihuahua",
+        "Cuauhtémoc",
+        "Parral"
+      ],
+      "categorias": [
+        "capacitacion",
+        "mayores"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía en copia.",
+            "Una copia de la CURP, en caso de que la identificación oficial no cuente con este dato.",
+            "En caso de que la identificación no cuente con el domicilio actual o no se especifique, deberá presentar una copia del comprobante de domicilio, sin importar la emisión de este.",
+            "Formato Hoja de Inscripción con fotografía (Anexo 1 de las Reglas de Operacion del Programa o en la siguiente hoja de cálculo del presente archivo), el cual será otorgado por la Unidad Responsable al momento de realizar el trámite."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "educación",
+        "curso",
+        "cursos",
+        "taller",
+        "talleres",
+        "clases",
+        "aprender",
+        "oficio",
+        "capacitación",
+        "diploma",
+        "estudiar",
+        "beca educativa",
+        "escuela",
+        "personas mayores",
+        "ancianos",
+        "viejitos",
+        "tercera edad",
+        "jubilados",
+        "abuelos",
+        "abuelitos",
+        "adultos mayores",
+        "60 años"
+      ]
+    },
+    {
+      "id": 12,
+      "direccion_institucional": "Dirección de Grupos Vulnerables y Prevención a la Discriminación",
+      "nombre_apoyo": "Talleres en materia de Prevención a la Discriminación",
+      "nombre_ciudadano": "Talleres De Prevención A La Discriminación",
+      "descripcion_oficial": "Se otorgarán talleres en materia de prevención a la discriminación de manera gratuita en las instituciones, organizaciones, gobierno, empresas y/o asociaciones.",
+      "descripcion_ciudadana": "Impartición de talleres de manera gratuita",
+      "grupo_atencion": "Poblacón general, instituciones, organizaciones, gobierno, empresas y/o asociaciones",
+      "municipio": "Todos los municipios",
+      "genero": "Indistinto",
+      "etapa_vida": "Infancia, Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "Se otorgará las veces que el solicitante lo requiera, según la disponibilidad de espacios físicos, la agenda de los talleristas y la suficiencia presupuestal.",
+      "monto": "No especificado",
+      "periodicidad": "Lunes a Viernes\n9:00 a 15:00 hrs",
+      "donde_solicitar": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 33 00\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "requisitos": "Presentar Oficio de solicitud mediante escrito libre que contenga los siguientes elementos mínimos: \nEspecificar qué tipo de taller es de su interés en recibir, población participante a la que va dirigido, número de asistentes, día, lugar y hora propuestos para recibir el taller; este oficio deberá estar dirigido al titular de la Dirección de Grupos Vulnerables y Prevención a la Discriminación.",
+      "donde_entrega": "Los talleres se podrán otorgar en las instalaciones de la empresa, institución, asociación, o persona solicitante, interesada en recibir el taller, o en las instalaciones de la Dirección de Grupos Vulnerables y Prevención a la Discriminación.",
+      "contacto": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 33 00\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "observaciones": "N/D",
+      "direccion_corta": "Grupos Vulnerables",
+      "municipios_lista": [
+        "Todos los municipios"
+      ],
+      "categorias": [
+        "capacitacion"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Presentar Oficio de solicitud mediante escrito libre que contenga los siguientes elementos mínimos: Especificar qué tipo de taller es de su interés en recibir, población participante a la que va dirigido, número de asistentes, día, lugar y hora propuestos para recibir el taller.",
+            "Este oficio deberá estar dirigido al titular de la Dirección de Grupos Vulnerables y Prevención a la Discriminación."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "educación",
+        "curso",
+        "cursos",
+        "taller",
+        "talleres",
+        "clases",
+        "aprender",
+        "oficio",
+        "capacitación",
+        "diploma",
+        "estudiar",
+        "beca educativa",
+        "escuela"
+      ]
+    },
+    {
+      "id": 13,
+      "direccion_institucional": "Dirección de Grupos Vulnerables y Prevención a la Discriminación",
+      "nombre_apoyo": "Apoyos Económicos a Personas con Discapacidad",
+      "nombre_ciudadano": "Apoyo Económico Para Personas Con Discapacidad",
+      "descripcion_oficial": "Los apoyos económicos comprenden específicamente para la adquisición de medicamentos, el pago de terapias de rehabilitación, la compra o mantenimiento de aparatos ortopédicos (como sillas de ruedas), así como gastos de alimentación especializada y transporte adaptado.",
+      "descripcion_ciudadana": "Apoyo económico está destinado a cubrir gastos de salud y bienestar",
+      "grupo_atencion": "Personas con discapacidad",
+      "municipio": "Chihuahua",
+      "genero": "Indistinto",
+      "etapa_vida": "Infancia, Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "El apoyo puede ir desde $4,000.00 hasta $13,000.00 en varias dispersiones, en el presente ejercicio fiscal",
+      "monto": "$4,000.00 hasta $13,000.00",
+      "periodicidad": "Mensual, Bimestral o Trimestral",
+      "donde_solicitar": "Se especifica en la convocatoria",
+      "requisitos": "Se especifican en la convocatoria",
+      "donde_entrega": "Se especifican en la convocatoria",
+      "contacto": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 3300 Ext-17904\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "observaciones": "LIGA CONVOCATORIA\nhttps://sdhybc.chihuahua.gob.mx/portal/convocatorias/dgvypd/2026_convocatoria-PD-apoyo-economico.pdf",
+      "direccion_corta": "Grupos Vulnerables",
+      "municipios_lista": [
+        "Chihuahua"
+      ],
+      "categorias": [
+        "economico",
+        "discapacidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Se especifican en la convocatoria."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "económico",
+        "dinero",
+        "efectivo",
+        "apoyo económico",
+        "beca",
+        "subsidio",
+        "tarjeta",
+        "recurso económico",
+        "pago",
+        "ayuda económica",
+        "discapacidad",
+        "silla de ruedas",
+        "invidente",
+        "sordo",
+        "down",
+        "autismo",
+        "capacidades diferentes",
+        "ortopédico",
+        "rehabilitación"
+      ]
+    },
+    {
+      "id": 14,
+      "direccion_institucional": "Dirección de Grupos Vulnerables y Prevención a la Discriminación",
+      "nombre_apoyo": "Apoyos en especie: Apoyo Alimentario",
+      "nombre_ciudadano": "Despensas Para Personas Mayores",
+      "descripcion_oficial": "Con el propósito de contribuir al ejercicio efectivo del derecho a una alimentación adecuada, el Programa otorgará despensas alimenticias a personas mayores en situación de pobreza o vulnerabilidad, priorizando a quienes presentan mayores carencias sociales o menor acceso a recursos económicos.",
+      "descripcion_ciudadana": "Entrega de despensa alimentaria con artículos de la canasta básica",
+      "grupo_atencion": "Personas mayores de 60 años de edad en situación de pobreza o vulnerabilidad",
+      "municipio": "Todos los municipios",
+      "genero": "Indistinto",
+      "etapa_vida": "Adultos Mayores",
+      "especificaciones": "Se podrán realizar las entregas de manera mensual, bimestral o trimestral, y los beneficiarios podrán tener acceso a hasta 8 apoyos en el transcurso del ejercicio fiscal en curso. En caso de algún ajuste presupuestal, la Secretaría podrá modificar los apoyos del Programa con base en la suficiencia y disponibilidad presupuestal.",
+      "monto": "No especificado",
+      "periodicidad": "Bimestral o Trimestral",
+      "donde_solicitar": "Se especifica en la convocatoria",
+      "requisitos": "Se especifica en la convocatoria",
+      "donde_entrega": "Se especifica en la convocatoria",
+      "contacto": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 3300 Ext-17904\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "observaciones": "Los detalles de los requisitos, selección de beneficiarios y entregas se podran consultar en el siguiente link: https://www.chihuahua.gob.mx/info/convocatorias-y-resultados-2026",
+      "direccion_corta": "Grupos Vulnerables",
+      "municipios_lista": [
+        "Todos los municipios"
+      ],
+      "categorias": [
+        "alimentacion",
+        "mayores"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Se especifica en la convocatoria."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "alimentación",
+        "comida",
+        "alimento",
+        "alimentos",
+        "despensa",
+        "despensas",
+        "canasta básica",
+        "nutrición",
+        "hambre",
+        "comer",
+        "víveres",
+        "comedor",
+        "personas mayores",
+        "ancianos",
+        "viejitos",
+        "tercera edad",
+        "jubilados",
+        "abuelos",
+        "abuelitos",
+        "adultos mayores",
+        "60 años"
+      ]
+    },
+    {
+      "id": 15,
+      "direccion_institucional": "Dirección de Grupos Vulnerables y Prevención a la Discriminación",
+      "nombre_apoyo": "Premio “Manuel Trueva Martínez”",
+      "nombre_ciudadano": "Premio Económico Para Personas Con Discapacidad",
+      "descripcion_oficial": "Se otorga un apoyo económico único en reconocimiento a las personas con discapacidad y/o organizaciones de la sociedad civil ganadoras que presenten proyectos de alto impacto social enfocados en los derechos humanos, la inclusión y la calidad de vida de las Personas con Discapacidad.",
+      "descripcion_ciudadana": "Premio en dinero para personas con discapacidad u organizaciones que ganen el concurso con algun proyecto que ayude a mejorar su vida y sus derechos.",
+      "grupo_atencion": "Personas con discapacidad y/u organizaciones de la sociedad civil",
+      "municipio": "Todos los municipios",
+      "genero": "Indistinto",
+      "etapa_vida": "Jóvenes y Adultos",
+      "especificaciones": "El apoyo máximo es de $300,000.00 (trescientos mil pesos 00/100 MXN). La cantidad de ganadores y el monto específico para cada uno es determinado por la Subcomisión Especial de Premiación, conforme a lo señalado en la convocatoria y sujeto a la disponibilidad presupuestal.",
+      "monto": "$300,000.00 MXN",
+      "periodicidad": "Único",
+      "donde_solicitar": "Se especifica en la convocatoria",
+      "requisitos": "Se especifica en la convocatoria",
+      "donde_entrega": "Se especifica en la convocatoria",
+      "contacto": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 3300 Ext-17904\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "observaciones": "*La convocatoria aún esta pendiente de ser publicada.\nhttps://www.chihuahua.gob.mx/info/convocatorias-y-resultados-2026",
+      "direccion_corta": "Grupos Vulnerables",
+      "municipios_lista": [
+        "Todos los municipios"
+      ],
+      "categorias": [
+        "economico",
+        "discapacidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Se especifica en la convocatoria."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "económico",
+        "dinero",
+        "efectivo",
+        "apoyo económico",
+        "beca",
+        "subsidio",
+        "tarjeta",
+        "recurso económico",
+        "pago",
+        "ayuda económica",
+        "discapacidad",
+        "silla de ruedas",
+        "invidente",
+        "sordo",
+        "down",
+        "autismo",
+        "capacidades diferentes",
+        "ortopédico",
+        "rehabilitación"
+      ]
+    },
+    {
+      "id": 16,
+      "direccion_institucional": "Dirección de Grupos Vulnerables y Prevención a la Discriminación",
+      "nombre_apoyo": "Servicio para el desarrollo integral: Atención Psicológica",
+      "nombre_ciudadano": "Atención Psicológica Para Personas Mayores",
+      "descripcion_oficial": "Con el fin de coadyuvar a la salud mental de las personas mayores, se proporcionará servicio de terapia psicológica, la cual se otorgará de manera individual y/o grupal, dicha terapia se llevará a cabo en las instalaciones de las Casas de los Abuelos.",
+      "descripcion_ciudadana": "Se ofrece servicio gratuito de terapia psicológica individual o en grupo dentro de las Casas de los Abuelos para cuidar la salud mental de los adultos mayores.",
+      "grupo_atencion": "Personas mayores de 60 años de edad",
+      "municipio": "Chihuahua, Cuauhtémoc y Parral",
+      "genero": "Indistinto",
+      "etapa_vida": "Adultos Mayores",
+      "especificaciones": "El servicio se otorgará a la o el beneficiario una vez al año, gozando de hasta 8 sesiones de terapia con una duración máxima de 50 minutos cada una durante el Ejercicio Fiscal en curso, y hasta 8 sesiones más a consideración del Psicólogo tratante. Las terapias grupales se llevarán a cabo según la consideración del psicólogo o psicóloga, las características de los beneficiaros que les permitan compartir espacio y tiempos específicos, y sujeto a la disponibilidad de recursos.",
+      "monto": "No especificado",
+      "periodicidad": "Martes a Viernes Casa de los Abuelos Deportiva;\nLunes Casa de los Abuelos Sur Oeste;\nMiercoles Casa de los Abuelos Norte;\nJueves Casa de los Abuelos Sur. \n\n8:00 a 15:00 hrs",
+      "donde_solicitar": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 33 00\n\nCd. Chihuahua: Casa de los Abuelos Deportiva, calle 27 S/N Cd. Deportiva Col. Altavista; Casa de los Abuelos Norte, calle Manuel Aguilar Saenz #521 Col. Barrio del Norte; Casa de los Abuelos Sur calle 42a #2008 y Jimenez Col. Pacifico; Casa de los Abuelos Sur Oeste calle Buenavista #8014 Col. Genaro Vazquez.",
+      "requisitos": "a) Identificación oficial con fotografía en copia;\nb) Una copia de la CURP, en caso de que la identificación oficial no cuente con este dato;\nc) En caso de que la identificación no cuente con el domicilio actual o no se especifique, deberá presentar una copia del comprobante de domicilio, sin importar la fecha de emisión de este; y\nd) Firmar Reglamento Interno de Pacientes, el cual será otorgado por la Unidad Responsable al momento de acudir a su primera cita (Anexo 5 de las Reglas de Operacion del Programa o en la siguiente hoja de cálculo del presente archivo).",
+      "donde_entrega": "Cd. Chihuahua: Casa de los Abuelos Deportiva, calle 27 S/N Cd. Deportiva Col. Altavista; Casa de los Abuelos Norte, calle Manuel Aguilar Saenz #521 Col. Barrio del Norte; Casa de los Abuelos Sur calle 42a #2008 y Jimenez Col. Pacifico; Casa de los Abuelos Sur Oeste calle Buenavista #8014 Col. Genaro Vazquez.",
+      "contacto": "Chihuahua: Deportiva 614- 414 -8363.   Norte: 614- 421- 5547  Sur: 614- 418 - 9667  Sur Oeste: 614- 452- 2495  Cuautemoc: 625- 112- 8891 Hidalgo del Parral: 627- 523- 7220",
+      "observaciones": "N/D",
+      "direccion_corta": "Grupos Vulnerables",
+      "municipios_lista": [
+        "Chihuahua",
+        "Cuauhtémoc",
+        "Parral"
+      ],
+      "categorias": [
+        "desarrollo_pers",
+        "mayores"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía en copia.",
+            "Una copia de la CURP, en caso de que la identificación oficial no cuente con este dato.",
+            "En caso de que la identificación no cuente con el domicilio actual o no se especifique, deberá presentar una copia del comprobante de domicilio, sin importar la fecha de emisión de este.",
+            "Firmar Reglamento Interno de Pacientes, el cual será otorgado por la Unidad Responsable al momento de acudir a su primera cita (Anexo 5 de las Reglas de Operacion del Programa o en la siguiente hoja de cálculo del presente archivo)."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "desarrollo personal",
+        "terapia",
+        "psicología",
+        "psicólogo",
+        "autoestima",
+        "bienestar emocional",
+        "consejería",
+        "ayuda psicológica",
+        "salud mental",
+        "depresión",
+        "ansiedad",
+        "personas mayores",
+        "ancianos",
+        "viejitos",
+        "tercera edad",
+        "jubilados",
+        "abuelos",
+        "abuelitos",
+        "adultos mayores",
+        "60 años"
+      ]
+    },
+    {
+      "id": 17,
+      "direccion_institucional": "Dirección de Grupos Vulnerables y Prevención a la Discriminación",
+      "nombre_apoyo": "Servicios a través del Centro de Capacitación para Personas con Discapacidad.",
+      "nombre_ciudadano": "Talleres, Cursos Y Capacitaciones Para Personas Con Discapacidad",
+      "descripcion_oficial": "El Centro de Capacitación para Personas con Discapacidad, impartirá talleres, cursos y capacitaciones gratuitas en disciplinas como talabartería, manualidades, bisutería, pintura, braille, lengua de señas, lectoescritura, entre otras. También promoverá actividades lúdicas y culturales.",
+      "descripcion_ciudadana": "Cursos de capacitación y actividades recreativas.",
+      "grupo_atencion": "Personas con discapacidad",
+      "municipio": "Chihuahua",
+      "genero": "Indistinto",
+      "etapa_vida": "Jóvenes y Adultos",
+      "especificaciones": "El beneficiario podrá solicitar uno o varios cursos de su interés según la disponibilidad de los capacitadores y aforo en cada curso y/o taller.",
+      "monto": "No especificado",
+      "periodicidad": "Lunes a Viernes\n8:00 a 13:00 hrs",
+      "donde_solicitar": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 33 00\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "requisitos": "a)\tEs necesario que la persona interesada tenga la capacidad de autocuidado para participar en las actividades sociales y de aprendizaje dentro de las instalaciones. \nb)\tLa edad mínima de ingreso será de 15 (quince) años cumplidos al momento de presentar su solicitud.\nc)\tPresentar en copia la credencial nacional para personas con discapacidad expedida por el Sistema Nacional para el Desarrollo Integral de las Familias o una constancia o certificado médico que acredite discapacidad permanente expedido por médico adscrito al Sector Salud o de carácter privado;\nd)\tCopia simple de la identificación Oficial con fotografía en caso de ser mayor de edad;\ne)\tEn caso de que la identificación no cuente con el domicilio actual o no se especifique, deberá presentar una copia simple del comprobante de domicilio, sin importar la fecha de emisión del mismo;\nf)\tCURP en copia simple en caso de que la identificación oficial no cuente con este dato;\ng)\tContestar formato ficha de inscripción (Anexo 1, en Reglas de Operación del programa ó en la siguiente hoja de cálculo del presente archivo) con fotografía, el cual será otorgado por la Unidad Responsable al momento de realizar el trámite; \nh)\tFirmar Carta Responsiva (Anexo 2, en Reglas de Operación del programa ó en la siguiente hoja de cálculo del presente archivo). En caso de que el solicitante sea menor de edad o no tenga la capacidad para firmar, el documento deberá ser firmado por el tutor.",
+      "donde_entrega": "Centro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "contacto": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 3300 Ext-17904\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "observaciones": "N/D",
+      "direccion_corta": "Grupos Vulnerables",
+      "municipios_lista": [
+        "Chihuahua"
+      ],
+      "categorias": [
+        "capacitacion",
+        "discapacidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Es necesario que la persona interesada tenga la capacidad de autocuidado para participar en las actividades sociales y de aprendizaje dentro de las instalaciones.",
+            "La edad mínima de ingreso será de 15 (quince) años cumplidos al momento de presentar su solicitud.",
+            "Presentar en copia la credencial nacional para personas con discapacidad expedida por el Sistema Nacional para el Desarrollo Integral de las Familias o una constancia o certificado médico que acredite discapacidad permanente expedido por médico adscrito al Sector Salud o de carácter privado.",
+            "Copia simple de la identificación Oficial con fotografía en caso de ser mayor de edad.",
+            "En caso de que la identificación no cuente con el domicilio actual o no se especifique, deberá presentar una copia simple del comprobante de domicilio, sin importar la fecha de emisión del mismo.",
+            "CURP en copia simple en caso de que la identificación oficial no cuente con este dato.",
+            "Contestar formato ficha de inscripción (Anexo 1, en Reglas de Operación del programa ó en la siguiente hoja de cálculo del presente archivo) con fotografía, el cual será otorgado por la Unidad Responsable al momento de realizar el trámite.",
+            "Firmar Carta Responsiva (Anexo 2, en Reglas de Operación del programa ó en la siguiente hoja de cálculo del presente archivo). En caso de que el solicitante sea menor de edad o no tenga la capacidad para firmar, el documento deberá ser firmado por el tutor."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "educación",
+        "curso",
+        "cursos",
+        "taller",
+        "talleres",
+        "clases",
+        "aprender",
+        "oficio",
+        "capacitación",
+        "diploma",
+        "estudiar",
+        "beca educativa",
+        "escuela",
+        "discapacidad",
+        "silla de ruedas",
+        "invidente",
+        "sordo",
+        "down",
+        "autismo",
+        "capacidades diferentes",
+        "ortopédico",
+        "rehabilitación"
+      ]
+    },
+    {
+      "id": 18,
+      "direccion_institucional": "Dirección de Grupos Vulnerables y Prevención a la Discriminación",
+      "nombre_apoyo": "Servicios de Atención Psicológica para Personas con Discapacidad",
+      "nombre_ciudadano": "Atención Psicológica Para Personas Con Discapacidad",
+      "descripcion_oficial": "Servicios de atención psicológica a personas con discapacidad a través de enforques terapéuticos sensibles y adaptados, donde se busca empoderar a estas personas para superar obstáculos, fortalecer su autoestima y construir relaciones saludables.",
+      "descripcion_ciudadana": "Terapias psicológicas para fortalecer su bienestar emocional y autoestima.",
+      "grupo_atencion": "Personas con discapacidad",
+      "municipio": "Chihuahua",
+      "genero": "Indistinto",
+      "etapa_vida": "Jóvenes y Adultos",
+      "especificaciones": "Se otorgan 8 sesiones de 50 minutos c/u de terapia psicológica individual de manera presencial o virtual, y hasta 8 sesiones más a consideración del Psicólogo tratante.",
+      "monto": "No especificado",
+      "periodicidad": "Lunes a Viernes\n8:00 a 15:00 hrs",
+      "donde_solicitar": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 33 00\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "requisitos": "a)\tCopia simple de la credencial nacional para personas con discapacidad expedida por el Sistema Nacional para el Desarrollo Integral de las Familias o en su defecto, una constancia o certificado médico que acredite discapacidad permanente, expedido por médico adscrito al Sector Salud o de carácter privado;\nb)\tCopia simple de la identificación oficial, en caso de ser mayor de edad;\nc)\tEn caso de que la identificación no cuente con el domicilio actual o no se especifique, deberá presentar una copia del comprobante de domicilio, sin importar la fecha de emisión del mismo;\nd)\tCURP simple en copia en caso de que la identificación oficial no cuente con este dato;\ne)\tReglamento interno de pacientes firmado (anexo 7, en Reglas de Operación del programa ó en la siguiente hoja de cálculo del presente archivo). En caso de que el paciente sea menor de edad o no tenga la capacidad para firmar, el documento deberá ser firmado por el tutor.",
+      "donde_entrega": "Centro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "contacto": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 3300 Ext-17904\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "observaciones": "N/D",
+      "direccion_corta": "Grupos Vulnerables",
+      "municipios_lista": [
+        "Chihuahua"
+      ],
+      "categorias": [
+        "desarrollo_pers",
+        "discapacidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Copia simple de la credencial nacional para personas con discapacidad expedida por el Sistema Nacional para el Desarrollo Integral de las Familias o en su defecto, una constancia o certificado médico que acredite discapacidad permanente, expedido por médico adscrito al Sector Salud o de carácter privado.",
+            "Copia simple de la identificación oficial, en caso de ser mayor de edad.",
+            "En caso de que la identificación no cuente con el domicilio actual o no se especifique, deberá presentar una copia del comprobante de domicilio, sin importar la fecha de emisión del mismo.",
+            "CURP simple en copia en caso de que la identificación oficial no cuente con este dato.",
+            "Reglamento interno de pacientes firmado (anexo 7, en Reglas de Operación del programa ó en la siguiente hoja de cálculo del presente archivo). En caso de que el paciente sea menor de edad o no tenga la capacidad para firmar, el documento deberá ser firmado por el tutor."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "desarrollo personal",
+        "terapia",
+        "psicología",
+        "psicólogo",
+        "autoestima",
+        "bienestar emocional",
+        "consejería",
+        "ayuda psicológica",
+        "salud mental",
+        "depresión",
+        "ansiedad",
+        "discapacidad",
+        "silla de ruedas",
+        "invidente",
+        "sordo",
+        "down",
+        "autismo",
+        "capacidades diferentes",
+        "ortopédico",
+        "rehabilitación"
+      ]
+    },
+    {
+      "id": 19,
+      "direccion_institucional": "Dirección de Grupos Vulnerables y Prevención a la Discriminación",
+      "nombre_apoyo": "Servicios de transporte a domicilio, adaptado",
+      "nombre_ciudadano": "Transporte A Domicilio",
+      "descripcion_oficial": "Servicio gratuito de transporte adaptado a domicilio para personas con discapacidad en Chihuahua y Ciudad Juárez.",
+      "descripcion_ciudadana": "Servicio de transporte a domicilio gratuito",
+      "grupo_atencion": "Personas con discapacidad",
+      "municipio": "Chihuahua y Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Infancia, Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "Se otorgará el servicio las veces que la persona con discapacidad solicitante lo requiera a libre demanda durante el turno y las rutas establecidas.",
+      "monto": "No especificado",
+      "periodicidad": "Lunes a Viernes\n6:30 a 18:00 hrs",
+      "donde_solicitar": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 33 00\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "requisitos": "a)\tPresentar en original y copia credencial de discapacidad expedida por el Sistema Nacional para el Desarrollo Integral de las Familias o constancia o certificado de Discapacidad Permanente, expedido por médico adscrito al Sector Salud o de carácter privado, en este último caso;\nb)\tCopia simple de la identificación Oficial con fotografía en caso de ser mayor de edad;\nc)\tEn caso de que la identificación no cuente con el domicilio actual o no se especifique, deberá presentar una copia simple del comprobante de domicilio, sin importar la emisión del mismo; \nd)\tCopia simple CURP en caso de que la identificación oficial no cuente con este dato;\ne)\tEstudio socioeconómico, previsto en el Anexo 3 de las Reglas de Operación del programa, el cual será aplicado por la Unidad Responsable al momento de realizar el trámite; \nf)\tCarta excluyente de responsabilidad para el beneficiario y el acompañante en caso de que aplique. (Anexo 4, en Reglas de Operación del programa ó en la siguiente hoja de cálculo del presente archivo).\ng)\tReglamento interno del servicio de transporte. (Anexo 5, en Reglas de Operación del programa ó en la siguiente hoja de cálculo del presente archivo).",
+      "donde_entrega": "Cd. Chihuahua, y Cd Juárez, según la disponibilidad de agenda y operadores",
+      "contacto": "Dirección de Grupos Vulnerables y Prevención a la Discriminación, ubicado en Av. Agustin Melgar #3703, Col. Nombre de Dios, C.P. 31150\nTeléfono 614 429 3300 Ext-17904\nCentro de Capacitación para Personas con Discapacidad, ubicado en Calle 70 #128, Colonia Salud, C.P. 31020\nTeléfono 614 411 56 62",
+      "observaciones": "Es indispensable hacer reservación del servicio con al menos una semana de anticipacion, para apertura de expediente, y que los menores de edad y adultos que requieran cuidados especificos viajen acompañados por un tutor. En el caso de personas mayores de 18 años que requieren asistencia de terceros para su movilidad, deberán abordar acompañadas de una personas que les apoye.",
+      "direccion_corta": "Grupos Vulnerables",
+      "municipios_lista": [
+        "Chihuahua",
+        "Juárez"
+      ],
+      "categorias": [
+        "transporte",
+        "discapacidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Presentar en original y copia credencial de discapacidad expedida por el Sistema Nacional para el Desarrollo Integral de las Familias o constancia o certificado de Discapacidad Permanente, expedido por médico adscrito al Sector Salud o de carácter privado, en este último caso.",
+            "Copia simple de la identificación Oficial con fotografía en caso de ser mayor de edad.",
+            "En caso de que la identificación no cuente con el domicilio actual o no se especifique, deberá presentar una copia simple del comprobante de domicilio, sin importar la emisión del mismo.",
+            "Copia simple CURP en caso de que la identificación oficial no cuente con este dato.",
+            "Estudio socioeconómico, previsto en el Anexo 3 de las Reglas de Operación del programa, el cual será aplicado por la Unidad Responsable al momento de realizar el trámite.",
+            "Carta excluyente de responsabilidad para el beneficiario y el acompañante en caso de que aplique. (Anexo 4, en Reglas de Operación del programa ó en la siguiente hoja de cálculo del presente archivo).",
+            "Reglamento interno del servicio de transporte. (Anexo 5, en Reglas de Operación del programa ó en la siguiente hoja de cálculo del presente archivo)."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "transporte",
+        "camión",
+        "autobús",
+        "traslado",
+        "pasaje",
+        "pasajes",
+        "movilidad",
+        "transporte público",
+        "discapacidad",
+        "silla de ruedas",
+        "invidente",
+        "sordo",
+        "down",
+        "autismo",
+        "capacidades diferentes",
+        "ortopédico",
+        "rehabilitación"
+      ]
+    },
+    {
+      "id": 20,
+      "direccion_institucional": "SDHyBC Programa 1S025A1 \"Desarrollo Humano\"",
+      "nombre_apoyo": "Apoyos en Especie para Personas en Rezago Social",
+      "nombre_ciudadano": "Equipamiento Y Materiales Para El Hogar En Rezago Social",
+      "descripcion_oficial": "Los apoyos estarán orientados al mejoramiento de la vivienda y a la atención de carencias sociales, mediante la dotación de insumos y materiales tales como piso firme, techo firme, muro firme, estufas ecológicas, filtros de agua, celdas solares, letrinas secas o húmedas, tinacos, impermeabilizante, así como paquetes de suministros de higiene, aseo personal y alimentación, entre otros bienes que determine la normatividad aplicable.",
+      "descripcion_ciudadana": "Entrega de insumos y materiales destinados al mejoramiento de la vivienda, equipamiento sustentable, así como paquetes de suministros de higiene, aseo personal y alimentación.",
+      "grupo_atencion": "Población general en condición de rezago social",
+      "municipio": "No especificado",
+      "genero": "Indistinto",
+      "etapa_vida": "Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "Las entregas se realizarán de manera directa a la persona beneficiaria, conforme a los criterios y procedimientos establecidos por la Unidad Responsable.",
+      "donde_solicitar": "No especificado, para mas información contactar a la dirección correspondiente",
+      "requisitos": "Requisitos generales:\na)\tPresentar copia legible de la Clave Única de Registro de Población, (CURP) solo si esta no viene en la identificación oficial;\nb)\tPresentar copia de comprobante de domicilio no mayor a un año o Escrito de Constancia Domiciliaria (Anexo 2) en caso de no contar con este; si la dirección actual es la misma que la INE no es necesario presentar comprobante de domicilio. \nc)\tIdentificación oficial (credencial de elector) emitida por el Instituto Nacional Electoral (INE).\n\nRequisitos específicos:\na)\tPresentar en formato original el estudio socioeconómico (Anexo 1) proporcionado por la institución.",
+      "donde_entrega": "Las entregas se realizarán de manera directa a la persona beneficiaria, conforme a los criterios y procedimientos establecidos por la Unidad Responsable.",
+      "contacto": "Av. Venustiano Carranza, CENTRO, 31350 Chihuahua, Chih.\n\nTeléfono: 614 429 3300",
+      "observaciones": "Si la persona pertenece a un pueblo o comunidad indígena, migrante o se encuentra en calidad de desplazada o de desplazamiento interno, repatriada o víctima de delito se respetará su derecho a determinar su identidad y se tomarán como ciertos y válidos los datos que proporcione bajo el concepto que mejor se adapte a su historial. Estando en la imposibilidad de que la beneficiaria o beneficiario presente copia de identificación oficial, comprobante de domicilio y CURP, se levantará el Estudio Socioeconómico (anexo 1).",
+      "direccion_corta": "Desarrollo Humano",
+      "municipios_lista": [
+        "No especificado"
+      ],
+      "categorias": [
+        "economico",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": "Requisitos generales",
+          "items": [
+            "Presentar copia legible de la Clave Única de Registro de Población, (CURP) solo si esta no viene en la identificación oficial.",
+            "Presentar copia de comprobante de domicilio no mayor a un año o Escrito de Constancia Domiciliaria (Anexo 2) en caso de no contar con este; si la dirección actual es la misma que la INE no es necesario presentar comprobante de domicilio.",
+            "Identificación oficial (credencial de elector) emitida por el Instituto Nacional Electoral (INE)."
+          ]
+        },
+        {
+          "titulo": "Requisitos específicos",
+          "items": [
+            "Presentar en formato original el estudio socioeconómico (Anexo 1) proporcionado por la institución."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "económico",
+        "dinero",
+        "efectivo",
+        "apoyo económico",
+        "beca",
+        "subsidio",
+        "tarjeta",
+        "recurso económico",
+        "pago",
+        "ayuda económica",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 21,
+      "direccion_institucional": "SDHyBC Programa 1S025A1 \"Desarrollo Humano\"",
+      "nombre_apoyo": "Apoyos Económicos para Asistetes Sociales",
+      "nombre_ciudadano": "Apoyo Económico Para Asistentes Sociales",
+      "descripcion_oficial": "Se brindaran apoyos económicos a personas mayores de 18 años en situación de vulnerabilidad para llevar a cabo actividades de diagnóstico socioeconómico así como el levantamiento de cédulas de evaluación para focalización de los apoyos y la eficacia de las acciones del programa.",
+      "descripcion_ciudadana": "Entrega de apoyos económicos destinados a la realización de diagnósticos socioeconómicos y levantamiento de cédulas de evaluación para los programas institucionales.",
+      "grupo_atencion": "Personas mayores de 18 años en situación de vulnerabilidad",
+      "municipio": "No especificado",
+      "genero": "Indistinto",
+      "etapa_vida": "Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "Monto mínimo de 1,000.00 ( mil pesos) hasta un monto máximo de 16,000 (diez y seis mil pesos)",
+      "monto": "$1,000.00 - $16,000.00 MXN",
+      "periodicidad": "Semanal, quincenal, mensual, semestral o anual",
+      "donde_solicitar": "Sin mencionar",
+      "requisitos": "Requisitos generales: \na)\tSolicitud de ingreso (Anexo 4);\nb)\tCopia de identificación oficial;\nc)\tComprobante de domicilio (Vigencia no mayor a 3 meses);\nd)\tCaratula de cuenta bancaria a su nombre;\ne)\tComprobante del último grado de estudios\n\nRequisitos específicos:\na)\tPresentar en formato original el Estudio Socioeconómico (anexo 1), proporcionado por la institución;\nb)\tPresentar copia legible de la Clave Única de Registro de Población, (CURP) solo si esta no viene en la identificación oficial;\nc)\tPresentar copia de comprobante de domicilio no mayor a un año o Escrito de Constancia Domiciliaria (Anexo 2) en caso de no contar con este; si la dirección actual es la misma que la Credencial para votar no es necesario presentar comprobante de domicilio. \nd)\tIdentificación oficial (credencial para votar) emitida por el Instituto Nacional Electoral. \ne)\tAviso de privacidad vigente, el cual se pude consultar en la página https://www.chihuahua.gob.mx/info/avisos-de-privacidad-integrales.\nf)\tEn caso de ser transferencia, será necesario presentar el estado de cuenta bancario con vigencia no mayor a tres meses.",
+      "donde_entrega": "Sin mencionar",
+      "contacto": "Av. Venustiano Carranza, CENTRO, 31350 Chihuahua, Chih.\n\nTeléfono: 614 429 3300",
+      "observaciones": "N/D",
+      "direccion_corta": "Desarrollo Humano",
+      "municipios_lista": [
+        "No especificado"
+      ],
+      "categorias": [
+        "economico",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": "Requisitos generales",
+          "items": [
+            "Solicitud de ingreso (Anexo 4).",
+            "Copia de identificación oficial.",
+            "Comprobante de domicilio (Vigencia no mayor a 3 meses).",
+            "Caratula de cuenta bancaria a su nombre.",
+            "Comprobante del último grado de estudios."
+          ]
+        },
+        {
+          "titulo": "Requisitos específicos",
+          "items": [
+            "Presentar en formato original el Estudio Socioeconómico (anexo 1), proporcionado por la institución.",
+            "Presentar copia legible de la Clave Única de Registro de Población, (CURP) solo si esta no viene en la identificación oficial.",
+            "Presentar copia de comprobante de domicilio no mayor a un año o Escrito de Constancia Domiciliaria (Anexo 2) en caso de no contar con este; si la dirección actual es la misma que la Credencial para votar no es necesario presentar comprobante de domicilio.",
+            "Identificación oficial (credencial para votar) emitida por el Instituto Nacional Electoral.",
+            "Aviso de privacidad vigente, el cual se pude consultar en la página https://www.chihuahua.gob.mx/info/avisos-de-privacidad-integrales.",
+            "En caso de ser transferencia, será necesario presentar el estado de cuenta bancario con vigencia no mayor a tres meses."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "económico",
+        "dinero",
+        "efectivo",
+        "apoyo económico",
+        "beca",
+        "subsidio",
+        "tarjeta",
+        "recurso económico",
+        "pago",
+        "ayuda económica",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 22,
+      "direccion_institucional": "SDHyBC Programa 1S054A1 \"Atención a Niñas, Niños, Jovenes y Adolescentes\"",
+      "nombre_apoyo": "Apoyo Económico a Instituciones Públicas con Proyectos de Intervención para N.N.A y J",
+      "nombre_ciudadano": "Apoyo Económico A Instituciones Públicas Con Proyectos De Intervención Para Niñas, Niños, Adolescentes Y Juventudes",
+      "descripcion_oficial": "Se otorga un apoyo económico sujeto a la disponibilidad presupuestal, el cual será entregado en una sola exhibición posterior a la firma del convenio y durante el Ejercicio Fiscal en curso;",
+      "descripcion_ciudadana": "Entrega de un apoyo económico en una sola exhibición, posterior a la firma de un convenio y otorgado durante el ejercicio fiscal en curso, sujeto a la disponibilidad del presupuesto.",
+      "grupo_atencion": "Instituciones Públicas",
+      "municipio": "Todos los municipios",
+      "genero": "No aplica",
+      "etapa_vida": "No aplica",
+      "especificaciones": "Sujeto a la disponibilidad presupuestal durante el ejercicio fiscal en curso.",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "No especificado, para mas información contactar a la dirección correspondiente",
+      "requisitos": "Requisitos generales: \na)\tIdentificación oficial vigente\nb)\tComprobante de domicilio\nc)\tCURP\n\nRequisitos específicos: \na)\tPresentar oficio de solicitud dirigido al titular de la Secretaría (Anexo 4); \nb)\tLlenar el formato presentación del proyecto (Anexo 3);\nc)\tCopia de constancia de mayoría y validez de la elección para el Ayuntamiento emitida por Instituto Estatal Electoral Chihuahua;\nd)\tCopia de identificación oficial vigente de quien preside el Ayuntamiento;\ne)\tCopia de nombramiento e identificación oficial vigente del Tesorero y secretario del Ayuntamiento;\nf)\tCopia de identificación oficial vigente del Regidor de Hacienda; \ng)\tPresentar comprobante de domicilio del Ayuntamiento (antigüedad no mayor a seis meses) copia; \nh)\tPresentar copia de carátula de cuenta bancaria a nombre del municipio; \ni)\tActa de mayoría de cabildo donde se autorice la participación y recepción del recurso en caso de ser aceptada la solicitud; y \nj)\tToda la documentación solicitada deberá presentarse de manera física y digital en memoria USB.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Av. Venustiano Carranza, CENTRO, 31350 Chihuahua, Chih.\n\nTeléfono: 614 429 3300",
+      "observaciones": "N/D",
+      "direccion_corta": "Atención a Niñas, Niños, Jovenes y Adolescentes",
+      "municipios_lista": [
+        "Todos los municipios"
+      ],
+      "categorias": [
+        "economico",
+        "ninos"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": "Requisitos generales",
+          "items": [
+            "Identificación oficial vigente.",
+            "Comprobante de domicilio.",
+            "CURP."
+          ]
+        },
+        {
+          "titulo": "Requisitos específicos",
+          "items": [
+            "Presentar oficio de solicitud dirigido al titular de la Secretaría (Anexo 4).",
+            "Llenar el formato presentación del proyecto (Anexo 3).",
+            "Copia de constancia de mayoría y validez de la elección para el Ayuntamiento emitida por Instituto Estatal Electoral Chihuahua.",
+            "Copia de identificación oficial vigente de quien preside el Ayuntamiento.",
+            "Copia de nombramiento e identificación oficial vigente del Tesorero y secretario del Ayuntamiento.",
+            "Copia de identificación oficial vigente del Regidor de Hacienda.",
+            "Presentar comprobante de domicilio del Ayuntamiento (antigüedad no mayor a seis meses) copia.",
+            "Presentar copia de carátula de cuenta bancaria a nombre del municipio.",
+            "Acta de mayoría de cabildo donde se autorice la participación y recepción del recurso en caso de ser aceptada la solicitud.",
+            "Toda la documentación solicitada deberá presentarse de manera física y digital en memoria USB."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "económico",
+        "dinero",
+        "efectivo",
+        "apoyo económico",
+        "beca",
+        "subsidio",
+        "tarjeta",
+        "recurso económico",
+        "pago",
+        "ayuda económica",
+        "niños",
+        "niñas",
+        "infancia",
+        "menores",
+        "adolescentes",
+        "jóvenes",
+        "juventud",
+        "escuela"
+      ]
+    },
+    {
+      "id": 23,
+      "direccion_institucional": "SDHyBC Programa 1S054A1 \"Atención a Niñas, Niños, Jovenes y Adolescentes\"",
+      "nombre_apoyo": "Apoyo Económico a los Cuidadores de Hijos de Personas Privadas en Centros de Reinserción Social",
+      "nombre_ciudadano": "Apoyo Económico Para Cuidadores De Hijos De Personas En Centros De Reinserción Social",
+      "descripcion_oficial": "Se brinda un apoyo económico único a las y los cuidadores de las hijas e hijos de personas privadas de su libertad en centros de reinserción social que podrá ser de 8 mil hasta 10 mil pesos, suministrados en una o dos exhibiciones durante el ejercicio fiscal mismo que se entregará por transferencia electrónica en los casos que ello sea posible",
+      "descripcion_ciudadana": "Entrega de un apoyo económico único  a cuidadores de hijas e hijos de personas privadas de su libertad.",
+      "grupo_atencion": "Cuidadores de hijos de personas privadas en centros de reinserción social",
+      "municipio": "Todos los municipios",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "8 mil hasta 10 mil pesos, suministrados en una o dos exhibiciones durante el ejercicio fiscal mismo que se entregará por transferencia electrónica en los casos que ello sea posible",
+      "monto": "$8,000.00 - $10,000.00 MXN",
+      "periodicidad": "Único",
+      "donde_solicitar": "Sin mencionar",
+      "requisitos": "Requisitos generales: \na)\tIdentificación oficial vigente\nb)\tComprobante de domicilio\nc)\tCURP\n\nRequisitos específicos: \n\na)\tEstudio Socioeconómico \nb)\tActa de nacimiento de los hijos e hijas de la persona privada de la libertad. \nc)\tEscrito libre firmado por la madre o padre de los hijos e hijas en donde se nombre cuidador o cuidadora principal. \nd)\tConstancia del Centro de Reinserción Social que de fe de la condición de privación de la libertad. \ne)\tBoleta o constancia de estudios del grado escolar en curso para mayores de 6 años.",
+      "donde_entrega": "Sin mencionar",
+      "contacto": "Av. Venustiano Carranza, CENTRO, 31350 Chihuahua, Chih.\n\nTeléfono: 614 429 3300",
+      "observaciones": "N/D",
+      "direccion_corta": "Atención a Niñas, Niños, Jovenes y Adolescentes",
+      "municipios_lista": [
+        "Todos los municipios"
+      ],
+      "categorias": [
+        "economico",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": "Requisitos generales",
+          "items": [
+            "Identificación oficial vigente.",
+            "Comprobante de domicilio.",
+            "CURP."
+          ]
+        },
+        {
+          "titulo": "Requisitos específicos",
+          "items": [
+            "Estudio Socioeconómico.",
+            "Acta de nacimiento de los hijos e hijas de la persona privada de la libertad.",
+            "Escrito libre firmado por la madre o padre de los hijos e hijas en donde se nombre cuidador o cuidadora principal.",
+            "Constancia del Centro de Reinserción Social que de fe de la condición de privación de la libertad.",
+            "Boleta o constancia de estudios del grado escolar en curso para mayores de 6 años."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "económico",
+        "dinero",
+        "efectivo",
+        "apoyo económico",
+        "beca",
+        "subsidio",
+        "tarjeta",
+        "recurso económico",
+        "pago",
+        "ayuda económica",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 24,
+      "direccion_institucional": "SDHyBC Programa 1S054A1 \"Atención a Niñas, Niños, Jovenes y Adolescentes\"",
+      "nombre_apoyo": "Apoyos en Especie de Material Didactico para la Estimulación en el Desarrollo Neurocognitivo y Fisiológico de Niños y Niñas de 1 a 3 años en Condiciones de Pobreza",
+      "nombre_ciudadano": "Paquetes De Materiales Didácticos Para Niñas Y Niños De 1 A 3 Años En Condiciones De Pobreza",
+      "descripcion_oficial": "Se brinda un paquete de materiales didácticos para niñas y niños de 1 a 3 años de edad, en condiciones de pobreza, el cual será otorgado a la madre, padre o tutor o quién lo solicité",
+      "descripcion_ciudadana": "Entrega de paquete con materiales didácticos para niñas y niños de 1 a 3 años de edad.",
+      "grupo_atencion": "Niñas y niños en situación de pobreza",
+      "municipio": "Todos los municipios",
+      "genero": "Indistinto",
+      "etapa_vida": "Infancia",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "No especificado, para mas información contactar a la dirección correspondiente",
+      "requisitos": "Requisitos generales: \na)\tIdentificación oficial vigente\nb)\tComprobante de domicilio\nc)\tCURP\n\nRequisitos específicos: \na)\tEstudio Socioeconómico (Anexo 1) y;  \nb)\tClave única de registro de población (CURP) del menor.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Av. Venustiano Carranza, CENTRO, 31350 Chihuahua, Chih.\n\nTeléfono: 614 429 3300",
+      "observaciones": "N/D",
+      "direccion_corta": "Atención a Niñas, Niños, Jovenes y Adolescentes",
+      "municipios_lista": [
+        "Todos los municipios"
+      ],
+      "categorias": [
+        "ninos"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": "Requisitos generales",
+          "items": [
+            "Identificación oficial vigente.",
+            "Comprobante de domicilio.",
+            "CURP."
+          ]
+        },
+        {
+          "titulo": "Requisitos específicos",
+          "items": [
+            "Estudio Socioeconómico (Anexo 1) y.",
+            "Clave única de registro de población (CURP) del menor."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "niños",
+        "niñas",
+        "infancia",
+        "menores",
+        "adolescentes",
+        "jóvenes",
+        "juventud",
+        "escuela"
+      ]
+    },
+    {
+      "id": 25,
+      "direccion_institucional": "SDHyBC Programa 1S054A1 \"Atención a Niñas, Niños, Jovenes y Adolescentes\"",
+      "nombre_apoyo": "Apoyo Económico a OSC con proyectos de intervención en N.N.A y J en el Estado de Chihuahua",
+      "nombre_ciudadano": "Financiamiento Para Proyectos De Organizaciones De La Sociedad Civil Orientados A Niñas, Niños, Adolescentes Y Juventudes",
+      "descripcion_oficial": "Apoyo económico a Organizaciones de la Sociedad Civil con proyectos de intervención en niñas, niños, adolescentes y juventudes en el Estado, el cual será ministrado de acuerdo con las características del proyecto presentado y estará sujeto a la disponibilidad presupuestal durante el ejercicio fiscal en curso.",
+      "descripcion_ciudadana": "Entrega de recursos económicos a Organizaciones de la Sociedad Civil (OSC) que desarrollan proyectos de atención para niñas, niños, adolescentes y jóvenes en el Estado.",
+      "grupo_atencion": "Organizaciones de la sociedad civil",
+      "municipio": "Todos los municipios",
+      "genero": "No aplica",
+      "etapa_vida": "No aplica",
+      "especificaciones": "Sujeto a la disponibilidad presupuestal durante el ejercicio fiscal en curso.",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "No especificado, para mas información contactar a la dirección correspondiente",
+      "requisitos": "Requisitos generales: \na)\tIdentificación oficial vigente\nb)\tComprobante de domicilio\nc)\tCURP\n\nRequisitos específicos: \na)\tSolicitud de entrega de apoyo correspondiente al Ejercicio Fiscal en curso; (Anexo 4); \nb)\tLlenar el formato presentación del proyecto (Anexo 3);\nc)\tActa constitutiva de la Asociación Civil;\nd)\tPoder Legal del Representante;\ne)\tIdentificación oficial del Representante Legal;\nf)\tComprobante de domicilio de la Asociación Civil;\ng)\tConstancia de Situación Fiscal de la Asociación Civil; y \nh)\tToda la documentación solicitada deberá presentarse de manera física y digital en memoria USB.\ni)\tOficio de declaración bajo protesta (Anexo 7)",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Av. Venustiano Carranza, CENTRO, 31350 Chihuahua, Chih.\n\nTeléfono: 614 429 3300",
+      "observaciones": "N/D",
+      "direccion_corta": "Atención a Niñas, Niños, Jovenes y Adolescentes",
+      "municipios_lista": [
+        "Todos los municipios"
+      ],
+      "categorias": [
+        "economico",
+        "ninos"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": "Requisitos generales",
+          "items": [
+            "Identificación oficial vigente.",
+            "Comprobante de domicilio.",
+            "CURP."
+          ]
+        },
+        {
+          "titulo": "Requisitos específicos",
+          "items": [
+            "Solicitud de entrega de apoyo correspondiente al Ejercicio Fiscal en curso; (Anexo 4).",
+            "Llenar el formato presentación del proyecto (Anexo 3).",
+            "Acta constitutiva de la Asociación Civil.",
+            "Poder Legal del Representante.",
+            "Identificación oficial del Representante Legal.",
+            "Comprobante de domicilio de la Asociación Civil.",
+            "Constancia de Situación Fiscal de la Asociación Civil.",
+            "Toda la documentación solicitada deberá presentarse de manera física y digital en memoria USB.",
+            "Oficio de declaración bajo protesta (Anexo 7)."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "económico",
+        "dinero",
+        "efectivo",
+        "apoyo económico",
+        "beca",
+        "subsidio",
+        "tarjeta",
+        "recurso económico",
+        "pago",
+        "ayuda económica",
+        "niños",
+        "niñas",
+        "infancia",
+        "menores",
+        "adolescentes",
+        "jóvenes",
+        "juventud",
+        "escuela"
+      ]
+    },
+    {
+      "id": 26,
+      "direccion_institucional": "SDHyBC Programa 1S054A1 \"Atención a Niñas, Niños, Jovenes y Adolescentes\"",
+      "nombre_apoyo": "Apoyos en Especie a Mujeres para Niños y Niñas de 0 a 11 meses de edad",
+      "nombre_ciudadano": "Paquetes De Artículos De Cuidado Para Infantes De 0 A 11 Meses De Edad.",
+      "descripcion_oficial": "Se otorga un paquete de artículos para la higiene, de estimulación y/o vestimenta a niñas y niños de 0 a 11 meses de edad con la finalidad de contribuir a dignificar las prácticas de cuidado con el objetivo de impulsar la salud. Está dirigido a población en condiciones de pobreza.",
+      "descripcion_ciudadana": "Entrega de un paquete con artículos de higiene, material de estimulación y vestimenta para niñas y niños de 0 a 11 meses de edad para mejorar las prácticas de cuidado y la salud infantil.",
+      "grupo_atencion": "Mujeres en situación de vulnerabilidad y pobreza",
+      "municipio": "Todos los municipios",
+      "genero": "Mujeres",
+      "etapa_vida": "Todas",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "No especificado, para mas información contactar a la dirección correspondiente",
+      "requisitos": "Requisitos generales: \na)\tIdentificación oficial vigente\nb)\tComprobante de domicilio\nc)\tCURP\n\nRequisitos específicos: \na)\tActa de nacimiento del menor \nb)\tClave única de registro de población (CURP) del menor",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Av. Venustiano Carranza, CENTRO, 31350 Chihuahua, Chih.\n\nTeléfono: 614 429 3300",
+      "observaciones": "N/D",
+      "direccion_corta": "Atención a Niñas, Niños, Jovenes y Adolescentes",
+      "municipios_lista": [
+        "Todos los municipios"
+      ],
+      "categorias": [
+        "mujeres",
+        "ninos"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": "Requisitos generales",
+          "items": [
+            "Identificación oficial vigente.",
+            "Comprobante de domicilio.",
+            "CURP."
+          ]
+        },
+        {
+          "titulo": "Requisitos específicos",
+          "items": [
+            "Acta de nacimiento del menor.",
+            "Clave única de registro de población (CURP) del menor."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "mujer",
+        "mujeres",
+        "mamá",
+        "madre soltera",
+        "embarazo",
+        "embarazada",
+        "género",
+        "violencia de género",
+        "niños",
+        "niñas",
+        "infancia",
+        "menores",
+        "adolescentes",
+        "jóvenes",
+        "juventud",
+        "escuela"
+      ]
+    },
+    {
+      "id": 27,
+      "direccion_institucional": "SDHyBC Programa 1S054A1 \"Atención a Niñas, Niños, Jovenes y Adolescentes\"",
+      "nombre_apoyo": "Servicios para el Desarrollo Integral de N.N.A y J",
+      "nombre_ciudadano": "Cursos De Capacitación Y Servicios De Salud Para El Desarrollo Integral",
+      "descripcion_oficial": "Se brindan servicios de capacitación con la intención de contribuir en los procesos de crianza, desarrollo y atención integral por medio de talleres, cursos, atención médica, terapias, estimulación temprana, reforzamiento escolar, entre otros, dirigido a niñas, niños, adolescentes, juventudes en condición de pobreza en coordinación o través de Organizaciones de la Sociedad Civil, Instituciones Públicas o Privadas.",
+      "descripcion_ciudadana": "Ofrecimiento de talleres de crianza, cursos, atención médica, terapias, estimulación temprana y regularización escolar para el desarrollo integral de niñas, niños y jóvenes.",
+      "grupo_atencion": "Niños, Niñas, Adolescentes y Juventudes en situación de Vulnerabilidad",
+      "municipio": "Todos los municipios",
+      "genero": "Indistinto",
+      "etapa_vida": "Infancia y Jóvenes",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "No especificado, para mas información contactar a la dirección correspondiente",
+      "requisitos": "Requisitos generales: \na)\tIdentificación oficial vigente\nb)\tComprobante de domicilio\nc)\tCURP\n\nRequisitos específicos: \na)\tRegistro de datos de asistencia a los servicios",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Av. Venustiano Carranza, CENTRO, 31350 Chihuahua, Chih.\n\nTeléfono: 614 429 3300",
+      "observaciones": "N/D",
+      "direccion_corta": "Atención a Niñas, Niños, Jovenes y Adolescentes",
+      "municipios_lista": [
+        "Todos los municipios"
+      ],
+      "categorias": [
+        "capacitacion",
+        "ninos"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": "Requisitos generales",
+          "items": [
+            "Identificación oficial vigente.",
+            "Comprobante de domicilio.",
+            "CURP."
+          ]
+        },
+        {
+          "titulo": "Requisitos específicos",
+          "items": [
+            "Registro de datos de asistencia a los servicios."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "educación",
+        "curso",
+        "cursos",
+        "taller",
+        "talleres",
+        "clases",
+        "aprender",
+        "oficio",
+        "capacitación",
+        "diploma",
+        "estudiar",
+        "beca educativa",
+        "escuela",
+        "niños",
+        "niñas",
+        "infancia",
+        "menores",
+        "adolescentes",
+        "jóvenes",
+        "juventud"
+      ]
+    },
+    {
+      "id": 28,
+      "direccion_institucional": "SDHyBC Programa 3F002E2 \"Proyectos Productivos y Economía Solidaria\"",
+      "nombre_apoyo": "Financiamiento de Proyectos Productivos a Personas en Situación de Pobreza",
+      "nombre_ciudadano": "Financiamiento De Proyectos Productivos Para Personas En Pobreza",
+      "descripcion_oficial": "Consiste en entregar financiamientos para iniciar, emprender o fortalecer el funcionamiento y crecimiento de proyectos productivos y/o negocios que garanticen la participación de hombres y mujeres en situación de pobreza para favorecer su inclusión económica, laboral y productiva.",
+      "descripcion_ciudadana": "Entrega de financiamientos económicos para iniciar, emprender o fortalecer el funcionamiento y crecimiento de proyectos o negocios para impulsar la inclusión laboral y económica.",
+      "grupo_atencion": "Población general en situación de pobreza",
+      "municipio": "Todos los municipios",
+      "genero": "Indistinto",
+      "etapa_vida": "Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "Los montos del financiamiento podrán destinarse para la adquisición de materia prima, insumos, utensilios, enseres, herramienta, maquinaria, equipamiento u otros activos que tengan el fin de destinarse a un proceso productivo de:\na) El sector primario: actividades relacionadas con la obtención, producción y comercialización de recursos naturales, siempre que se considere algún proceso de transformación de la materia prima a un producto, con el fin de darle un mayor valor comercial o valor agregado.\n\nb) El sector secundario: manufactura, procesamiento o transformación de recursos provenientes del sector primario o materias primas para la producción\n\nc) El sector terciario: La prestación de servicios o el comercio.",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "No especificado, para mas información contactar a la dirección correspondiente",
+      "requisitos": "Requisitos generales:\nLas personas interesadas deberán presentar la siguiente documentación:\n1.\tIdentificación oficial vigente en copia.\n2.\tCURP en copia.\n3.\tComprobante de domicilio. (No mayor a tres meses a la fecha de solicitud).\n4.\tAviso de privacidad.\n\nRequisitos específicos:\n1.\tAsistencia a la capacitación del Taller de Emprendimiento en el lugar, fecha y hora que la UR le indique\n2.\tLlenar la Solicitud de proyecto (Anexo 1);\n3.\tEncontrarse en situación de pobreza de acuerdo con el estudio (Anexo 2);\n4.\tPresentar el Formato de Ventas actuales (Anexo 3);\n5.\tLlenar el estudio paramétrico (Anexo 4)\n6.\tPresentar la Carta de Aval Solidario, en original debidamente firmada (Anexo 5);\n7.\tCotización con fecha y de un negocio establecido, que permita identificar los bienes, servicios y conceptos a los que destinará el monto del financiamiento;\n8.\tCopia de Identificación oficial del aval;\n9.\tCopia del comprobante de domicilio del aval, no mayor a tres meses; y\n10.\tLa figura del aval no deberá presentar adeudos con el administrador del fondo, ni podrá solicitar un financiamiento del PPES hasta que los saldos sean pagados en totalidad. Solo podrá ser aval de un crédito a la vez.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Av. Venustiano Carranza, CENTRO, 31350 Chihuahua, Chih.\n\nTeléfono: 614 429 3300",
+      "observaciones": "Modalidades de los financiamientos a otorgar\n\na)\tFinanciamiento a Proyectos en Operación. Se otorgará a micro, pequeños o medianos negocios, crédito por un monto y a un plazo acorde a las necesidades que se justifiquen en la Solicitud de Proyecto (Anexo 1)\nb)\tFinanciamiento a Proyectos de Inicio o Capital Semilla. Se otorgará crédito a emprendedores a nivel autoempleo, micro y pequeños negocios que quieran iniciar un proyecto, por un monto y a un plazo acorde a las necesidades que se justifiquen en la Solicitud del Proyecto (Anexo 1).\nc)\tFinanciamiento a Agro Negocio. Tratándose del financiamiento a proyectos de Agro Negocios del sector agropecuario o de transformación de productos del campo dándole un valor agregado, por un monto y a un plazo acorde a las necesidades que se justifiquen en la Solicitud del Proyecto (Anexo 1).\nd)\tFinanciamiento modalidad Subsidio. Consiste en la entrega de un apoyo económico a fondo perdido, dirigido a personas en situación de pobreza y que cuente con los requisitos específicos.",
+      "direccion_corta": "Proyectos Productivos y Economía Solidaria",
+      "municipios_lista": [
+        "Todos los municipios"
+      ],
+      "categorias": [
+        "empleo",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": "Requisitos generales",
+          "items": [
+            "Las personas interesadas deberán presentar la siguiente documentación: 1. Identificación oficial vigente en copia. 2. CURP en copia. 3. Comprobante de domicilio. (No mayor a tres meses a la fecha de solicitud). 4. Aviso de privacidad."
+          ]
+        },
+        {
+          "titulo": "Requisitos específicos",
+          "items": [
+            "1. Asistencia a la capacitación del Taller de Emprendimiento en el lugar, fecha y hora que la UR le indique 2. Llenar la Solicitud de proyecto (Anexo 1).",
+            "3. Encontrarse en situación de pobreza de acuerdo con el estudio (Anexo 2).",
+            "4. Presentar el Formato de Ventas actuales (Anexo 3).",
+            "5. Llenar el estudio paramétrico (Anexo 4) 6. Presentar la Carta de Aval Solidario, en original debidamente firmada (Anexo 5).",
+            "7. Cotización con fecha y de un negocio establecido, que permita identificar los bienes, servicios y conceptos a los que destinará el monto del financiamiento.",
+            "8. Copia de Identificación oficial del aval.",
+            "9. Copia del comprobante de domicilio del aval, no mayor a tres meses.",
+            "Y 10. La figura del aval no deberá presentar adeudos con el administrador del fondo, ni podrá solicitar un financiamiento del PPES hasta que los saldos sean pagados en totalidad. Solo podrá ser aval de un crédito a la vez."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "trabajo",
+        "chamba",
+        "vacante",
+        "vacantes",
+        "bolsa de trabajo",
+        "contratación",
+        "empleo",
+        "negocio",
+        "emprendimiento",
+        "proyecto productivo",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 29,
+      "direccion_institucional": "SDHyBC Programa 3F002E2 \"Proyectos Productivos y Economía Solidaria\"",
+      "nombre_apoyo": "Apoyos Económicos de Ocupación Temporal a Personas en Situación de Pobreza",
+      "nombre_ciudadano": "Apoyo Económico Por Medio De Trabajos Comunitarios",
+      "descripcion_oficial": "Consiste en otorgar apoyo de ocupación temporal a personas en situación de pobreza través de los municipios, con la finalidad de mejorar sus ingresos, así como las condiciones del medio familiar y comunitario, con proyectos que contribuyan a la mejora de sus municipios.",
+      "descripcion_ciudadana": "Entrega de apoyos económicos a personas en situación de pobreza a cambio de su participación temporal en trabajos y proyectos locales que ayuden a mejorar las calles, espacios o servicios de su municipio.",
+      "grupo_atencion": "Población general en situación de pobreza",
+      "municipio": "Todos los municipios",
+      "genero": "Indistinto",
+      "etapa_vida": "Infancia, Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Ventanilla Correspondiente",
+      "requisitos": "Requisitos generales:\n1.\tIdentificación oficial vigente en copia.\n2.\tCURP en copia.\n3.\tComprobante de domicilio. (No mayor a tres meses a la fecha de solicitud).\n4.\tAviso de privacidad.\n\nRequisitos específicos:\nLos municipios interesados deberán presentar la siguiente documentación:\n1.\tOficio de solicitud de parte del municipio solicitante dirigido a la Secretaría con la intención de participar en el programa;\n2.\tSolicitud de Apoyo Económico para el Proyecto de Ocupación Temporal (anexo 8);\n3.\tActa de mayoría de quien preside el ayuntamiento emitido por el Instituto Estatal Electoral;\n4.\tCopia de identificación oficial del presidente municipal;\n5.\tCopia del comprobante de domicilio del ayuntamiento no mayor a tres meses de antigüedad;\n6.\tActa de toma de protesta del presidente municipal en función;\n7.\tConstancia de Situación Fiscal del ayuntamiento;\n8.\tActa de cabildo en la que se sesione y apruebe la participación del municipio en el programa;\n9.\tNombramientos e identificaciones de quienes conforman el cabildo;\n10.\tEstudio socioeconómico debidamente lleno (anexo 2); de cada beneficiario descrito en el proyecto (anexo 8). Revisar con lo que solicita jurídico para convenio",
+      "donde_entrega": "Al asisitir a ventanilla única se le otorgara la información de manera inmediata",
+      "contacto": "Av. Venustiano Carranza, CENTRO, 31350 Chihuahua, Chih.\n\nTeléfono: 614 429 3300",
+      "observaciones": "Modalidades de los financiamientos a otorgar\n\na)\tFinanciamiento a Proyectos en Operación. Se otorgará a micro, pequeños o medianos negocios, crédito por un monto y a un plazo acorde a las necesidades que se justifiquen en la Solicitud de Proyecto (Anexo 1)\nb)\tFinanciamiento a Proyectos de Inicio o Capital Semilla. Se otorgará crédito a emprendedores a nivel autoempleo, micro y pequeños negocios que quieran iniciar un proyecto, por un monto y a un plazo acorde a las necesidades que se justifiquen en la Solicitud del Proyecto (Anexo 1).\nc)\tFinanciamiento a Agro Negocio. Tratándose del financiamiento a proyectos de Agro Negocios del sector agropecuario o de transformación de productos del campo dándole un valor agregado, por un monto y a un plazo acorde a las necesidades que se justifiquen en la Solicitud del Proyecto (Anexo 1).\nd)\tFinanciamiento modalidad Subsidio. Consiste en la entrega de un apoyo económico a fondo perdido, dirigido a personas en situación de pobreza y que cuente con los requisitos específicos.",
+      "direccion_corta": "Proyectos Productivos y Economía Solidaria",
+      "municipios_lista": [
+        "Todos los municipios"
+      ],
+      "categorias": [
+        "empleo",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": "Requisitos generales",
+          "items": [
+            "1. Identificación oficial vigente en copia. 2. CURP en copia. 3. Comprobante de domicilio. (No mayor a tres meses a la fecha de solicitud). 4. Aviso de privacidad."
+          ]
+        },
+        {
+          "titulo": "Requisitos específicos",
+          "items": [
+            "Los municipios interesados deberán presentar la siguiente documentación: 1. Oficio de solicitud de parte del municipio solicitante dirigido a la Secretaría con la intención de participar en el programa.",
+            "2. Solicitud de Apoyo Económico para el Proyecto de Ocupación Temporal (anexo 8).",
+            "3. Acta de mayoría de quien preside el ayuntamiento emitido por el Instituto Estatal Electoral.",
+            "4. Copia de identificación oficial del presidente municipal.",
+            "5. Copia del comprobante de domicilio del ayuntamiento no mayor a tres meses de antigüedad.",
+            "6. Acta de toma de protesta del presidente municipal en función.",
+            "7. Constancia de Situación Fiscal del ayuntamiento.",
+            "8. Acta de cabildo en la que se sesione y apruebe la participación del municipio en el programa.",
+            "9. Nombramientos e identificaciones de quienes conforman el cabildo.",
+            "10. Estudio socioeconómico debidamente lleno (anexo 2).",
+            "De cada beneficiario descrito en el proyecto (anexo 8). Revisar con lo que solicita jurídico para convenio."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "trabajo",
+        "chamba",
+        "vacante",
+        "vacantes",
+        "bolsa de trabajo",
+        "contratación",
+        "empleo",
+        "negocio",
+        "emprendimiento",
+        "proyecto productivo",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 30,
+      "direccion_institucional": "SDHyBC Programa 3F002E2 \"Proyectos Productivos y Economía Solidaria\"",
+      "nombre_apoyo": "Eventos Para la Exhibición y Venta de Productos",
+      "nombre_ciudadano": "Espacios Para La Exhibición Y Venta De Productos",
+      "descripcion_oficial": "Creación de lugares eventuales a través de los municipios para la oferta de productos regionales en infraestructura local, en donde la secretaria apoyara con mobiliario y equipo de instalación para exposición de pequeños comerciantes y productores regionales. \n\nSe otorgarán capacitaciones de cómo administrar, promocionar y hacer crecer un negocio dirigidas a las y los emprendedores, y a solicitantes de financiamientos, asimismo se otorgarán capacitaciones sobre estrategias para la evaluación de un proyecto dirigidas a las ventanillas municipales.",
+      "descripcion_ciudadana": "Instalación de espacios temporales y préstamo de mobiliario para la venta de productos locales, junto con capacitaciones en administración y crecimiento de negocios para emprendedores.",
+      "grupo_atencion": "Comerciantes y productores regionales",
+      "municipio": "Todos los municipios",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "No especificado, para mas información contactar a la dirección correspondiente",
+      "requisitos": "Requisitos generales: \nLas personas interesadas en un espacio deberán proporcionar los siguientes documentos:\na)\tFirmar el Reglamento. (Anexo 6)\nb)\tFirmar el Resguardo de Material (Anexo 7)\nc)\tIdentificación oficial vigente en copia.\nd)\tCURP en copia.\ne)\tComprobante de domicilio. (No mayor a tres meses a la fecha de solicitud).\nf)\tAviso de privacidad.\n\n\nRequisitos específicos\na)\tLos municipios interesados deberán presentar la siguiente documentación:\nb)\tEl municipio deberá presentar un escrito libre dirigido a la secretaria, donde se informe el lugar y fecha en que el evento puede ser desarrollado.\nc)\tSi el municipio resulta seleccionado, deberá acudir a la mesa de trabajo a la que serán convocados para tratar cuestiones de logística.\nd)\tPermisos necesarios para la celebración de le evento.\ne)\tEl municipio deberá recabar la documentación requerida en ROP de cada productor y presentarlo a la UR.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Av. Venustiano Carranza, CENTRO, 31350 Chihuahua, Chih.\n\nTeléfono: 614 429 3300",
+      "observaciones": "N/D",
+      "direccion_corta": "Proyectos Productivos y Economía Solidaria",
+      "municipios_lista": [
+        "Todos los municipios"
+      ],
+      "categorias": [
+        "empleo"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": "Requisitos generales",
+          "items": [
+            "Firmar el Reglamento. (Anexo 6).",
+            "Firmar el Resguardo de Material (Anexo 7).",
+            "Identificación oficial vigente en copia.",
+            "CURP en copia.",
+            "Comprobante de domicilio. (No mayor a tres meses a la fecha de solicitud).",
+            "Aviso de privacidad. Requisitos específicos.",
+            "Los municipios interesados deberán presentar la siguiente documentación:",
+            "El municipio deberá presentar un escrito libre dirigido a la secretaria, donde se informe el lugar y fecha en que el evento puede ser desarrollado.",
+            "Si el municipio resulta seleccionado, deberá acudir a la mesa de trabajo a la que serán convocados para tratar cuestiones de logística.",
+            "Permisos necesarios para la celebración de le evento.",
+            "El municipio deberá recabar la documentación requerida en ROP de cada productor y presentarlo a la UR."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "trabajo",
+        "chamba",
+        "vacante",
+        "vacantes",
+        "bolsa de trabajo",
+        "contratación",
+        "empleo",
+        "negocio",
+        "emprendimiento",
+        "proyecto productivo"
+      ]
+    },
+    {
+      "id": 31,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Acompañamiento Biopsicosocial",
+      "nombre_ciudadano": "Apoyo Integral Para Tu Bienestar",
+      "descripcion_oficial": "Servicios de contención, acompañamiento psicosocial, y gerontológico para la población, dirigido particularmente a aquellas personas expuestas a distintas formas de violencia, con atención a perspectiva de género, derechos humanos, perspectiva de infancia y adolescencia.",
+      "descripcion_ciudadana": "Se ofrece ayuda emocional, acompañamiento y atención especial para adultos mayores, mujeres, niñas, niños y jóvenes que han pasado por situaciones de violencia o maltrato.",
+      "grupo_atencion": "Población general en situación de vulnerabilidad",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Infancia, Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio; Expediente médico",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 30 días naturales.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "desarrollo_pers",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio.",
+            "Expediente médico."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "desarrollo personal",
+        "terapia",
+        "psicología",
+        "psicólogo",
+        "autoestima",
+        "bienestar emocional",
+        "consejería",
+        "ayuda psicológica",
+        "salud mental",
+        "depresión",
+        "ansiedad",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 32,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Apoyo de Transporte",
+      "nombre_ciudadano": "Pasajes Y Traslados",
+      "descripcion_oficial": "Consiste en subsidio al transporte terrestre para personas en condición de vulnerabilidad que acuden a tratamientos médicos hospitalarios en el Estado o fuera de él, a su vez, cuando la o el paciente requiera viajar con una persona acompañante, se le brindará de igual manera a éste el apoyo; para personas en situación de migración y/o desplazamiento que requieran regresar a su Estado de origen; niñas, niños, adolescentes y jóvenes que tengan que acudir a eventos deportivos y culturales; y cualquier otra necesidad debidamente",
+      "descripcion_ciudadana": "Ayuda económica para pagar el transporte en autobús de personas que necesitan viajar para recibir atención médica (incluyendo a su acompañante), estudiantes y jóvenes que van a eventos deportivos o culturales, y personas migrantes o desplazadas que necesitan regresar a su estado de origen.",
+      "grupo_atencion": "Población general en situación de vulnerabilidad",
+      "municipio": "Todos los municipios",
+      "genero": "Indistinto",
+      "etapa_vida": "Infancia, Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "El apoyo puede cubrir el costo parcial o total del precio del boleto, el cual tiene como monto mínimo $100.00 (CIEN PESOS 00/100 MONEDA NACIONAL) y máximo de $10,000.00 (DIEZ MIL PESOS 00/100 MONEDA NACIONAL), considerando viaje redondo, de acuerdo con la tarifa otorgada por la(s) empresa(s) de autobuses con la que se celebre convenio(s) y el traslado requerido por la persona solicitante.",
+      "monto": "$100.00 - $10,000.00 MXN",
+      "periodicidad": "Al asistir a ventanilla única se le otorgara la información de manera inmediata",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio; Responder y firmar el estudio socioeconómico expedido por SIPUB; Carnet de citas médicas para los casos que aplique.",
+      "donde_entrega": "Según los requerimientos del beneficiario",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: Inmediato.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Todos los municipios"
+      ],
+      "categorias": [
+        "transporte",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio.",
+            "Responder y firmar el estudio socioeconómico expedido por SIPUB.",
+            "Carnet de citas médicas para los casos que aplique."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "transporte",
+        "camión",
+        "autobús",
+        "traslado",
+        "pasaje",
+        "pasajes",
+        "movilidad",
+        "transporte público",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 33,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Apoyo Funerario",
+      "nombre_ciudadano": "Apoyo Para Gastos Funerarios",
+      "descripcion_oficial": "Consiste en un apoyo económico dirigido a personas en condición de vulnerabilidad que no cuenten con los recursos económicos necesarios para cubrir los gastos derivados de las exequias de un familiar.",
+      "descripcion_ciudadana": "Es una ayuda económica destinada a familias que no tienen el dinero necesario para pagar los gastos del funeral (exequias) de un familiar.",
+      "grupo_atencion": "Población general en situación de vulnerabilidad",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "No aplica",
+      "especificaciones": "El apoyo se otorgará mediante cheque nominativo a favor de la persona beneficiaria, por un monto mínimo de $2,000.00 (DOS MIL PESOS 00/100 M.N.) y un monto máximo de $20,000.00 (VEINTE MIL PESOS 00/100 M.N.)",
+      "monto": "$2,000.00 - $20,000.00 MXN",
+      "periodicidad": "Único",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio; Responder y firmar el estudio socioeconómico expedido por SIPUB; Firmar carta compromiso del uso adecuado del recurso.",
+      "donde_entrega": "Sin mencionar",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 1 día natural.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "economico",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio.",
+            "Responder y firmar el estudio socioeconómico expedido por SIPUB.",
+            "Firmar carta compromiso del uso adecuado del recurso."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "económico",
+        "dinero",
+        "efectivo",
+        "apoyo económico",
+        "beca",
+        "subsidio",
+        "tarjeta",
+        "recurso económico",
+        "pago",
+        "ayuda económica",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 34,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Apoyos Alimenticios",
+      "nombre_ciudadano": "Despensas Para Personas En Situación De Vulnerabilidad",
+      "descripcion_oficial": "Consiste en la entrega de despensas a personas en situación de vulnerabilidad, de conformidad con el resultado de la aplicación de un estudio socioeconómico.",
+      "descripcion_ciudadana": "Entrega de despensa alimentaria con artículos de la canasta básica",
+      "grupo_atencion": "Población general en situación de vulnerabilidad",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio; Aplicación de estudio socioeconómico",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: Inmediato.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "alimentacion",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio.",
+            "Aplicación de estudio socioeconómico."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "alimentación",
+        "comida",
+        "alimento",
+        "alimentos",
+        "despensa",
+        "despensas",
+        "canasta básica",
+        "nutrición",
+        "hambre",
+        "comer",
+        "víveres",
+        "comedor",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 35,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Apoyos Económicos de Siniestro",
+      "nombre_ciudadano": "Apoyo Económico Para Afectados Por Siniestros O Desastres",
+      "descripcion_oficial": "Consiste en un subsidio económico destinado a personas en condición de vulnerabilidad que resulten afectadas por un siniestro y que no cuenten con los recursos",
+      "descripcion_ciudadana": "Ayuda económica destinada a personas vulnerables que sufrieron pérdidas por un siniestro (como un incendio o inundación) y que no tienen los recursos económicos para recuperarse por sí mismas.",
+      "grupo_atencion": "Población general en situación de vulnerabilidad",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "El apoyo económico será de un monto mínimo de $2,000.00 (DOS MIL PESOS 00/100 MONEDA NACIONAL) y un monto máximo de $15,000.00 (QUINCE MIL PESOS 00/100 MONEDA NACIONAL), de acuerdo con la disponibilidad y las tarifas establecidas para este objeto.",
+      "monto": "$2,000 - $15,000.00",
+      "periodicidad": "Único",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio; Responder y firmar el estudio socioeconómico expedido por SIPUB.",
+      "donde_entrega": "Sin mencionar",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: Inmediato.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "economico",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio.",
+            "Responder y firmar el estudio socioeconómico expedido por SIPUB."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "económico",
+        "dinero",
+        "efectivo",
+        "apoyo económico",
+        "beca",
+        "subsidio",
+        "tarjeta",
+        "recurso económico",
+        "pago",
+        "ayuda económica",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 36,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Capacitaciones Técnicas para el Emprendimiento",
+      "nombre_ciudadano": "Apoyo A Emprendedores",
+      "descripcion_oficial": "Se otorga a las personas residentes en la Zona Norte que se interesen en el arranque o consolidación de un proyecto productivo personal, familiar y/o grupal. Además, se otorgará capacitación para el proceso de emprendimiento de cada proyecto.",
+      "descripcion_ciudadana": "Financiamiento y capacitación para personas de la Zona Norte interesadas en arrancar o consolidar un negocio o proyecto productivo personal, familiar o grupal.",
+      "grupo_atencion": "Población general",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: Inmediato.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "capacitacion",
+        "empleo"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "educación",
+        "curso",
+        "cursos",
+        "taller",
+        "talleres",
+        "clases",
+        "aprender",
+        "oficio",
+        "capacitación",
+        "diploma",
+        "estudiar",
+        "beca educativa",
+        "escuela",
+        "trabajo",
+        "chamba",
+        "vacante",
+        "vacantes",
+        "bolsa de trabajo",
+        "contratación",
+        "empleo",
+        "negocio",
+        "emprendimiento",
+        "proyecto productivo"
+      ]
+    },
+    {
+      "id": 37,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Cursos y Talleres Orientados al Desarrollo Personal y Social de Personas Mayores y Personas con Discapacidad",
+      "nombre_ciudadano": "Talleres, Cursos Y Actividades Recreativas",
+      "descripcion_oficial": "A través de la Casa de los Abuelos y las Asambleas de Personas Adultas Mayores se impartirán cursos y talleres gratuitos de tipo cultural, físico, educativo y de esparcimiento, entre otros; asimismo, se promoverán talleres orientados a generar conciencia, comprensión y empatía hacia las personas con discapacidad, fomentando una cultura de inclusión y respeto en el entorno comunitario.",
+      "descripcion_ciudadana": "Se imparten cursos y talleres gratuitos (culturales, físicos, educativos y de esparcimiento) para adultos mayores en la Casa de los Abuelos y Asambleas, además de talleres comunitarios para promover la inclusión y el respeto hacia las personas con discapacidad.",
+      "grupo_atencion": "Personas con discapacidad y personas mayores de 60 años en situación de vulnerabilidad",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Infancia, Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 1 día natural.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "capacitacion",
+        "mayores",
+        "discapacidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "educación",
+        "curso",
+        "cursos",
+        "taller",
+        "talleres",
+        "clases",
+        "aprender",
+        "oficio",
+        "capacitación",
+        "diploma",
+        "estudiar",
+        "beca educativa",
+        "escuela",
+        "personas mayores",
+        "ancianos",
+        "viejitos",
+        "tercera edad",
+        "jubilados",
+        "abuelos",
+        "abuelitos",
+        "adultos mayores",
+        "60 años",
+        "discapacidad",
+        "silla de ruedas",
+        "invidente",
+        "sordo",
+        "down",
+        "autismo",
+        "capacidades diferentes",
+        "ortopédico",
+        "rehabilitación"
+      ]
+    },
+    {
+      "id": 38,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Gestión de Proyectos Productivos",
+      "nombre_ciudadano": "Gestión De Proyectos Productivos",
+      "descripcion_oficial": "Gestión ante el Fondo de Inclusión Productiva y Economía Solidaria del financiamiento para el arranque o consolidación del proyecto.",
+      "descripcion_ciudadana": "Trámite de financiamiento público ante el FIPES para iniciar o fortalecer un negocio o proyecto productivo.",
+      "grupo_atencion": "Población general en situación de vulnerabilidad",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "El monto otorgado está sujeto a la suficiencia presupuestal del programa Proyectos Productivos y Economía Solidaria.",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 1 día natural.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "empleo",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "trabajo",
+        "chamba",
+        "vacante",
+        "vacantes",
+        "bolsa de trabajo",
+        "contratación",
+        "empleo",
+        "negocio",
+        "emprendimiento",
+        "proyecto productivo",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 39,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Paquete de Materiales Para el Autoempleo",
+      "nombre_ciudadano": "Paquetes De Herramientas Y Materiales Para Cursos De Capacitación",
+      "descripcion_oficial": "Puede contener herramientas diversas de acuerdo a la modalidad de curso que se encuentren desarrollando, por ejemplo, paquete de extensiones para pestañas; bombas de aire para globoflexia, paquete para la aplicación de uñas, con aceite, limas, quitaesmalte, pegatinas; paquete para repostería con espátulas, soportes y raspadores, entre otros.",
+      "descripcion_ciudadana": "Entrega de materiales y herramientas específicas de acuerdo al curso de capacitación impartido, tales como paquetes para repostería, aplicación de uñas, extensiones de pestañas o globoflexia.",
+      "grupo_atencion": "Población General",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "Sin monto",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio; aplicación de estudio socioeconómico.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 1 día natural.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "empleo",
+        "capacitacion"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio.",
+            "Aplicación de estudio socioeconómico."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "trabajo",
+        "chamba",
+        "vacante",
+        "vacantes",
+        "bolsa de trabajo",
+        "contratación",
+        "empleo",
+        "negocio",
+        "emprendimiento",
+        "proyecto productivo",
+        "educación",
+        "curso",
+        "cursos",
+        "taller",
+        "talleres",
+        "clases",
+        "aprender",
+        "oficio",
+        "capacitación",
+        "diploma",
+        "estudiar",
+        "beca educativa",
+        "escuela"
+      ]
+    },
+    {
+      "id": 40,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Paquete Para la Atención Gerontológica",
+      "nombre_ciudadano": "Paquetes De Insumos Médicos Y Cuidado Para Personas Mayores",
+      "descripcion_oficial": "Dirigido a personas adultas mayores en situación de vulnerabilidad, abandono o soledad, que puede incluir material de curación, material de chequeo físico, material de higiene personal, pañales, entre otros",
+      "descripcion_ciudadana": "Entrega de insumos médicos y de aseo, incluyendo material de curación, herramientas de chequeo físico, artículos de higiene personal y pañales.",
+      "grupo_atencion": "Personas mayores de 60 años de edad en situación de vulnerabilidad, abandono o soledad",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Adultos Mayores",
+      "especificaciones": "Sin monto",
+      "monto": "No especificado",
+      "periodicidad": "Limitado a un paquete por persona",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio; aplicación de estudio socioeconómico.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 1 día natural.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "mayores"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio.",
+            "Aplicación de estudio socioeconómico."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "personas mayores",
+        "ancianos",
+        "viejitos",
+        "tercera edad",
+        "jubilados",
+        "abuelos",
+        "abuelitos",
+        "adultos mayores",
+        "60 años"
+      ]
+    },
+    {
+      "id": 41,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Vinculación Laboral Para Grupos Vulnerables",
+      "nombre_ciudadano": "Vinculación Laboral Para Grupos Vulnerables",
+      "descripcion_oficial": "Servicio que consiste en realizar una vinculación de las personas con discapacidad y personas adultas mayores a las actividades productivas con las empresas y/o instituciones gubernamentales que tengan disponibilidad de espacios vacantes, con la finalidad de mejorar su economía.",
+      "descripcion_ciudadana": "Vinculación laboral de personas con discapacidad y adultas mayores con empresas u oficinas de gobierno que cuentan con vacantes disponibles.",
+      "grupo_atencion": "Personas con discapacidad y personas mayores de 60 años en situación de vulnerabilidad",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 5 días naturales.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "empleo",
+        "discapacidad",
+        "mayores"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "trabajo",
+        "chamba",
+        "vacante",
+        "vacantes",
+        "bolsa de trabajo",
+        "contratación",
+        "empleo",
+        "negocio",
+        "emprendimiento",
+        "proyecto productivo",
+        "discapacidad",
+        "silla de ruedas",
+        "invidente",
+        "sordo",
+        "down",
+        "autismo",
+        "capacidades diferentes",
+        "ortopédico",
+        "rehabilitación",
+        "personas mayores",
+        "ancianos",
+        "viejitos",
+        "tercera edad",
+        "jubilados",
+        "abuelos",
+        "abuelitos",
+        "adultos mayores",
+        "60 años"
+      ]
+    },
+    {
+      "id": 42,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Actividades en los Centros de Servicios Comunitarios Integrados",
+      "nombre_ciudadano": "Talleres Y Actividades En Centros Comunitarios",
+      "descripcion_oficial": "Ofrece actividades recreativas, deportivas y de capacitación en espacios públicos, que propician la intervención comunitaria, así como el desarrollo de capacidades de autoempleo, salud y culturales en CSCI",
+      "descripcion_ciudadana": "Se organizan actividades deportivas, culturales, recreativas y talleres para aprender un oficio en espacios públicos y centros comunitarios, promoviendo la convivencia vecinal y el cuidado de la salud.",
+      "grupo_atencion": "Población general en situación de vulnerabilidad",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Infancia, Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Clave Única de Registro de Población (CURP); Comprobante de domicilio; Ficha de registro para cursos y talleres.",
+      "donde_entrega": "Centros de Servicios Comunitarios Integrados",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 1 día natural.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "desarrollo_soc",
+        "capacitacion",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio.",
+            "Ficha de registro para cursos y talleres."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "desarrollo social",
+        "comunidad",
+        "convivencia",
+        "tejido social",
+        "vecinos",
+        "participación ciudadana",
+        "colonia",
+        "barrio",
+        "educación",
+        "curso",
+        "cursos",
+        "taller",
+        "talleres",
+        "clases",
+        "aprender",
+        "oficio",
+        "capacitación",
+        "diploma",
+        "estudiar",
+        "beca educativa",
+        "escuela",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 43,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Apoyo a Través de Comedores Comunitarios",
+      "nombre_ciudadano": "Comedores Comunitarios",
+      "descripcion_oficial": "Para cubrir la necesidad básica de alimentación a personas vulnerables de todas las edades, se pone a disposición platillos alimenticios en los Centros de Servicios Comunitarios Integrados que cuenten con área de cocina y comedor.",
+      "descripcion_ciudadana": "Se ofrecen platillos de comida listos para el consumo dentro de los Centros de Servicios Comunitarios Integrados",
+      "grupo_atencion": "Población general en situación de vulnerabilidad",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Infancia, Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "La Unidad Responsable otorgará los insumos de alimentos perecederos y no perecederos para que sean elaborados los platillos en los días programados para ello.",
+      "monto": "No especificado",
+      "periodicidad": "Se otorgan alimentos según los días de operación de los CSCI",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio; Ficha de registro.",
+      "donde_entrega": "Centros de Servicios Comunitarios Integrados",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 1 día natural.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "alimentacion",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio.",
+            "Ficha de registro."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "alimentación",
+        "comida",
+        "alimento",
+        "alimentos",
+        "despensa",
+        "despensas",
+        "canasta básica",
+        "nutrición",
+        "hambre",
+        "comer",
+        "víveres",
+        "comedor",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 44,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Apoyo Económico Emergente",
+      "nombre_ciudadano": "Apoyo Económico Emergente Para Personas En Vulnerabilidad",
+      "descripcion_oficial": "Consiste en subsidio económico destinado a satisfacer una necesidad básica urgente o inmediata de personas en situación de vulnerabilidad, que hayan atravesado por alguna emergencia, o se encuentren en alguna situación que acredite asistencia económica para hacer frente a cubrir derechos sociales.",
+      "descripcion_ciudadana": "Ayuda económica que se otorga a personas afectadas por una emergencia o crisis imprevista, con el fin de apoyarlas a cubrir de manera inmediata sus necesidades más básicas y urgentes.",
+      "grupo_atencion": "Población general en situación de vulnerabilidad",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "Se entregará según la necesidad personal acreditada mediante la aplicación del estudio socioeconómico, apoyo único, por un monto mínimo de $200.00 (DOSCIENTOS PESOS 00/100 MONEDA NACIONAL y un monto máximo de $15,000.00 (QUINCE MIL PESOS 00/100 MONEDA NACIONAL)",
+      "monto": "$200.00 - $15,000.00 MXN",
+      "periodicidad": "Único",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio; Responder y firmar el estudio socioeconómico expedido por SIPUB; Firmar carta compromiso del uso adecuado del recurso.",
+      "donde_entrega": "Sin mencionar",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: Inmediato.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "economico",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio.",
+            "Responder y firmar el estudio socioeconómico expedido por SIPUB.",
+            "Firmar carta compromiso del uso adecuado del recurso."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "económico",
+        "dinero",
+        "efectivo",
+        "apoyo económico",
+        "beca",
+        "subsidio",
+        "tarjeta",
+        "recurso económico",
+        "pago",
+        "ayuda económica",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 45,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Apoyos Alimenticios a Víctimas de Violencia",
+      "nombre_ciudadano": "Despensas A Víctimas (CEAVE)",
+      "descripcion_oficial": "Se realizará la entrega de despensas a personas en situación de vulnerabilidad que sean familiares de personas víctimas de desaparición forzada y violencia, la cual se encuentra condicionada exclusivamente al padrón de beneficiarios proporcionado por la Comisión Ejecutiva de Atención a Víctimas del Estado de Chihuahua (CEAVE).",
+      "descripcion_ciudadana": "Entrega de despensas alimentarias a familiares de víctimas de violencia o desaparición, asignada exclusivamente a través del padrón oficial de la CEAVE.",
+      "grupo_atencion": "Víctimas de Violencia",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio; Aplicación de estudio socioeconómico; En el caso de formar parte del Grupo de Madres en Busca de Justicia, Grupo Asistencial para Familiares Directos de Personas del Sexo Femenino con Reporte de Ausencia y Extravío en Ciudad Juárez, Villas de Salvarcar y otros casos de víctimas de violencia, deberán firmar la carta compromiso de recepción de apoyo alimentario (ANEXO5)",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 1 día natural.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "alimentacion",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio.",
+            "Aplicación de estudio socioeconómico.",
+            "En el caso de formar parte del Grupo de Madres en Busca de Justicia, Grupo Asistencial para Familiares Directos de Personas del Sexo Femenino con Reporte de Ausencia y Extravío en Ciudad Juárez, Villas de Salvarcar y otros casos de víctimas de violencia, deberán firmar la carta compromiso de recepción de apoyo alimentario (ANEXO5)."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "alimentación",
+        "comida",
+        "alimento",
+        "alimentos",
+        "despensa",
+        "despensas",
+        "canasta básica",
+        "nutrición",
+        "hambre",
+        "comer",
+        "víveres",
+        "comedor",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 46,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Apoyos Para el Mejoramiento de la Vivienda",
+      "nombre_ciudadano": "Apoyos Para El Mejoramiento De La Vivienda",
+      "descripcion_oficial": "Consiste en la entrega de distintos bienes con la finalidad de mejorar las condiciones de vida de las personas en situación de vulnerabilidad, mismos que pueden ser abanicos, cubetas de pintura, cemento, estufa ecológica, tinacos, impermeabilizantes para techos, láminas, electrodomésticos, material de limpieza, entre otros, a través de la aplicación de un estudio socioeconómico.",
+      "descripcion_ciudadana": "Entrega de materiales de construcción, artículos para el hogar, electrodomésticos y productos de limpieza para mejorar las vivienda",
+      "grupo_atencion": "Población general en situación de vulnerabilidad",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio; Aplicación de estudio socioeconómico.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 2 días naturales.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "economico",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio.",
+            "Aplicación de estudio socioeconómico."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "económico",
+        "dinero",
+        "efectivo",
+        "apoyo económico",
+        "beca",
+        "subsidio",
+        "tarjeta",
+        "recurso económico",
+        "pago",
+        "ayuda económica",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    },
+    {
+      "id": 47,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Creación y Consolidación de Consejos Comunitarios",
+      "nombre_ciudadano": "Actividades Y Gestión Para La Mejora Comunitaria",
+      "descripcion_oficial": "Desarrollo de actividades que fomenten la cohesión social, así como la canalización y gestión de apoyos y servicios que permitan facilitar procesos de desarrollo de base y autogestión comunitarios.",
+      "descripcion_ciudadana": "Organización de actividades para union entre vecinos, así como brindar orientación para gestionar apoyos y servicios que ayuden a la comunidad",
+      "grupo_atencion": "Población general",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 1 día natural.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "desarrollo_soc"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "desarrollo social",
+        "comunidad",
+        "convivencia",
+        "tejido social",
+        "vecinos",
+        "participación ciudadana",
+        "colonia",
+        "barrio"
+      ]
+    },
+    {
+      "id": 48,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Eventos Para la Exhibición y Venta de Productos",
+      "nombre_ciudadano": "Ferias Regionales Para Impulsar Negocios",
+      "descripcion_oficial": "Organización y logística de ferias que buscan impulsar el crecimiento de personas microempresarias de la región y fomentar el consumo de sus productos y servicios.",
+      "descripcion_ciudadana": "Organización de ferias comerciales para impulsar las ventas y el crecimiento de microempresarios locales.",
+      "grupo_atencion": "Población general",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "Sin mencionar",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio.",
+      "donde_entrega": "Las y los productores recibirán el apoyo a través de la facilitación de espacios y difusión de los eventos en medios de comunicación, así como un espacio de promoción permanente para los productos, favoreciendo la inclusión productiva y la derrama económica en la Zona Norte.",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 1 día natural.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "empleo"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "trabajo",
+        "chamba",
+        "vacante",
+        "vacantes",
+        "bolsa de trabajo",
+        "contratación",
+        "empleo",
+        "negocio",
+        "emprendimiento",
+        "proyecto productivo"
+      ]
+    },
+    {
+      "id": 49,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Gestión de Trámites y Servicios a Través de Ventanilla Única y Ferias de Servicios",
+      "nombre_ciudadano": "Gestión Y Envío De Peticiones Ciudadanas",
+      "descripcion_oficial": "Gestión de trámites y servicios gratuitos para la canalización ante las dependencias de los tres órdenes de gobierno, organizaciones de la sociedad civil, iniciativa privada, entre otras instancias, para que éstas a su vez atiendan, apoyen y den respuesta ajustada y debidamente sustentada, según corresponda, a las solicitudes de la población en general.",
+      "descripcion_ciudadana": "Se brinda ayuda gratuita para enviar y registrar peticiones ante las oficinas de gobierno, empresas o asociaciones civiles, asegurando que revisen tu caso y te den una respuesta clara.",
+      "grupo_atencion": "Población general",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Todas",
+      "especificaciones": "Sin monto",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua. \n\nVentanilla Única y Ferias de Servicio",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 1 día natural.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "tramites"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "trámites",
+        "papeles",
+        "documentos",
+        "acta",
+        "actas",
+        "gratis",
+        "trámite",
+        "constancia",
+        "antecedentes penales",
+        "registro civil"
+      ]
+    },
+    {
+      "id": 50,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Paquete de Materiales Para la Gestación y Primera Infancia",
+      "nombre_ciudadano": "Paquetes De Insumos Básicos Y De Cuidado Para Recién Nacidos",
+      "descripcion_oficial": "Los insumos pueden ser un apoyo de pañales, toallas húmedas, talco, shampoo, crema, bañera, algún ropón para la o el bebé, suplemento alimenticio.",
+      "descripcion_ciudadana": "Entrega de insumos para el cuidado de bebés, tales como pañales, toallas húmedas, talco, shampoo, crema, bañera, ropones y suplementos alimenticios.",
+      "grupo_atencion": "Mujeres en periodo de gestación o con hijos e hijas menores de 12 meses, que se encuentren en situación de vulnerabilidad.",
+      "municipio": "Juárez",
+      "genero": "Mujeres",
+      "etapa_vida": "Periodo de Gestación o con Hijos Recién Nacidos",
+      "especificaciones": "Sin monto",
+      "monto": "No especificado",
+      "periodicidad": "Limitado a un paquete por persona. Con la excepción de las gestaciones de embarazo múltiple, en donde se podrá entregar el número de apoyos de acuerdo a la cantidad de infantes.",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio; aplicación de estudio socioeconómico.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 1 día natural.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "mujeres",
+        "ninos"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio.",
+            "Aplicación de estudio socioeconómico."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "mujer",
+        "mujeres",
+        "mamá",
+        "madre soltera",
+        "embarazo",
+        "embarazada",
+        "género",
+        "violencia de género",
+        "niños",
+        "niñas",
+        "infancia",
+        "menores",
+        "adolescentes",
+        "jóvenes",
+        "juventud",
+        "escuela"
+      ]
+    },
+    {
+      "id": 51,
+      "direccion_institucional": "Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte \"Juárez Cuenta Conmigo\"",
+      "nombre_apoyo": "Talleres y Cursos Para Atención Biopsicosocial",
+      "nombre_ciudadano": "Talleres, Cursos Y Capacitaciones Para La Formación Integral Y Bienestar",
+      "descripcion_oficial": "Talleres, capacitaciones y/o cursos otorgados en CSCI, así como diversos espacios públicos, enfocados al desarrollo del bienestar biológico, psicológico y social",
+      "descripcion_ciudadana": "Impartición de talleres, capacitaciones y cursos en Centros de Servicios Comunitarios Integrales (CSCI) y espacios públicos, orientados al desarrollo del bienestar físico, mental y social.",
+      "grupo_atencion": "Población general en situación de vulnerabilidad",
+      "municipio": "Juárez",
+      "genero": "Indistinto",
+      "etapa_vida": "Infancia, Jóvenes, Adultos y Adultos Mayores",
+      "especificaciones": "Las y los beneficiarios podrán acceder a todos los talleres o cursos que deseen, sin costo alguno. La capacidad máxima del curso o taller estará determinada por UR y el espacio ofertado.",
+      "monto": "No especificado",
+      "periodicidad": "No especificado, para mas información contactar a la dirección correspondiente",
+      "donde_solicitar": "Oficinas de la Subsecretaría (de lunes a viernes en horario de 9:00 a 15:00 hrs), ubicada en el Parque Central Poniente, Avenida Tecnológico No. 4450, Colonia Partido Iglesias, Ciudad Juárez, Chihuahua.",
+      "requisitos": "Identificación oficial con fotografía; Clave Única de Registro de Población (CURP); Comprobante de domicilio.",
+      "donde_entrega": "No especificado, para mas información contactar a la dirección correspondiente",
+      "contacto": "Avenida Tecnológico 4450 Colonia Partido Iglesias en Parque Central poniente., Ciudad Juárez, Mexico, 32652\n \nNúmero telefónico (656) 629-33-00 Extensión 53908,",
+      "observaciones": "Tiempo de respuesta: 15 días naturales.",
+      "direccion_corta": "Subsecretaría Frontera Norte",
+      "municipios_lista": [
+        "Juárez"
+      ],
+      "categorias": [
+        "capacitacion",
+        "desarrollo_pers",
+        "vulnerabilidad"
+      ],
+      "requisitos_estructurado": [
+        {
+          "titulo": null,
+          "items": [
+            "Identificación oficial con fotografía.",
+            "Clave Única de Registro de Población (CURP).",
+            "Comprobante de domicilio."
+          ]
+        }
+      ],
+      "palabras_clave": [
+        "educación",
+        "curso",
+        "cursos",
+        "taller",
+        "talleres",
+        "clases",
+        "aprender",
+        "oficio",
+        "capacitación",
+        "diploma",
+        "estudiar",
+        "beca educativa",
+        "escuela",
+        "desarrollo personal",
+        "terapia",
+        "psicología",
+        "psicólogo",
+        "autoestima",
+        "bienestar emocional",
+        "consejería",
+        "ayuda psicológica",
+        "salud mental",
+        "depresión",
+        "ansiedad",
+        "vulnerabilidad",
+        "pobreza",
+        "necesidad",
+        "bajos recursos",
+        "escasos recursos",
+        "marginación",
+        "situación vulnerable",
+        "apoyo social"
+      ]
+    }
+  ]
+}
