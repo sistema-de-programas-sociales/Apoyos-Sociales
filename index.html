@@ -1,0 +1,2214 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Cuenta Conmigo - Chihuahua</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<style>
+/* -----------------------------------------
+   DESIGN TOKENS
+----------------------------------------- */
+:root {
+  --blue:        #1A4FC4;
+  --blue-dark:   #0D2B6B;
+  --blue-light:  #E8EFFC;
+  --blue-mid:    #3B6FE0;
+  --purple:      #7B5EA7;
+  --pink:        #E0457B;
+  --pink-light:  #FBEAF0;
+  --surface:     #FFFFFF;
+  --bg:          #E7ECF7;
+  --bg-2:        #DCE4F4;
+  --border:      #C5D0E8;
+  --text:        #0D1B3E;
+  --text-2:      #4A5578;
+  --text-3:      #8892B0;
+  --success:     #0F6E56;
+  --error:       #BA1A1A;
+  --amber:       #BA7517;
+
+  --r-sm:   10px;
+  --r-md:   16px;
+  --r-lg:   20px;
+  --r-xl:   28px;
+  --r-full: 9999px;
+
+  --shadow-xs: 0 1px 3px rgba(13,43,107,.10), 0 1px 2px rgba(13,43,107,.06);
+  --shadow-sm: 0 2px 8px rgba(13,43,107,.12), 0 1px 3px rgba(13,43,107,.08);
+  --shadow-md: 0 6px 20px rgba(13,43,107,.16), 0 2px 6px rgba(13,43,107,.08);
+  --shadow-lg: 0 12px 36px rgba(13,43,107,.20), 0 4px 10px rgba(13,43,107,.10);
+  --shadow-pink: 0 4px 20px rgba(224,69,123,.35);
+
+  --nav-h: 115px;
+  --logo-offset-y: -20px;  /* mueve el logo: negativo = arriba, positivo = abajo */
+  --bot-h: 84px;
+
+  /* svc-card outline — edit these two to change the border on the category cards */
+  --svc-card-border-width: 2px;
+  --svc-card-border-color: #cfd3e0c4
+;
+}
+
+/* -----------------------------------------
+   RESET
+----------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; -webkit-tap-highlight-color: transparent; scroll-behavior: smooth; overflow-x: hidden; max-width: 100%; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;   /* fallback para navegadores/webviews que no soportan dvh */
+  min-height: 100dvh;
+  padding-bottom: calc(var(--bot-h) + var(--safe-bottom, 0px));
+  overflow-x: hidden;
+  max-width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+button, a { cursor: pointer; font-family: inherit; }
+button { border: none; background: none; }
+a { text-decoration: none; color: inherit; }
+
+/* -----------------------------------------
+   MATERIAL ICONS
+----------------------------------------- */
+.mi {
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: middle;
+  user-select: none;
+  display: inline-block;
+}
+.mi-fill { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.mi-sm { font-size: 18px; }
+.mi-lg { font-size: 28px; }
+.mi-xl { font-size: 36px; }
+
+/* -----------------------------------------
+   PAGES & TRANSITIONS
+----------------------------------------- */
+.page { display: none !important; }
+.page.active { display: block !important; animation: fadeUp .24s cubic-bezier(.4,0,.2,1) both; }
+
+/* =========================================
+   PANTALLA DE CARGA INICIAL
+========================================= */
+.app-loader {
+  position: fixed; inset: 0; z-index: 9999;
+  background: linear-gradient(160deg, var(--purple) 0%, var(--blue) 45%, var(--blue-dark) 100%);
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity .4s ease, visibility .4s ease;
+}
+.app-loader.hide { opacity: 0; visibility: hidden; pointer-events: none; }
+.app-loader-inner { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.app-loader-logo {
+  width: 130px; height: auto;
+  filter: drop-shadow(0 4px 14px rgba(0,0,0,.25));
+  animation: loaderPulse 1.6s ease-in-out infinite;
+}
+.app-loader-spinner {
+  width: 32px; height: 32px; border-radius: 50%;
+  border: 3px solid rgba(255,255,255,.25); border-top-color: #fff;
+  animation: loaderSpin .8s linear infinite;
+}
+.app-loader-text { color: rgba(255,255,255,.85); font-size: 13px; font-weight: 600; letter-spacing: .02em; }
+@keyframes loaderSpin { to { transform: rotate(360deg); } }
+@keyframes loaderPulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.05); opacity: .85; } }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* -----------------------------------------
+   TOP NAVBAR
+----------------------------------------- */
+.topnav {
+  position: sticky; top: 0; z-index: 100;
+  height: var(--nav-h);
+  background: transparent;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: flex-start;
+  padding: 0 16px; gap: 10px;
+  box-shadow: 0 2px 12px rgba(13,43,107,.18);
+  transition: box-shadow .25s;
+}
+/* Video de fondo del navbar */
+.topnav-video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
+}
+.topnav-video.fading { opacity: 0; }
+/* Overlay para legibilidad del logo */
+.topnav-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(33, 66, 138, 0.61) 0%,
+    rgba(221, 178, 35, 0.308) 100%
+  );
+  z-index: 1;
+}
+/* Todo el contenido del nav por encima */
+.topnav > *:not(.topnav-video):not(.topnav-overlay) {
+  position: relative; z-index: 2;
+}
+.topnav::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 2.5px;
+  background: linear-gradient(90deg, var(--blue-dark) 0%, var(--blue) 40%, var(--purple) 70%, var(--pink) 100%);
+}
+
+.topnav-logo { height: 60px; width: auto; object-fit: contain; position: relative; top: var(--logo-offset-y); }
+
+/* -----------------------------------------
+   BOTTOM NAV
+----------------------------------------- */
+.botnav {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 100;
+  height: calc(var(--bot-h) + var(--safe-bottom, 0px));
+  padding-bottom: var(--safe-bottom, 0px);
+  background: linear-gradient(0deg, var(--purple) -50%,var(--blue-dark) 20%, var(--text) 100%);
+  border-top: 1px solid var(--border);
+  display: flex;
+}
+.bn-item {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 3px; padding: 6px 4px;
+  color: #e4e7f58f; font-size: 12px; font-weight: 200;
+  letter-spacing: .02em; position: relative;
+  transition: color .15s;
+}
+.bn-item .mi { font-size: 22px; transition: transform .2s cubic-bezier(.34,1.56,.64,1); }
+.bn-item.active { color:  rgb(233, 254, 255); }
+.bn-item.active .mi { transform: scale(1.25); font-variation-settings: 'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 24; }
+.bn-item::after {
+  content: ''; position: absolute; bottom: 0; left: 15%; right: 15%;
+  height: 5px; border-radius: 0 0 4px 4px;
+  background:#fff; transform: scaleX(0);
+  transition: transform .09s cubic-bezier(.34,1.56,.64,1);
+}
+.bn-item.active::after { transform: scaleX(1); }
+
+/* -----------------------------------------
+   FAB
+----------------------------------------- */
+
+
+/* -----------------------------------------
+   TYPOGRAPHY HELPERS
+----------------------------------------- */
+.t-display  { font-size: 28px; font-weight: 800; line-height: 1.15; letter-spacing: -.02em; }
+.t-h1       { font-size: 22px; font-weight: 700; line-height: 1.25; }
+.t-h2       { font-size: 19px; font-weight: 700; line-height: 1.3; }
+.t-h3       { font-size: 16px; font-weight: 600; line-height: 1.4; }
+.t-body     { font-size: 15px; font-weight: 400; line-height: 1.65; }
+.t-body-sm  { font-size: 13px; font-weight: 400; line-height: 1.6; }
+.t-label    { font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+.t-caption  { font-size: 11px; font-weight: 500; line-height: 1.5; }
+.c-primary  { color: var(--blue); }
+.c-navy     { color: var(--blue-dark); }
+.c-muted    { color: var(--text-2); }
+.c-faint    { color: var(--text-3); }
+.c-white    { color: #fff; }
+
+/* -----------------------------------------
+   BUTTONS
+----------------------------------------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 0 20px; height: 48px; border-radius: var(--r-full);
+  font-size: 15px; font-weight: 700; transition: all .15s;
+  white-space: nowrap;
+}
+.btn-primary { background: var(--blue); color: #fff; box-shadow: 0 2px 8px rgba(26,79,196,.3); }
+.btn-primary:active { background: var(--blue-dark); box-shadow: none; transform: scale(.98); }
+.btn-outline { background: transparent; color: var(--blue); border: 2px solid var(--blue); }
+.btn-outline:active { background: var(--blue-light); transform: scale(.98); }
+.btn-ghost  { background: var(--bg-2); color: var(--text); }
+.btn-ghost:active { background: var(--border); transform: scale(.98); }
+.btn-white  { background: #fff; color: var(--blue-dark); box-shadow: var(--shadow-sm); }
+.btn-white:active { background: var(--bg-2); transform: scale(.98); }
+.btn-full   { width: 100%; }
+.btn-sm     { height: 38px; padding: 0 14px; font-size: 13px; }
+
+/* -----------------------------------------
+   CARDS
+----------------------------------------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow .2s, transform .15s;
+}
+.card:active { transform: scale(.99); }
+
+/* -----------------------------------------
+   BADGES
+----------------------------------------- */
+.badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 3px 9px; border-radius: var(--r-full);
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em;
+}
+.badge-blue   { background: var(--blue-light); color: var(--blue); }
+.badge-green  { background: #E1F5EE; color: var(--success); }
+.badge-pink   { background: var(--pink-light); color: var(--pink); }
+.badge-amber  { background: #FEF3E0; color: var(--amber); }
+.badge-purple { background: #EDE9F7; color: var(--purple); }
+.badge-error  { background: #FFDAD6; color: var(--error); }
+.badge-navy   { background: #E3E8F4; color: var(--blue-dark); }
+.badge-teal     { background: #E0F4F3; color: #0E7C75; }
+.badge-coral    { background: #FCE9E4; color: #C2502E; }
+.badge-violet   { background: #F1E8FA; color: #8A4FD6; }
+.badge-rose     { background: #FCE7EF; color: #C23B73; }
+.badge-cyan     { background: #E2F3FB; color: #1276A8; }
+.badge-olive    { background: #F1F3DE; color: #6F7A1E; }
+.badge-gray     { background: #EEF1F4; color: #5B6472; }
+
+/* -----------------------------------------
+   FORM ELEMENTS
+----------------------------------------- */
+.field-wrap { display: flex; flex-direction: column; gap: 6px; }
+.field-label { font-size: 13px; font-weight: 600; color: var(--text); }
+.field-hint  { font-size: 12px; color: var(--text-3); }
+.field-input {
+  width: 100%; padding: 14px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-md);
+  font-size: 16px; font-family: 'Inter', sans-serif;
+  color: var(--text); background: var(--surface);
+  outline: none; transition: border-color .15s, box-shadow .15s;
+}
+.field-input:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(26,79,196,.12);
+}
+.field-input::placeholder { color: var(--text-3); }
+textarea.field-input { resize: vertical; min-height: 120px; }
+
+/* -----------------------------------------
+   SEARCH BAR
+----------------------------------------- */
+.search-wrap {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-full);
+  display: flex; align-items: center;
+  height: 40px; padding: 0 5px 0 14px;
+  box-shadow: var(--shadow-sm);
+  transition: border-color .15s, box-shadow .15s;
+  overflow: hidden;
+}
+.search-wrap:focus-within {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(26,79,196,.12);
+}
+.search-wrap .mi { color: var(--text-3); flex-shrink: 0; font-size: 20px; }
+.search-wrap input {
+  flex: 1; min-width: 0; border: none; outline: none;
+  font-size: 12px; color: var(--text);
+  padding: 0 8px; background: transparent;
+  font-family: 'Inter', sans-serif;
+}
+.search-wrap input::placeholder { color: var(--text-3); }
+.search-wrap .btn {
+  height: 30px; padding: 0 16px;
+  border-radius: var(--r-full);
+  flex-shrink: 0; font-size: 14px;
+  white-space: nowrap;
+}
+/* Variante para usar sobre fondos oscuros/de color */
+.search-wrap.on-dark {
+  border-color: rgba(255,255,255,.18);
+  box-shadow: 0 4px 20px rgba(0,0,0,.22);
+}
+.search-wrap.on-dark:focus-within {
+  border-color: rgba(255,255,255,.4);
+  box-shadow: 0 4px 20px rgba(0,0,0,.22);
+}
+.search-wrap.on-dark input::placeholder { color: rgba(74,85,120,.6); }
+
+/* -----------------------------------------
+   CHIPS / FILTERS
+----------------------------------------- */
+.chips-row {
+  display: flex; gap: 8px;
+  overflow-x: auto; padding: 2px 0 4px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.chips-row::-webkit-scrollbar { display: none; }
+.chip {
+  display: flex; align-items: center; gap: 4px;
+  padding: 6px 10px 6px 10px; border-radius: var(--r-full);
+  font-size: 12px; font-weight: 700;
+  border: 1.5px solid var(--border);
+  background: var(--surface); color: var(--text-2);
+  white-space: nowrap; flex-shrink: 0;
+  transition: all .15s; cursor: pointer;
+  box-shadow: var(--shadow-xs);
+}
+.chip .mi { font-size: 17px; color: var(--text-3); transition: color .15s; }
+.chip.active {
+  background:  rgba(127, 48, 163, 0.459); border-color: #fff; color: #fff;
+}
+.chip.active .mi { color: #fff; font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24; }
+.chip:active { transform: scale(.96); }
+
+/* -----------------------------------------
+   SECTION HEADER
+----------------------------------------- */
+.sec-head {
+  display: flex; align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.sec-head-link { font-size: 13px; font-weight: 600; color: var(--blue); }
+
+/* -----------------------------------------
+   DIVIDER
+----------------------------------------- */
+.divider { height: 1px; background: var(--border); }
+
+/* -----------------------------------------
+   FOOTER
+----------------------------------------- */
+.footer {
+  background: var(--blue-dark);
+  padding: 0 0 12px;
+  position: relative; overflow: hidden;
+}
+.footer::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(160deg, var(--purple) 0%,var(--blue) 40%, var(--blue-dark) 80%);
+  pointer-events: none;
+}
+.footer > * { position: relative; z-index: 1; }
+
+/* - Footer heading - */
+.footer-hero {
+  padding: 18px 20px 12px;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  text-align: center;
+}
+.footer-desc {
+  font-size: 14px; color: rgba(255,255,255,.85);
+  line-height: 1.5; font-weight: 700;
+  max-width: 36ch;
+  margin: 0 auto;
+}
+
+/* - Llamada 070 - */
+.footer-contact {
+  display: flex; align-items: center; gap: 10px;
+  margin: 10px 16px;
+  padding: 9px 12px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--r-md);
+  background: rgba(13,43,107,.35);
+  text-decoration: none; transition: background .15s, border-color .15s;
+}
+.footer-contact:active { background: rgba(2, 8, 22, 0.623); border-color: rgba(255,255,255,.2); }
+.footer-contact-icon {
+  width: 32px; height: 32px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--pink), var(--purple));
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 8px rgba(224,69,123,.3);
+}
+.footer-contact-icon .mi { color: #fff; font-size: 18px; }
+.footer-contact-text { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.footer-contact-title { display: block; font-size: 11px; font-weight: 700; color: rgba(255, 255, 255, 0.815); text-transform: uppercase; letter-spacing: .05em; }
+.footer-contact-row { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.footer-contact-numbers { display: flex; align-items: baseline; gap: 6px; }
+.footer-contact-num { font-size: 14px; font-weight: 800; color: #fff; line-height: 1; }
+.footer-contact-alt { font-size: 12px; color: rgba(255, 255, 255, 0.925); font-weight: 600; }
+.footer-contact-hours { font-size: 10.5px; color: rgba(255,255,255,.46); }
+
+/* - Nav links - */
+.footer-nav {
+  display: flex; justify-content: space-around;
+  padding: 4px 16px 8px;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.footer-nav a {
+  display: flex; align-items: center; gap: 5px;
+  font-size: 12px; color: rgba(255, 255, 255, 0.801);
+  font-weight: 500; text-decoration: none;
+  padding: 7px 10px;
+  border-radius: var(--r-md);
+  transition: background .15s, color .15s;
+}
+.footer-nav a:active { background: rgba(255,255,255,.08); color: #fff; }
+.footer-nav a .mi { font-size: 16px; color: rgba(255,255,255,.38); }
+
+/* - Copy - */
+.footer-copy {
+  font-size: 11px; color: rgba(255, 255, 255, 0.616);
+  text-align: center;
+  padding: 8px 20px calc(4px + var(--safe-bottom, 0px));
+}
+
+/* -----------------------------------------
+   BREADCRUMB
+----------------------------------------- */
+.breadcrumb {
+  display: flex; align-items: center; gap: 4px;
+  font-size: 12px; color: var(--text-3); font-weight: 500;
+  padding: 14px 20px 0;
+}
+.breadcrumb .mi { font-size: 14px; }
+.breadcrumb strong { color: var(--blue); }
+
+/* =========================================
+   PAGE: INICIO
+========================================= */
+
+/* Hero */
+.hero {
+  background:linear-gradient(160deg, var(--purple) 0%,var(--blue) 40%, var(--blue-dark) 80%);
+  padding: 18px 20px 18px;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: conic-gradient(from 200deg at 85% 120%, #E0457B44, #7B5EA766, #1A4FC488, transparent 60%);
+  z-index: 0;
+}
+.hero::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 60px;
+  background: linear-gradient(to top, rgba(13,43,107,.35), transparent);
+  z-index: 0;
+}
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: rgba(255,255,255,.15); color: rgba(255,255,255,.9);
+  font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  padding: 2px 12px; border-radius: var(--r-full);
+  margin-bottom: 10px; position: relative; z-index: 1;
+  align-self: flex-start;
+}
+.hero-eyebrow .mi { font-size: 13px; }
+.hero h1 {
+  color: #fff; font-size: 26px; font-weight: 800;
+  line-height: 1.2; letter-spacing: -.02em;
+  margin-bottom: 8px; position: relative; z-index: 1;
+}
+.hero-sub {
+  color: rgba(255,255,255,.72); font-size: 13px; line-height: 1.55;
+  margin-bottom: 18px; position: relative; z-index: 1;
+  max-width: 320px;
+}
+.hero-search { position: relative; z-index: 2; }
+
+/* Stats strip */
+.stats-strip {
+  background: #0A2258;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+}
+.stats-strip::before { display: none; }
+.stats-strip::after {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.12), transparent);
+}
+/* Card interior */
+.stats-card {
+  display: flex; align-items: center; gap: 16px;
+  padding: 16px 0 18px;
+  position: relative; z-index: 1;
+}
+.stats-avatar {
+  width: 52px; height: 52px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--pink), var(--purple));
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(224,69,123,.35);
+}
+.stats-avatar .mi { color: #fff; font-size: 26px; }
+.stats-body { flex: 1; min-width: 0; }
+.stats-number {
+  display: flex; align-items: baseline; gap: 6px;
+  margin-bottom: 2px;
+}
+.stats-number-main {
+  font-size: 28px; font-weight: 800; color: #fff;
+  line-height: 1; letter-spacing: -.03em;
+}
+.stats-number-unit {
+  font-size: 13px; font-weight: 700;
+  color: var(--pink); letter-spacing: .02em;
+  text-transform: uppercase;
+}
+.stats-desc {
+  font-size: 12px; color: rgba(255,255,255,.6);
+  line-height: 1.45; font-weight: 400;
+}
+.stats-desc strong {
+  color: rgba(255,255,255,.9); font-weight: 600;
+}
+/* Separador vertical derecho decorativo */
+.stats-badge {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 3px; flex-shrink: 0;
+}
+.stats-badge-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--pink);
+  box-shadow: 0 0 8px rgba(224,69,123,.6);
+}
+.stats-badge-line {
+  width: 1px; height: 28px;
+  background: linear-gradient(to bottom, var(--pink), transparent);
+}
+
+/* How it works */
+.how-section { padding: 28px 20px; }
+.step-row { display: flex; gap: 14px; position: relative; }
+.step-row:not(:last-child)::before {
+  content: ''; position: absolute;
+  left: 17px; top: 38px; bottom: -12px;
+  width: 2px; background: var(--border);
+}
+.step-num {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--blue); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; font-weight: 800; flex-shrink: 0;
+  position: relative; z-index: 1;
+}
+.step-body { padding: 4px 0 24px; flex: 1; }
+.step-body h3 { font-size: 16px; font-weight: 700; color: var(--blue-dark); margin-bottom: 4px; }
+.step-body p  { font-size: 14px; color: var(--text-2); line-height: 1.6; }
+
+/* Featured program cards - horizontal scroll */
+.featured-scroll {
+  display: flex; gap: 12px;
+  overflow-x: auto; padding: 4px 20px 8px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.featured-scroll::-webkit-scrollbar { display: none; }
+.featured-card {
+  min-width: 240px; max-width: 260px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden; flex-shrink: 0;
+  box-shadow: var(--shadow-md);
+}
+.featured-card-accent { height: 4px; }
+.featured-card-body { padding: 14px; }
+.featured-card-badges { display: flex; flex-wrap: nowrap; gap: 6px; margin-bottom: 8px; overflow: hidden; }
+.featured-card-badges .badge {
+  font-size: 10px; padding: 3px 8px; letter-spacing: .02em;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  flex-shrink: 1; min-width: 0; display: inline-block;
+}
+.featured-card-body h3 {
+  font-size: 15px; font-weight: 700; color: var(--blue-dark); margin: 0 0 12px; line-height: 1.3;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.featured-card-media { position: relative; width: 100%; height: 110px; background: var(--bg-2); overflow: hidden; }
+.featured-card-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.featured-card-media.img-missing { background: linear-gradient(135deg, var(--cat-bg, var(--bg-2)), var(--bg-2)); }
+.featured-card-media.img-missing .featured-card-img { display: none; }
+.featured-card-media.img-missing::before {
+  content: attr(data-icon);
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px; color: var(--cat-c, var(--blue)); opacity: .75;
+}
+
+/* -----------------------------------------
+   OFFICES / DIRECTORY
+----------------------------------------- */
+.offices-section { background: var(--bg); padding-bottom: 8px; }
+.dir-cards {
+  display: flex; flex-direction: row; gap: 12px;
+  padding: 0 16px 24px;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.dir-cards::-webkit-scrollbar { display: none; }
+.dir-card {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  min-width: 280px; max-width: 280px; flex-shrink: 0;
+  display: flex; flex-direction: column;
+}
+.dir-card-head {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 14px; border-bottom: 1px solid var(--border);
+}
+.dir-icon-wrap {
+  width: 40px; height: 40px; border-radius: var(--r-md);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.dir-head-text { flex: 1; min-width: 0; }
+.dir-tag { display: block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 3px; }
+.dir-name { font-size: 13px; font-weight: 700; color: var(--text); line-height: 1.35; }
+.dir-card-body { padding: 12px 14px; display: flex; flex-direction: column; gap: 10px; }
+.dir-row { display: flex; align-items: flex-start; gap: 8px; }
+.dir-text { font-size: 13px; color: var(--text-2); line-height: 1.5; }
+.dir-phone { font-size: 13px; font-weight: 600; color: var(--blue); text-decoration: none; }
+.dir-map-wrap {
+  width: 100%; height: 160px; overflow: hidden;
+  border-top: 1px solid var(--border);
+}
+.dir-map-static {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: var(--text-3);
+  background: linear-gradient(135deg, #EEF2FB, #DDE6F7);
+}
+.dir-map-static .mi { font-size: 30px; color: var(--blue); opacity: .72; }
+.dir-map-static span:last-child { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.dir-map-iframe {
+  width: 100%; height: 100%; border: none;
+  display: block; pointer-events: auto;
+}
+.dir-maps-btn {
+  display: flex; align-items: center; gap: 6px;
+  padding: 11px 14px; border-top: 1px solid var(--border);
+  font-size: 13px; font-weight: 700; color: var(--blue);
+  text-decoration: none; background: var(--blue-light);
+  transition: background .15s; flex-shrink: 0;
+}
+.dir-maps-btn:active { background: #D0DDFA; }
+
+/* CTA Banner */
+.cta-banner {
+  margin: 8px 16px 24px;
+  background: #0D2B6B;
+  position: relative; overflow: hidden;
+  border-radius: var(--r-lg);
+  padding: 22px 18px;
+  border: 1px solid rgba(255,255,255,.08);
+}
+.cta-banner::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: conic-gradient(from 200deg at 85% 120%, #E0457B44, #7B5EA766, #1A4FC488, transparent 60%);
+  z-index: 0;
+}
+.cta-banner > * { position: relative; z-index: 1; }
+.cta-banner h3 { color: #fff; font-size: 18px; font-weight: 800; margin-bottom: 4px; }
+.cta-banner p  { color: rgba(255,255,255,.72); font-size: 13px; line-height: 1.55; margin-bottom: 16px; }
+.cta-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* =========================================
+   PAGE: SERVICIOS
+========================================= */
+.svc-hero {
+  background:linear-gradient(160deg, var(--purple) 0%,var(--blue) 40%, var(--blue-dark) 80%);
+  padding: 18px 20px 2px;
+  position: relative; overflow: hidden;
+}
+.svc-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: conic-gradient(from 200deg at 85% 120%, #E0457B44, #7B5EA766, #1A4FC488, transparent 60%);
+  z-index: 0;
+}
+.svc-hero > * { position: relative; z-index: 1; }
+.svc-hero h1 {   
+  color: #fff;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+  margin-bottom: 8px;
+ }
+.svc-hero p  { color: rgba(255,255,255,.72); font-size: 13px; line-height: 1.55;
+  margin-bottom: 18px; position: relative; z-index: 1;
+  max-width: 320px;}
+
+.svc-search-wrap { padding: 18px 16px 4px; background: var(--bg); }
+
+.svc-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 12px; padding: 18px 16px 18px;
+}
+.svc-card {
+  /* El fondo es el mismo gradiente del título: cualquier gap se ve del color correcto */
+  background: linear-gradient(135deg, var(--purple) 0%, var(--blue) 100%);
+  border: var(--svc-card-border-width) solid var(--svc-card-border-color);
+  border-radius: var(--r-lg);
+  padding: 0;
+  display: flex; flex-direction: column;
+  align-items: stretch;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow .2s, transform .15s;
+  cursor: pointer;
+  position: relative; overflow: hidden;
+}
+.svc-card:active { transform: scale(.97); box-shadow: none; }
+
+/* image area */
+.svc-card-media {
+  position: relative;
+  width: 100%;
+  /* flex: 1 para absorber el espacio extra cuando el grid iguala alturas entre columnas */
+  flex: 1;
+  min-height: 100px;
+  background: var(--bg-2);
+  overflow: hidden;
+}
+.svc-card-img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  display: block;
+}
+
+/* fallback shown automatically if the image file is missing/not added yet */
+.svc-card-media.img-missing { background: linear-gradient(135deg, var(--cat-bg), var(--bg-2)); }
+.svc-card-media.img-missing .svc-card-img { display: none; }
+.svc-card-media.img-missing::before {
+  content: attr(data-icon);
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; color: var(--cat); opacity: .55;
+}
+
+/* title strip, gradient band, no icon / no subtitle */
+.svc-card-row {
+  padding: 10px 8px;
+  min-height: 54px;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, var(--purple) 0%, var(--blue) 100%);
+}
+
+.svc-card-body { padding: 0; min-width: 0; }
+.svc-card h3 { font-size: 14px; font-weight: 800; color: #fff; line-height: 1.25; text-transform: uppercase; letter-spacing: .03em; text-align: center; }
+
+/* category colors (13 categorías oficiales) - usadas para el ícono de respaldo cuando falta la imagen */
+.cat-aliment         { --cat: #E0457B; --cat-bg: #FBEAF0; }
+.cat-desarrollo-pers { --cat: #8A4FD6; --cat-bg: #F1E8FA; }
+.cat-desarrollo-soc  { --cat: #0E7C75; --cat-bg: #E0F4F3; }
+.cat-discapacidad    { --cat: #1276A8; --cat-bg: #E2F3FB; }
+.cat-econ            { --cat: #1A4FC4; --cat-bg: #E8EFFC; }
+.cat-educ            { --cat: #7B5EA7; --cat-bg: #EDE9F7; }
+.cat-empleo          { --cat: #D85A30; --cat-bg: #FAECE7; }
+.cat-mujeres         { --cat: #C23B73; --cat-bg: #FCE7EF; }
+.cat-ninos           { --cat: #C2502E; --cat-bg: #FCE9E4; }
+.cat-vulnerabilidad  { --cat: #6F7A1E; --cat-bg: #F1F3DE; }
+.cat-mayores         { --cat: #0F6E56; --cat-bg: #E1F5EE; }
+.cat-transp          { --cat: #BA7517; --cat-bg: #FEF3E0; }
+.cat-tramites        { --cat: #0D2B6B; --cat-bg: #E3E8F4; }
+
+.svc-help {
+  margin: 0 16px 24px;
+  background: #0D2B6B;
+  position: relative; overflow: hidden;
+  border-radius: var(--r-lg);
+  padding: 20px;
+  display: flex; gap: 14px; align-items: flex-start;
+  border: 1px solid rgba(255,255,255,.08);
+}
+.svc-help::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: conic-gradient(from 200deg at 85% 120%, #E0457B44, #7B5EA766, #1A4FC488, transparent 60%);
+  z-index: 0;
+}
+.svc-help > * { position: relative; z-index: 1; }
+.svc-help-icon {
+  width: 48px; height: 48px; border-radius: var(--r-md);
+  background: rgba(255,255,255,.15);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.svc-help h3 { color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.svc-help p  { color: rgba(255,255,255,.72); font-size: 13px; line-height: 1.55; margin-bottom: 12px; }
+
+/* =========================================
+   PAGE: PROGRAMAS
+========================================= */
+.prog-header {
+  background:   linear-gradient(160deg, var(--purple) 0%,var(--blue) 40%, var(--blue-dark) 80%);
+  padding: 14px 16px 0;
+  border-bottom: 1px solid var(--border);
+  position: sticky; top: var(--nav-h); z-index: 80;
+  display: flex; flex-direction: column;
+  box-shadow: var(--shadow-xs);
+}
+.prog-chips-row {
+  padding: 12px 10px 14px;
+  margin: 0 -16px;
+  overflow-x: auto; overflow-y: hidden; display: flex; gap: 8px;
+  scrollbar-width: none;
+}
+
+.prog-suggest {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+  padding-top: 12px;
+}
+.prog-suggest.hide { display: none; }
+.prog-suggest-label { font-size: 11.5px; color: rgba(255,255,255,.65); font-weight: 600; margin-right: 2px; }
+.suggest-chip {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,.92);
+  background: rgba(255,255,255,.13); border: 1px solid rgba(255,255,255,.18);
+  padding: 5px 10px; border-radius: var(--r-full);
+  transition: background .15s, transform .15s;
+}
+.suggest-chip:active { background: rgba(255,255,255,.26); transform: scale(.96); }
+.prog-chips-row::-webkit-scrollbar { display: none; }
+.prog-chips-row::before,
+.prog-chips-row::after { content: ''; flex: 0 0 8px; }
+
+.prog-results-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 16px 4px;
+}
+.prog-title{
+  color:#fff;
+  font-size:26px;
+  font-weight:800;
+  line-height:1.2;
+  margin-bottom:12px;
+  padding-left: 8px;
+}
+
+.prog-list { padding: 0 16px; display: flex; flex-direction: column; gap: 8px; padding-bottom: 20px; }
+
+.empty-state {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  padding: 40px 24px; gap: 10px;
+}
+.empty-state .mi { font-size: 40px; color: var(--text-3); }
+.empty-state h3 { font-size: 15px; font-weight: 700; color: var(--blue-dark); }
+.empty-state p { font-size: 13px; color: var(--text-2); line-height: 1.55; max-width: 320px; }
+.empty-state .btn { margin-top: 6px; }
+
+.prog-card {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow .2s, transform .15s, border-color .15s;
+  cursor: pointer;
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px;
+}
+.prog-card:active { transform: scale(.98); box-shadow: none; border-color: var(--cat-c, var(--border)); }
+
+/* image / icon thumbnail */
+.prog-card-media {
+  position: relative;
+  width: 60px; height: 60px; flex-shrink: 0;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: var(--bg-2);
+}
+.prog-card-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.prog-card-media.img-missing { background: linear-gradient(135deg, var(--cat-bg, var(--bg-2)), var(--bg-2)); }
+.prog-card-media.img-missing .prog-card-img { display: none; }
+.prog-card-media.img-missing::before {
+  content: attr(data-icon);
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; color: var(--cat-c, var(--blue)); opacity: .65;
+}
+
+.prog-card-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.prog-card-badge {
+  align-self: flex-start;
+  font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .02em;
+  padding: 2px 8px; border-radius: var(--r-full); line-height: 1.5;
+}
+.prog-card-name {
+  font-size: 14px; font-weight: 700; color: var(--blue-dark); line-height: 1.28;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.prog-card-dir { display: flex; align-items: center; gap: 3px; font-size: 11px; color: var(--blue); font-weight: 600; }
+.prog-card-dir .mi { font-size: 13px; }
+.prog-card-sub { display: flex; align-items: center; gap: 3px; font-size: 11.5px; color: var(--text-3); font-weight: 500; }
+.prog-card-sub .mi { font-size: 13px; }
+.prog-card-grupo-row { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 3px; }
+.prog-card-grupo-chip {
+  display: inline-flex; align-items: center; gap: 3px;
+  font-size: 11px; font-weight: 700; color: var(--blue-dark);
+  background: var(--blue-light);
+  padding: 3px 8px; border-radius: var(--r-full); line-height: 1.3;
+}
+.prog-card-grupo-chip .mi { font-size: 13px; color: var(--blue); }
+
+.prog-card-chevron { color: var(--text-3); font-size: 22px; flex-shrink: 0; transition: transform .15s; }
+.prog-card:active .prog-card-chevron { transform: translateX(2px); }
+
+/* =========================================
+   PAGE: CONTACTO
+========================================= */
+.contact-hero {
+  background:   linear-gradient(160deg, var(--purple) 0%,var(--blue) 40%, var(--blue-dark) 80%);
+  padding: 18px 20px 18px;
+  position: relative; overflow: hidden;
+}
+.contact-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:linear-gradient(160deg, var(--purple) 0%,var(--blue) 40%, var(--blue-dark) 80%);
+  z-index: 0;
+}
+.contact-hero > * { position: relative; z-index: 1; }
+.contact-hero h1 {   color: #fff; font-size: 26px; font-weight: 800;
+  line-height: 1.2; letter-spacing: -.02em;
+  margin-bottom: 8px; position: relative; z-index: 1;
+}
+.contact-hero p  { color: rgba(255,255,255,.72); font-size: 13px; }
+
+.contact-section { padding: 16px; display: flex; flex-direction: column; gap: 14px; }
+
+.contact-form-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.contact-form-head {
+  background: #692c8d;
+  position: relative; overflow: hidden;
+  padding: 12px;
+  display: flex; align-items: center; gap: 12px;
+  border-bottom: none;
+}
+.contact-form-head::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:linear-gradient(360deg, var(--purple) -20%,var(--blue) 60%, var(--blue-dark) 120%);
+  z-index: 0;
+}
+.contact-form-head > * { position: relative; z-index: 1; }
+.contact-form-head .mi { color: rgba(255,255,255,.9) !important; }
+.contact-form-head h3 { color: #fff !important; }
+.contact-form-head p  { color: rgba(255,255,255,.65) !important; }
+.contact-form-head .mi { color: var(--blue); font-size: 26px; }
+.contact-form-head h3 { font-size: 16px; font-weight: 700; color: var(--blue-dark); }
+.contact-form-head p  { font-size: 12px; color: var(--text-2); margin-top: 1px; }
+.contact-form-body { padding: 16px; display: flex; flex-direction: column; gap: 14px; }
+
+.contact-info-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+
+}
+.contact-info-row {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 16px;
+}
+.contact-info-row + .contact-info-row { border-top: 1px solid var(--border); }
+.contact-info-icon {
+  width: 44px; height: 44px; border-radius: var(--r-md);
+  background: var(--blue-light);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.contact-info-icon .mi { color: var(--blue); font-size: 22px; }
+.contact-info-label { font-size: 11px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 2px; }
+.contact-info-value { font-size: 17px; font-weight: 800; color: var(--blue); }
+
+.social-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 14px 16px; border-top: 1px solid var(--border); }
+.social-btn {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 10px 14px; font-size: 13px; font-weight: 600;
+  color: var(--text); transition: background .15s;
+}
+.social-btn .mi { font-size: 20px; color: var(--blue); }
+.social-btn-img { width: 20px; height: 20px; object-fit: contain; flex-shrink: 0; }
+.social-btn:active { background: var(--border); }
+
+
+/* =========================================
+   BOTTOM SHEET (DETAIL)
+========================================= */
+.sheet-overlay {
+  position: fixed; inset: 0; z-index: 200;
+  background: rgba(13,27,62,.5);
+  backdrop-filter: blur(3px);
+  opacity: 0; pointer-events: none;
+  transition: opacity .3s;
+}
+.sheet-overlay.open { opacity: 1; pointer-events: all; }
+.sheet {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 201;
+  background: var(--surface);
+  border-radius: var(--r-xl) var(--r-xl) 0 0;
+  max-height: 92dvh;
+  display: flex; flex-direction: column;
+  transform: translateY(100%);
+  transition: transform .35s cubic-bezier(.32,.72,0,1);
+  padding-bottom: calc(16px + var(--safe-bottom, 0px));
+}
+.sheet.open { transform: translateY(0); }
+.sheet-handle { width: 36px; height: 4px; border-radius: 2px; background: var(--border); margin: 10px auto 0; flex-shrink: 0; }
+.sheet-head {
+  background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+  padding: 20px 18px 22px; margin-top: 8px; flex-shrink: 0;
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+  position: relative;
+}
+.sheet-title { color: #fff; font-size: 20px; font-weight: 800; line-height: 1.25; margin-bottom: 6px; }
+.sheet-desc  { color: rgba(255,255,255,.82); font-size: 12.5px; line-height: 1.55; margin-bottom: 2px; }
+
+.sheet-body { overflow-y: auto; flex: 1; padding: 16px; }
+
+.sheet-tags-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.sheet-tags-row .badge .mi { font-size: 13px; }
+
+.sheet-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
+.sheet-info-item { background: var(--bg); border: 1px solid var(--border); border-radius: var(--r-md); padding: 9px 11px; }
+.sheet-info-full { grid-column: 1 / -1; }
+.sheet-info-label { display: flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 3px; }
+.sheet-info-label .mi { font-size: 13px; color: var(--blue); }
+.sheet-info-value { font-size: 13px; font-weight: 600; color: var(--blue-dark); line-height: 1.4; }
+.muni-toggle { cursor: pointer; display: inline-flex; align-items: center; gap: 2px; color: var(--blue); }
+.muni-chevron { font-size: 15px; transition: transform .15s; }
+.muni-toggle.expanded .muni-chevron { transform: rotate(180deg); }
+
+.sheet-sec { margin-bottom: 16px; }
+.sheet-sec-title { font-size: 11px; font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: .06em; display: flex; align-items: center; gap: 5px; margin-bottom: 8px; }
+.sheet-sec-title .mi { font-size: 15px; color: var(--blue); }
+.sheet-sec-body { background: var(--bg); border: 1px solid var(--border); border-radius: var(--r-md); padding: 12px 14px; font-size: 14px; color: var(--text-2); line-height: 1.7; }
+
+/* requisitos como checklist, con sub-bloques con título cuando aplica */
+.req-box { background: var(--bg); border: 1px solid var(--border); border-radius: var(--r-md); padding: 14px; }
+.req-block { margin-bottom: 14px; }
+.req-block:last-child { margin-bottom: 0; }
+.req-block-title { font-size: 12.5px; font-weight: 800; color: var(--blue-dark); margin-bottom: 7px; }
+.req-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.req-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 13.5px; color: var(--text-2); line-height: 1.55; }
+.req-list li::before {
+  content: 'check_circle'; font-family: 'Material Symbols Outlined';
+  font-variation-settings: 'FILL' 1;
+  font-size: 16px; color: var(--success); flex-shrink: 0; margin-top: 1px;
+}
+
+.sheet-close { margin: 8px 16px 0; padding: 14px; background: var(--blue); color: #fff; border-radius: var(--r-lg); font-size: 15px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 6px; flex-shrink: 0; transition: background .15s; }
+.sheet-close:active { background: var(--blue-dark); }
+
+/* -----------------------------------------
+   SPACING UTILS
+----------------------------------------- */
+.px-page   { padding-left: 20px; padding-right: 20px; }
+.py-section { padding-top: 24px; padding-bottom: 24px; }
+.mt-section { margin-top: 24px; }
+.pb-page    { padding-bottom: 24px; }
+</style>
+</head>
+<body>
+
+<!-- ============== PANTALLA DE CARGA ============== -->
+<div class="app-loader" id="appLoader">
+  <div class="app-loader-inner">
+    <img src="multimedia/Logo-hero.png" alt="Cuenta Conmigo - Más Chihuahua" class="app-loader-logo">
+    <div class="app-loader-spinner"></div>
+    <p class="app-loader-text">Cargando información...</p>
+  </div>
+</div>
+
+<!-- ============== TOP NAV ============== -->
+<header class="topnav" id="topnav">
+  <!-- Video de fondo -->
+  <video class="topnav-video" autoplay muted playsinline id="navVideo">
+    <source src="multimedia/hero_video.mp4" type="video/mp4">
+  </video>
+  <!-- Overlay azul -->
+  <div class="topnav-overlay"></div>
+  <!-- Contenido -->
+  <img class="topnav-logo" alt="Cuenta Conmigo - Más Chihuahua" src="multimedia/Logo-hero.png">
+</header>
+
+<!-- ============ PAGE: INICIO ============ -->
+<div class="page active" id="page-inicio">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-eyebrow"><span class="mi mi-fill">verified</span>Sec. Desarrollo Humano y Bien Común</div>
+    <h1>¡Estamos para ayudarte!</h1>
+    <p class="hero-sub">Descubre todos los programas y apoyos sociales que tenemos para ofrecerte a tí y a tu familia.</p>
+    <div class="hero-search">
+      <div class="search-wrap">
+        <span class="mi">search</span>
+        <input type="text" placeholder="ej: despensas, becas, talleres, étc" id="homeSearch" onkeydown="if(event.key==='Enter')doHomeSearch()">
+        <button class="btn btn-primary btn-sm" onclick="doHomeSearch()">Buscar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-strip">
+    <div class="stats-card">
+      <div class="stats-avatar">
+        <span class="mi mi-fill">group</span>
+      </div>
+      <div class="stats-body">
+        <div class="stats-number">
+          <span class="stats-number-main">+50,000</span>
+          <span class="stats-number-unit">personas</span>
+        </div>
+        <div class="stats-desc">ya disfrutan de los beneficios de sus<strong> programas y apoyos</strong> todos los días.</div>
+      </div>
+      <div class="stats-badge">
+        <div class="stats-badge-dot"></div>
+        <div class="stats-badge-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cómo funciona -->
+  <div class="py-section px-page" style="background:var(--surface)">
+    <div class="sec-head">
+      <h2 class="t-h1 c-navy">¿Cómo funciona?</h2>
+    </div>
+    <div class="step-row">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h3>Explora el catálogo</h3>
+        <p>Usa el buscador o navega por las pestañas inferiores para encontrar el programa o apoyo que más se adapte a tus necesidades.</p>
+      </div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h3>Verifica los requisitos</h3>
+        <p>Revisa la documentación necesaria y los plazos de cada programa.</p>
+      </div>
+    </div>
+    <div class="step-row" style="padding-bottom:0">
+      <div class="step-num">3</div>
+      <div class="step-body" style="padding-bottom:0">
+        <h3>Inicia tu solicitud</h3>
+        <p>Acude a la oficina indicada o comunícate con la dependencia responsable.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Programas destacados -->
+  <div class="py-section" style="background:var(--bg)">
+    <div class="sec-head px-page">
+      <h2 class="t-h1 c-navy">Programas destacados</h2>
+      <button class="sec-head-link" onclick="navTo('programas')">Ver todos</button>
+    </div>
+    <div class="featured-scroll" id="featuredScroll">
+      <!-- Se llena dinámicamente con datos reales desde apoyos.json (ver renderFeatured() en el script) -->
+    </div>
+  </div>
+
+  <!-- Directorio de Oficinas -->
+  <div class="offices-section">
+    <div class="sec-head px-page" style="padding-top:24px">
+      <h2 class="t-h1 c-navy">Nuestras oficinas</h2>
+      <button class="sec-head-link" onclick="navTo('contacto')">Ver contacto</button>
+    </div>
+    <p style="font-size:13px;color:var(--text-2);padding:0 20px 16px;line-height:1.55">Acude a la sede más cercana para iniciar tu trámite de forma presencial.</p>
+    <div class="dir-cards">
+    <div class="dir-card">
+      <div class="dir-card-head" style="background:#E8EFFC">
+        <div class="dir-icon-wrap" style="background:#1A4FC4">
+          <span class="mi mi-fill" style="color:#fff;font-size:20px">account_balance</span>
+        </div>
+        <div class="dir-head-text">
+          <span class="dir-tag" style="color:#1A4FC4">SDHyBC</span>
+          <h4 class="dir-name">Secretaría de Desarrollo Humano y Bien Común</h4>
+        </div>
+      </div>
+      <div class="dir-card-body">
+        <div class="dir-row">
+          <span class="mi" style="color:#1A4FC4;font-size:18px;flex-shrink:0">location_on</span>
+          <span class="dir-text">Av. Venustiano Carranza 601, Centro, 31350 Chihuahua, Chih.</span>
+        </div>
+        <div class="dir-row">
+          <span class="mi" style="color:#1A4FC4;font-size:18px;flex-shrink:0">phone</span>
+          <a href="tel:614 121 6147" class="dir-phone">614 121 6147</a>
+        </div>
+      </div>
+      <div class="dir-map-wrap">
+        <iframe
+          src="https://www.google.com/maps?q=Av.+Venustiano+Carranza+601,+Centro,+Chihuahua&output=embed"
+          class="dir-map-iframe"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa SDHyBC">
+        </iframe>
+      </div>
+      <a href="https://maps.google.com/?q=Av.+Venustiano+Carranza+601+Chihuahua+Chihuahua" target="_blank" class="dir-maps-btn">
+        <span class="mi" style="font-size:16px">map</span>
+        Abrir en Google Maps
+        <span class="mi" style="font-size:14px;margin-left:auto">open_in_new</span>
+      </a>
+    </div>
+    <div class="dir-card">
+      <div class="dir-card-head" style="background:#EDE9F7">
+        <div class="dir-icon-wrap" style="background:#7B5EA7">
+          <span class="mi mi-fill" style="color:#fff;font-size:20px">groups</span>
+        </div>
+        <div class="dir-head-text">
+          <span class="dir-tag" style="color:#7B5EA7">Cohesión Social</span>
+          <h4 class="dir-name">Dirección de Cohesión Social y Participación Ciudadana</h4>
+        </div>
+      </div>
+      <div class="dir-card-body">
+        <div class="dir-row">
+          <span class="mi" style="color:#7B5EA7;font-size:18px;flex-shrink:0">location_on</span>
+          <span class="dir-text">Ejército Mexicano 2906, Zona Centro, 31000 Chihuahua, Chih.</span>
+        </div>
+        <div class="dir-row">
+          <span class="mi" style="color:#7B5EA7;font-size:18px;flex-shrink:0">phone</span>
+          <a href="tel:429-33-00 ext. 24315, 24496 y 24598" class="dir-phone">429-33-00 ext. 24315, 24496 y 24598</a>
+        </div>
+      </div>
+      <div class="dir-map-wrap">
+        <iframe
+          src="https://www.google.com/maps?q=Ejercito+Mexicano+2906,+Chihuahua&output=embed"
+          class="dir-map-iframe"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa Cohesión Social">
+        </iframe>
+      </div>
+      <a href="https://maps.google.com/?q=Ejército+Mexicano+2906+Chihuahua" target="_blank" class="dir-maps-btn">
+        <span class="mi" style="font-size:16px">map</span>
+        Abrir en Google Maps
+        <span class="mi" style="font-size:14px;margin-left:auto">open_in_new</span>
+      </a>
+    </div>
+    <div class="dir-card">
+      <div class="dir-card-head" style="background:#E1F5EE">
+        <div class="dir-icon-wrap" style="background:#0F6E56">
+          <span class="mi mi-fill" style="color:#fff;font-size:20px">accessibility_new</span>
+        </div>
+        <div class="dir-head-text">
+          <span class="dir-tag" style="color:#0F6E56">Grupos Vulnerables</span>
+          <h4 class="dir-name">Dirección de Grupos Vulnerables y Prevención a la Discriminación</h4>
+        </div>
+      </div>
+      <div class="dir-card-body">
+        <div class="dir-row">
+          <span class="mi" style="color:#0F6E56;font-size:18px;flex-shrink:0">location_on</span>
+          <span class="dir-text">Av. Agustín Melgar #3703, Col. Nombre de Dios, C.P. 31150</span>
+        </div>
+        <div class="dir-row">
+          <span class="mi" style="color:#0F6E56;font-size:18px;flex-shrink:0">phone</span>
+          <a href="tel:614 429 33 00" class="dir-phone">614 429 33 00</a>
+        </div>
+      </div>
+      <div class="dir-map-wrap">
+        <iframe
+          src="https://www.google.com/maps?q=Av+Agustin+Melgar+3703,+Chihuahua&output=embed"
+          class="dir-map-iframe"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa Grupos Vulnerables">
+        </iframe>
+      </div>
+      <a href="https://maps.google.com/?q=Av.+Agustin+Melgar+3703+Chihuahua" target="_blank" class="dir-maps-btn">
+        <span class="mi" style="font-size:16px">map</span>
+        Abrir en Google Maps
+        <span class="mi" style="font-size:14px;margin-left:auto">open_in_new</span>
+      </a>
+    </div>
+    <div class="dir-card">
+      <div class="dir-card-head" style="background:#FEF3E0">
+        <div class="dir-icon-wrap" style="background:#BA7517">
+          <span class="mi mi-fill" style="color:#fff;font-size:20px">school</span>
+        </div>
+        <div class="dir-head-text">
+          <span class="dir-tag" style="color:#BA7517">Centro de Capacitación</span>
+          <h4 class="dir-name">Centro de Capacitación para Personas con Discapacidad</h4>
+        </div>
+      </div>
+      <div class="dir-card-body">
+        <div class="dir-row">
+          <span class="mi" style="color:#BA7517;font-size:18px;flex-shrink:0">location_on</span>
+          <span class="dir-text">Calle 70 #128, Colonia Salud, C.P. 31020</span>
+        </div>
+        <div class="dir-row">
+          <span class="mi" style="color:#BA7517;font-size:18px;flex-shrink:0">phone</span>
+          <a href="tel:614 411 56 62" class="dir-phone">614 411 56 62</a>
+        </div>
+      </div>
+      <div class="dir-map-wrap">
+        <iframe
+          src="https://www.google.com/maps?q=Calle+70+128,+Colonia+Salud,+Chihuahua&output=embed"
+          class="dir-map-iframe"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa Centro de Capacitación">
+        </iframe>
+      </div>
+      <a href="https://maps.google.com/?q=Calle+70+128+Colonia+Salud+Chihuahua" target="_blank" class="dir-maps-btn">
+        <span class="mi" style="font-size:16px">map</span>
+        Abrir en Google Maps
+        <span class="mi" style="font-size:14px;margin-left:auto">open_in_new</span>
+      </a>
+    </div>
+    <div class="dir-card">
+      <div class="dir-card-head" style="background:#FBEAF0">
+        <div class="dir-icon-wrap" style="background:#E0457B">
+          <span class="mi mi-fill" style="color:#fff;font-size:20px">location_city</span>
+        </div>
+        <div class="dir-head-text">
+          <span class="dir-tag" style="color:#E0457B">Frontera Norte</span>
+          <h4 class="dir-name">Subsecretaría de Desarrollo Humano y Bien Común Frontera Norte</h4>
+        </div>
+      </div>
+      <div class="dir-card-body">
+        <div class="dir-row">
+          <span class="mi" style="color:#E0457B;font-size:18px;flex-shrink:0">location_on</span>
+          <span class="dir-text">Parque Central Poniente, Av. Tecnológico No. 4450, Col. Partido Iglesias, Ciudad Juárez</span>
+        </div>
+        <div class="dir-row">
+          <span class="mi" style="color:#E0457B;font-size:18px;flex-shrink:0">phone</span>
+          <a href="tel:(656) 629-33-00 ext. 53908" class="dir-phone">(656) 629-33-00 ext. 53908</a>
+        </div>
+      </div>
+      <div class="dir-map-wrap">
+        <iframe
+          src="https://www.google.com/maps?q=Av+Tecnologico+4450,+Ciudad+Juarez,+Chihuahua&output=embed"
+          class="dir-map-iframe"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa Frontera Norte">
+        </iframe>
+      </div>
+      <a href="https://maps.google.com/?q=Av.+Tecnológico+4450+Ciudad+Juárez+Chihuahua" target="_blank" class="dir-maps-btn">
+        <span class="mi" style="font-size:16px">map</span>
+        Abrir en Google Maps
+        <span class="mi" style="font-size:14px;margin-left:auto">open_in_new</span>
+      </a>
+    </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-hero">
+      <p class="footer-desc">Secretaría de Desarrollo Humano y Bien Común - Gobierno del Estado de Chihuahua</p>
+    </div>
+    <a href="tel:070" class="footer-contact">
+      <div class="footer-contact-icon"><span class="mi mi-fill">support_agent</span></div>
+      <div class="footer-contact-text">
+        <span class="footer-contact-title">Línea de Atención Ciudadana</span>
+        <div class="footer-contact-row">
+          <span class="footer-contact-num">070</span>
+          <span class="footer-contact-alt">800 MÁRCAME</span>
+          <span class="footer-contact-hours">· Lun-Vie 8am-4pm</span>
+        </div>
+      </div>
+      <span class="mi" style="color:rgba(255,255,255,.2);font-size:18px">chevron_right</span>
+    </a>
+    <div class="footer-nav">
+      <a href="https://chihuahua.gob.mx/aviso-privacidad" target="_blank"><span class="mi">lock</span>Privacidad</a>
+      <a href="#" onclick="navTo('inicio');setTimeout(()=>document.querySelector('.offices-section').scrollIntoView({behavior:'smooth'}),250)"><span class="mi">map</span>Ubicaciones</a>
+      <a href="#" onclick="navTo('contacto')"><span class="mi">mail</span>Contacto</a>
+    </div>
+    <p class="footer-copy">(c) 2026 Gobierno del Estado de Chihuahua - Todos los derechos reservados</p>
+  </div>
+
+</div>
+
+<!-- ============ PAGE: PROGRAMAS ============ -->
+<div class="page" id="page-programas">
+
+  <div class="prog-header">
+  <div class="hero-eyebrow"><span class="mi mi-fill">verified</span>Sec. Desarrollo Humano y Bien Común</div>
+  <h1 class="prog-title">Catálogo de Apoyos</h1>
+    <div class="search-wrap">
+      <span class="mi">search</span>
+      <input type="text" placeholder="ej: despensas, becas, talleres..." id="progSearch" oninput="renderCards()">
+      <button class="btn btn-primary btn-sm" onclick="renderCards()">Buscar</button>
+    </div>
+    <div class="prog-suggest" id="progSuggest">
+    </div>
+    <div class="prog-chips-row" id="chipsRow"></div>
+  </div>
+
+  <div class="prog-results-bar">
+    <span class="t-label">Resultados</span>
+    <span class="badge" id="countLabel">0</span>
+  </div>
+
+  <div class="prog-list" id="progList"></div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-hero">
+      <p class="footer-desc">Secretaría de Desarrollo Humano y Bien Común - Gobierno del Estado de Chihuahua</p>
+    </div>
+    <a href="tel:070" class="footer-contact">
+      <div class="footer-contact-icon"><span class="mi mi-fill">support_agent</span></div>
+      <div class="footer-contact-text">
+        <span class="footer-contact-title">Línea de Atención Ciudadana</span>
+        <div class="footer-contact-row">
+          <span class="footer-contact-num">070</span>
+          <span class="footer-contact-alt">800 MÁRCAME</span>
+          <span class="footer-contact-hours">· Lun-Vie 8am-4pm</span>
+        </div>
+      </div>
+    </a>
+    <div class="footer-nav">
+      <a href="https://chihuahua.gob.mx/aviso-privacidad" target="_blank"><span class="mi">lock</span>Privacidad</a>
+      <a href="#" onclick="navTo('inicio');setTimeout(()=>document.querySelector('.offices-section').scrollIntoView({behavior:'smooth'}),250)"><span class="mi">map</span>Ubicaciones</a>
+      <a href="#" onclick="navTo('contacto')"><span class="mi">mail</span>Contacto</a>
+    </div>
+    <p class="footer-copy">(c) 2026 Gobierno del Estado de Chihuahua - Todos los derechos reservados</p>
+  </div>
+</div>
+
+<div class="page" id="page-servicios">
+<div class="svc-hero">
+
+  <div class="hero-eyebrow">
+    <span class="mi mi-fill">verified</span>
+    SEC. DESARROLLO HUMANO Y BIEN COMÚN
+  </div>
+
+  <h1>Servicios y Programas</h1>
+
+  <p class="hero-sub">
+    Selecciona la categoría que mas se adapte a tus necesidades personales o familiares.
+  </p>
+
+</div>
+
+  <div class="svc-grid">
+    <div class="svc-card cat-aliment" onclick="setFilter('alimentacion');navTo('programas')">
+      <div class="svc-card-media" data-icon="restaurant">
+        <img class="svc-card-img" src="multimedia/cat-alimentacion.webp" alt="Alimentación" onerror="this.parentElement.classList.add('img-missing')">
+      </div>
+      <div class="svc-card-row">
+        <div class="svc-card-body"><h3>Alimentación</h3></div>
+      </div>
+    </div>
+    <div class="svc-card cat-desarrollo-pers" onclick="setFilter('desarrollo_pers');navTo('programas')">
+      <div class="svc-card-media" data-icon="self_improvement">
+        <img class="svc-card-img" src="multimedia/cat-personal.jpg" alt="Desarrollo Personal" onerror="this.parentElement.classList.add('img-missing')">
+      </div>
+      <div class="svc-card-row">
+        <div class="svc-card-body"><h3>Desarrollo Personal</h3></div>
+      </div>
+    </div>
+    <div class="svc-card cat-desarrollo-soc" onclick="setFilter('desarrollo_soc');navTo('programas')">
+      <div class="svc-card-media" data-icon="diversity_3">
+        <img class="svc-card-img" src="multimedia/cat-social.jpg" alt="Desarrollo Social" onerror="this.parentElement.classList.add('img-missing')">
+      </div>
+      <div class="svc-card-row">
+        <div class="svc-card-body"><h3>Desarrollo Social</h3></div>
+      </div>
+    </div>
+    <div class="svc-card cat-discapacidad" onclick="setFilter('discapacidad');navTo('programas')">
+      <div class="svc-card-media" data-icon="accessible">
+        <img class="svc-card-img" src="multimedia/cat-discapacidad.jpg" alt="Discapacidad" onerror="this.parentElement.classList.add('img-missing')">
+      </div>
+      <div class="svc-card-row">
+        <div class="svc-card-body"><h3>Personas con Discapacidad</h3></div>
+      </div>
+    </div>
+    <div class="svc-card cat-econ" onclick="setFilter('economico');navTo('programas')">
+      <div class="svc-card-media" data-icon="payments">
+        <img class="svc-card-img" src="multimedia/cat-economico.jpg" alt="Económico" onerror="this.parentElement.classList.add('img-missing')">
+      </div>
+      <div class="svc-card-row">
+        <div class="svc-card-body"><h3>Económico</h3></div>
+      </div>
+    </div>
+    <div class="svc-card cat-educ" onclick="setFilter('capacitacion');navTo('programas')">
+      <div class="svc-card-media" data-icon="school">
+        <img class="svc-card-img" src="multimedia/cat-educación.jpeg" alt="Educación" onerror="this.parentElement.classList.add('img-missing')">
+      </div>
+      <div class="svc-card-row">
+        <div class="svc-card-body"><h3>Educación</h3></div>
+      </div>
+    </div>
+    <div class="svc-card cat-empleo" onclick="setFilter('empleo');navTo('programas')">
+      <div class="svc-card-media" data-icon="work">
+        <img class="svc-card-img" src="multimedia/cat-empleo.jpg" alt="Empleo" onerror="this.parentElement.classList.add('img-missing')">
+      </div>
+      <div class="svc-card-row">
+        <div class="svc-card-body"><h3>Empleo</h3></div>
+      </div>
+    </div>
+    <div class="svc-card cat-mujeres" onclick="setFilter('mujeres');navTo('programas')">
+      <div class="svc-card-media" data-icon="woman">
+        <img class="svc-card-img" src="multimedia/cat-mujeres.jpg" alt="Mujeres" onerror="this.parentElement.classList.add('img-missing')">
+      </div>
+      <div class="svc-card-row">
+        <div class="svc-card-body"><h3>Mujeres</h3></div>
+      </div>
+    </div>
+    <div class="svc-card cat-ninos" onclick="setFilter('ninos');navTo('programas')">
+      <div class="svc-card-media" data-icon="child_care">
+        <img class="svc-card-img" src="multimedia/cat-nnj.jpeg" alt="Niños, Niñas y Adolescentes" onerror="this.parentElement.classList.add('img-missing')">
+      </div>
+      <div class="svc-card-row">
+        <div class="svc-card-body"><h3>Niños, Niñas y Adolescentes</h3></div>
+      </div>
+    </div>
+    <div class="svc-card cat-vulnerabilidad" onclick="setFilter('vulnerabilidad');navTo('programas')">
+      <div class="svc-card-media" data-icon="volunteer_activism">
+        <img class="svc-card-img" src="multimedia/cat-vulnerabilidad.webp" alt="Personas en Vulnerabilidad" onerror="this.parentElement.classList.add('img-missing')">
+      </div>
+      <div class="svc-card-row">
+        <div class="svc-card-body"><h3>Personas en Vulnerabilidad</h3></div>
+      </div>
+    </div>
+    <div class="svc-card cat-mayores" onclick="setFilter('mayores');navTo('programas')">
+      <div class="svc-card-media" data-icon="elderly">
+        <img class="svc-card-img" src="multimedia/cat-mayores.jpg" alt="Personas Mayores" onerror="this.parentElement.classList.add('img-missing')">
+      </div>
+      <div class="svc-card-row">
+        <div class="svc-card-body"><h3>Personas Mayores</h3></div>
+      </div>
+    </div>
+    <div class="svc-card cat-transp" onclick="setFilter('transporte');navTo('programas')">
+      <div class="svc-card-media" data-icon="directions_bus">
+        <img class="svc-card-img" src="multimedia/cat-transporte.jpeg" alt="Transporte" onerror="this.parentElement.classList.add('img-missing')">
+      </div>
+      <div class="svc-card-row">
+        <div class="svc-card-body"><h3>Transporte</h3></div>
+      </div>
+    </div>
+    <div class="svc-card cat-tramites" onclick="setFilter('tramites');navTo('programas')">
+      <div class="svc-card-media" data-icon="description">
+        <img class="svc-card-img" src="multimedia/cat-tramite.jpeg" alt="Trámites" onerror="this.parentElement.classList.add('img-missing')">
+      </div>
+      <div class="svc-card-row">
+        <div class="svc-card-body"><h3>Trámites</h3></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-hero">
+      <p class="footer-desc">Secretaría de Desarrollo Humano y Bien Común - Gobierno del Estado de Chihuahua</p>
+    </div>
+    <a href="tel:070" class="footer-contact">
+      <div class="footer-contact-icon"><span class="mi mi-fill">support_agent</span></div>
+      <div class="footer-contact-text">
+        <span class="footer-contact-title">Línea de Atención Ciudadana</span>
+        <div class="footer-contact-row">
+          <span class="footer-contact-num">070</span>
+          <span class="footer-contact-alt">800 MÁRCAME</span>
+          <span class="footer-contact-hours">· Lun-Vie 8am-4pm</span>
+        </div>
+      </div>
+      <span class="mi" style="color:rgba(255,255,255,.2);font-size:18px">chevron_right</span>
+    </a>
+    <div class="footer-nav">
+      <a href="https://chihuahua.gob.mx/aviso-privacidad" target="_blank"><span class="mi">lock</span>Privacidad</a>
+      <a href="#" onclick="navTo('inicio');setTimeout(()=>document.querySelector('.offices-section').scrollIntoView({behavior:'smooth'}),250)"><span class="mi">map</span>Ubicaciones</a>
+      <a href="#" onclick="navTo('contacto')"><span class="mi">mail</span>Contacto</a>
+    </div>
+    <p class="footer-copy">(c) 2026 Gobierno del Estado de Chihuahua - Todos los derechos reservados</p>
+  </div>
+
+</div>
+
+<!-- ============ PAGE: CONTACTO ============ -->
+<div class="page" id="page-contacto">
+
+  <div class="contact-hero">
+    <p class="t-label" style="color:rgba(255,255,255,.6);margin-bottom:6px">Estamos para ayudarte</p>
+    <h1>Contáctanos</h1>
+    <p>Resolvemos tus dudas sobre cualquier apoyo o trámite.</p>
+  </div>
+
+  <div class="contact-section">
+
+    <!-- Formulario -->
+    <div class="contact-form-card">
+      <div class="contact-form-head">
+        <span class="mi mi-fill">chat</span>
+        <div>
+          <h3>Envíanos un mensaje</h3>
+          <p>Respondemos en menos de 48 horas hábiles</p>
+        </div>
+      </div>
+      <div class="contact-form-body">
+        <form id="contactForm">
+          <div class="field-wrap" style="margin-bottom:14px">
+            <label class="field-label">Nombre completo</label>
+            <input class="field-input" type="text" placeholder="Ej. María González">
+          </div>
+          <div class="field-wrap" style="margin-bottom:14px">
+            <label class="field-label">Correo electrónico</label>
+            <input class="field-input" type="email" placeholder="nombre@ejemplo.com">
+          </div>
+          <div class="field-wrap" style="margin-bottom:16px">
+            <label class="field-label">Mensaje o trámite</label>
+            <textarea class="field-input" placeholder="Describe el apoyo o programa que te interesa..."></textarea>
+            <span class="field-hint">Cuéntanos tu situación y te orientamos al apoyo correcto.</span>
+          </div>
+          <button class="btn btn-primary btn-full" id="submitBtn" type="submit" style="height:50px;font-size:15px">
+            <span class="mi">send</span>Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Datos de contacto -->
+    <div class="contact-info-card">
+      <div class="contact-info-row">
+        <div class="contact-info-icon" style="background:linear-gradient(135deg,var(--pink-light),#f3d6e4)"><span class="mi mi-fill" style="color:var(--pink);font-size:24px">support_agent</span></div>
+        <div>
+          <div class="contact-info-label">Línea ciudadana gratuita</div>
+          <a href="tel:070" class="contact-info-value">070</a>
+        </div>
+      </div>
+      <div class="contact-info-row">
+        <div class="contact-info-icon" style="background:linear-gradient(135deg,var(--blue-light),#d0dcf8)"><span class="mi mi-fill" style="color:var(--blue);font-size:24px">phone_in_talk</span></div>
+        <div>
+          <div class="contact-info-label">Oficina central</div>
+          <a href="tel:6144293300" class="contact-info-value" style="font-size:15px">(614) 429-3300</a>
+        </div>
+      </div>
+      <div class="social-row">
+        <a href="https://www.facebook.com/Secretariadedesarrollohumanoybiencomun/?locale=es_LA" target="_blank" rel="noopener" class="social-btn"><img src="facebook.png" alt="Facebook" class="social-btn-img">Facebook</a>
+        <a href="https://chihuahua.gob.mx/desarrollohumanoybc" target="_blank" rel="noopener" class="social-btn"><img src="webimage.png" alt="Sitio Web" class="social-btn-img">Sitio Web</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-hero">
+      <p class="footer-desc">Secretaría de Desarrollo Humano y Bien Común - Gobierno del Estado de Chihuahua</p>
+    </div>
+    <a href="tel:070" class="footer-contact">
+      <div class="footer-contact-icon"><span class="mi mi-fill">support_agent</span></div>
+      <div class="footer-contact-text">
+        <span class="footer-contact-title">Línea de Atención Ciudadana</span>
+        <div class="footer-contact-row">
+          <span class="footer-contact-num">070</span>
+          <span class="footer-contact-alt">800 MÁRCAME</span>
+          <span class="footer-contact-hours">· Lun-Vie 8am-4pm</span>
+        </div>
+      </div>
+      <span class="mi" style="color:rgba(255,255,255,.2);font-size:18px">chevron_right</span>
+    </a>
+    <div class="footer-nav">
+      <a href="https://chihuahua.gob.mx/aviso-privacidad" target="_blank"><span class="mi">lock</span>Privacidad</a>
+      <a href="#" onclick="navTo('inicio');setTimeout(()=>document.querySelector('.offices-section').scrollIntoView({behavior:'smooth'}),250)"><span class="mi">map</span>Ubicaciones</a>
+      <a href="#" onclick="navTo('contacto')"><span class="mi">mail</span>Contacto</a>
+    </div>
+    <p class="footer-copy">(c) 2026 Gobierno del Estado de Chihuahua - Todos los derechos reservados</p>
+  </div>
+
+</div>
+
+<!-- ======== BOTTOM SHEET ======== -->
+<div class="sheet-overlay" id="sheetOverlay" onclick="closeSheet()"></div>
+<div class="sheet" id="sheet">
+  <div class="sheet-handle"></div>
+  <div class="sheet-head" id="sheetHead"></div>
+  <div class="sheet-body" id="sheetBody"></div>
+  <button class="sheet-close" onclick="closeSheet()"><span class="mi">close</span>Cerrar</button>
+</div>
+
+<!-- ======== BOTTOM NAV ======== -->
+<nav class="botnav">
+  <button class="bn-item active" id="bn-inicio" onclick="navTo('inicio')">
+    <span class="mi">home</span><span>Inicio</span>
+  </button>
+  <button class="bn-item" id="bn-servicios" onclick="navTo('servicios')">
+    <span class="mi">category</span><span>Categorías</span>
+  </button>
+  <button class="bn-item" id="bn-programas" onclick="navTo('programas')">
+    <span class="mi">grid_view</span><span>Apoyos</span>
+  </button>
+  <button class="bn-item" id="bn-contacto" onclick="navTo('contacto')">
+    <span class="mi">mail</span><span>Contacto</span>
+  </button>
+</nav>
+
+<script>
+/* -- DATA -------------------------------
+   Los apoyos NO están escritos aquí. Se cargan en tiempo real desde
+   apoyos.json (mismo carpeta que este HTML). Para actualizar la
+   información: edita apoyos.xlsx -> corre excel_to_json.py -> listo,
+   esta página mostrará los cambios al recargar.
+---------------------------------------- */
+let APOYOS = [];
+
+/* Calcula el "safe area inset" del dispositivo UNA SOLA VEZ al cargar y lo
+   fija como variable CSS estática (--safe-bottom). Algunos navegadores/
+   WebViews (ej. el navegador interno de WhatsApp) recalculan
+   env(safe-area-inset-bottom) de forma inconsistente cada vez que la página
+   se repinta, lo que hacía que la barra de navegación inferior cambiara de
+   tamaño al pasar de una pestaña a otra. Al fijar el valor una sola vez,
+   la altura de la barra queda siempre igual sin importar qué página esté
+   activa o cuántas veces se repinte el contenido. */
+function lockSafeAreaInset() {
+  const probe = document.createElement('div');
+  probe.style.cssText = 'position:fixed;left:0;bottom:0;height:0;width:0;padding:0;margin:0;padding-bottom:env(safe-area-inset-bottom);visibility:hidden;pointer-events:none;';
+  document.body.appendChild(probe);
+  const computed = parseFloat(getComputedStyle(probe).paddingBottom) || 0;
+  probe.remove();
+  document.documentElement.style.setProperty('--safe-bottom', computed + 'px');
+}
+lockSafeAreaInset();
+
+/* escapa texto libre (proveniente del Excel) antes de insertarlo en el HTML,
+   para que comillas, < o > no rompan el markup si aparecen en el futuro */
+function esc(s) {
+  return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+const CAT = {
+  '':              {label:'Todos',                      icon:'apps',              cls:'badge-navy'},
+  alimentacion:    {label:'Alimentación',                icon:'restaurant',        cls:'badge-pink'},
+  desarrollo_pers: {label:'Desarrollo Personal',          icon:'self_improvement',  cls:'badge-violet'},
+  desarrollo_soc:  {label:'Desarrollo Social',            icon:'diversity_3',       cls:'badge-teal'},
+  discapacidad:    {label:'Discapacidad',                 icon:'accessible',        cls:'badge-cyan'},
+  economico:       {label:'Económico',                    icon:'payments',          cls:'badge-blue'},
+  capacitacion:    {label:'Educación',                    icon:'school',            cls:'badge-purple'},
+  empleo:          {label:'Empleo',                       icon:'work',              cls:'badge-error'},
+  mujeres:         {label:'Mujeres',                      icon:'woman',             cls:'badge-rose'},
+  ninos:           {label:'Niños, Niñas y Adolescentes',  icon:'child_care',        cls:'badge-coral'},
+  vulnerabilidad:  {label:'Personas en Vulnerabilidad',   icon:'volunteer_activism',cls:'badge-olive'},
+  mayores:         {label:'Personas Mayores',              icon:'elderly',           cls:'badge-green'},
+  transporte:      {label:'Transporte',                    icon:'directions_bus',    cls:'badge-amber'},
+  tramites:        {label:'Trámites',                      icon:'description',       cls:'badge-navy'},
+};
+const CAT_COLORS = {
+  alimentacion:'#E0457B', desarrollo_pers:'#8A4FD6', desarrollo_soc:'#0E7C75',
+  discapacidad:'#1276A8', economico:'#1A4FC4', capacitacion:'#7B5EA7',
+  empleo:'#D85A30', mujeres:'#C23B73', ninos:'#C2502E',
+  vulnerabilidad:'#6F7A1E', mayores:'#0F6E56', transporte:'#BA7517',
+  tramites:'#0D2B6B', '':'#8892B0'
+};
+const CAT_BG = {
+  alimentacion:'#FBEAF0', desarrollo_pers:'#F1E8FA', desarrollo_soc:'#E0F4F3',
+  discapacidad:'#E2F3FB', economico:'#E8EFFC', capacitacion:'#EDE9F7',
+  empleo:'#FAECE7', mujeres:'#FCE7EF', ninos:'#FCE9E4',
+  vulnerabilidad:'#F1F3DE', mayores:'#E1F5EE', transporte:'#FEF3E0',
+  tramites:'#E3E8F4', '':'#EEF2FB'
+};
+
+/* -- LOAD APOYOS.JSON -------------------- */
+const __loaderStart = Date.now();
+function hideLoader() {
+  const el = document.getElementById('appLoader');
+  if (!el || el.classList.contains('hide')) return;
+  el.classList.add('hide');
+  setTimeout(() => el.remove(), 500);
+}
+// Seguro: si por alguna razón loadApoyos nunca termina, no dejar al usuario
+// atrapado detrás de la pantalla de carga.
+setTimeout(hideLoader, 6000);
+
+async function loadApoyos() {
+  try {
+    const res = await fetch('../data/apoyos.json');
+    const data = await res.json();
+    APOYOS = (data.apoyos || []).map(a => ({
+      id: a.id,
+      nombre: a.nombre_ciudadano || a.nombre_apoyo,
+      nombreOficial: a.nombre_apoyo,
+      grupo: a.grupo_atencion || 'Población general',
+      direccionCorta: a.direccion_corta || '',
+      municipio: a.municipio || 'No especificado',
+      municipiosLista: (a.municipios_lista && a.municipios_lista.length) ? a.municipios_lista : [a.municipio || 'No especificado'],
+      monto: a.monto || 'No especificado',
+      cats: (a.categorias && a.categorias.length) ? a.categorias : [],
+      desc: a.descripcion_ciudadana || a.descripcion_oficial || '',
+      descOficial: a.descripcion_oficial || '',
+      requisitos: a.requisitos || 'No especificado.',
+      requisitosLista: a.requisitos_estructurado || [],
+      donde_solicitar: a.donde_solicitar || 'No especificado.',
+      donde_entrega: a.donde_entrega || '',
+      contacto: a.contacto || '',
+      observaciones: a.observaciones || '',
+      especificaciones: a.especificaciones || '',
+      periodicidad: a.periodicidad || 'No especificado',
+      genero: a.genero || '',
+      etapa_vida: a.etapa_vida || '',
+      palabrasClave: a.palabras_clave || [],
+    }));
+  } catch (e) {
+    console.error('No se pudo cargar apoyos.json', e);
+    APOYOS = [];
+  }
+  renderChips();
+  renderCards();
+  renderFeatured();
+  const elapsed = Date.now() - __loaderStart;
+  setTimeout(hideLoader, Math.max(0, 500 - elapsed));
+}
+
+
+/* -- STATE ----------------------------- */
+let activeFilter = '';
+
+/* -- NAVIGATION ------------------------ */
+function navTo(page) {
+  // Limpia TODAS las páginas que pudieran tener 'active' (nunca debe haber más de una)
+  document.querySelectorAll('.page.active').forEach(p => p.classList.remove('active'));
+  const next = document.getElementById('page-' + page);
+  if (next) {
+    next.classList.add('active');
+    next.style.animation = 'none';
+    next.offsetHeight;
+    next.style.animation = '';
+  }
+  document.querySelectorAll('.bn-item').forEach(b => b.classList.remove('active'));
+  const btn = document.getElementById('bn-' + page);
+  if (btn) btn.classList.add('active');
+  // Resetea el scroll después de que el navegador pinte el cambio de página
+  // (evita que se quede la posición de scroll de la página anterior)
+  const raf = window.requestAnimationFrame || function(cb){ setTimeout(cb, 0); };
+  raf(() => {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  });
+  if (page === 'programas') renderCards();
+}
+
+/* -- SEARCH ---------------------------- */
+function doHomeSearch() {
+  const q = document.getElementById('homeSearch')?.value || '';
+  const progSearch = document.getElementById('progSearch');
+  if (q && progSearch) { progSearch.value = q; }
+  navTo('programas');
+}
+
+/* -- CHIPS ------------------------------ */
+function setFilter(cat) { activeFilter = cat; renderChips(); renderCards(); }
+
+function renderChips() {
+  const row = document.getElementById('chipsRow');
+  if (!row) return;
+  row.innerHTML = Object.entries(CAT).map(([k, v]) => `
+    <button class="chip${k === activeFilter ? ' active' : ''}" onclick="setFilter('${k}')">
+      <span class="mi mi-sm">${v.icon}</span>${v.label}
+    </button>`).join('');
+  const activeChip = row.querySelector('.chip.active');
+  if (activeChip) {
+    // Centramos el chip activo desplazando SOLO el scroll horizontal de esta
+    // fila (row.scrollLeft), sin usar scrollIntoView: en algunos navegadores
+    // móviles (iOS Safari, principalmente) scrollIntoView puede arrastrar
+    // también el scroll vertical de toda la página, lo que dispara la
+    // animación de ocultar/mostrar la barra de direcciones y hace que la
+    // barra de navegación inferior (que depende de 100dvh) se vea encogida.
+    const rowRect = row.getBoundingClientRect();
+    const chipRect = activeChip.getBoundingClientRect();
+    const delta = (chipRect.left + chipRect.width / 2) - (rowRect.left + rowRect.width / 2);
+    if (typeof row.scrollBy === 'function') {
+      row.scrollBy({ left: delta, behavior: 'smooth' });
+    } else {
+      row.scrollLeft += delta;
+    }
+  } else {
+    row.scrollLeft = 0;
+  }
+}
+
+/* -- CARDS ------------------------------ */
+const POP_KEYS = ['discapacidad', 'mayores', 'mujeres', 'ninos', 'vulnerabilidad'];
+function grupoChips(cats, grupoText) {
+  const chips = (cats || []).filter(k => POP_KEYS.includes(k)).map(k => CAT[k]);
+  const gt = (grupoText || '').toLowerCase();
+  // "Organizaciones"/"Instituciones" no son una de las 13 categorías oficiales,
+  // pero cuando el apoyo está dirigido directamente a ellas (y no solo a las
+  // personas que atienden) es información clave para distinguir la card —
+  // se agrega como chip adicional, sin reemplazar la categoría de población.
+  if (gt.includes('organizaci')) {
+    chips.unshift({ icon: 'corporate_fare', label: 'Organizaciones de la Sociedad Civil' });
+  } else if (gt.includes('instituci')) {
+    chips.unshift({ icon: 'account_balance', label: 'Instituciones' });
+  }
+  if (!chips.length) chips.push({ icon: 'groups', label: 'Población general' });
+  return `<div class="prog-card-grupo-row">${chips.map(m =>
+    `<span class="prog-card-grupo-chip"><span class="mi">${m.icon}</span>${esc(m.label)}</span>`
+  ).join('')}</div>`;
+}
+function quickSearch(term) {
+  const input = document.getElementById('progSearch');
+  if (input) input.value = term;
+  renderCards();
+}
+/* Quita acentos para que "educacion" encuentre "Educación", etc. */
+function normTxt(s) {
+  return String(s ?? '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+/* -- PROGRAMAS DESTACADOS (Inicio) -------
+   IDs reales de apoyos.json elegidos a mano para la portada: apoyo
+   económico para personas con discapacidad, paquete de cuidado para
+   personas mayores, despensas, y Casa de los Abuelos. Si alguno de estos
+   ids cambia o se elimina en el Excel, esta sección simplemente lo omite
+   en vez de romperse. */
+const FEATURED_IDS = [13, 40, 14, 11];
+const FEATURED_POP_KEYS = ['discapacidad', 'mayores', 'mujeres', 'ninos', 'vulnerabilidad'];
+function renderFeatured() {
+  const wrap = document.getElementById('featuredScroll');
+  if (!wrap) return;
+  const items = FEATURED_IDS.map(id => APOYOS.find(a => a.id === id)).filter(Boolean);
+  wrap.innerHTML = items.map(a => {
+    const primary = a.cats[0] || '';
+    const color = CAT_COLORS[primary] || CAT_COLORS[''];
+    const bg = CAT_BG[primary] || CAT_BG[''];
+    const meta = CAT[primary] || CAT[''];
+    // Si además de la categoría principal hay una categoría de población
+    // distinta (ej. Discapacidad, Personas Mayores), se muestra como un
+    // segundo badge para que quede claro a quién va dirigido el apoyo.
+    const popKey = a.cats.find(k => FEATURED_POP_KEYS.includes(k) && k !== primary);
+    const popBadge = popKey ? `<span class="badge ${CAT[popKey].cls}">${CAT[popKey].label}</span>` : '';
+    return `<div class="featured-card" onclick="openSheet(${a.id})">
+      <div class="featured-card-accent" style="background:${color}"></div>
+      <div class="featured-card-media" data-icon="${meta.icon}" style="--cat-c:${color};--cat-bg:${bg}">
+        <img class="featured-card-img" src="apoyo-${a.id}.jpg" alt="${esc(a.nombre)}" onerror="this.parentElement.classList.add('img-missing')">
+      </div>
+      <div class="featured-card-body">
+        <div class="featured-card-badges">
+          <span class="badge ${meta.cls}">${meta.label}</span>
+          ${popBadge}
+        </div>
+        <h3>${esc(a.nombre)}</h3>
+        <button class="btn btn-outline btn-full" style="height:38px;font-size:13px" onclick="event.stopPropagation();openSheet(${a.id})">Ver detalles</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+function renderCards() {
+  renderChips();
+  const rawQ = document.getElementById('progSearch')?.value || '';
+  const q = normTxt(rawQ);
+  const suggestBox = document.getElementById('progSuggest');
+  if (suggestBox) suggestBox.classList.toggle('hide', rawQ.length > 0);
+  const countLabel = document.getElementById('countLabel');
+  const progList = document.getElementById('progList');
+  if (!countLabel || !progList) return;
+  const filtered = APOYOS.filter(a => {
+    const matchCat = !activeFilter || a.cats.includes(activeFilter);
+    const matchQ = !q
+      || normTxt(a.nombre).includes(q)
+      || normTxt(a.nombreOficial).includes(q)
+      || normTxt(a.grupo).includes(q)
+      || normTxt(a.desc).includes(q)
+      || normTxt(a.direccionCorta).includes(q)
+      || normTxt(a.municipio).includes(q)
+      || normTxt(a.monto).includes(q)
+      || a.palabrasClave.some(k => normTxt(k).includes(q));
+    return matchCat && matchQ;
+  });
+  countLabel.textContent = filtered.length;
+
+  if (APOYOS.length === 0) {
+    progList.innerHTML = `<div class="empty-state">
+      <span class="mi">cloud_off</span>
+      <h3>No se pudieron cargar los apoyos</h3>
+      <p>Verifica tu conexión e intenta recargar la página. Si el problema persiste, asegúrate de que el archivo <b>apoyos.json</b> esté en la misma carpeta que este HTML y que se esté abriendo con un servidor local (Live Server) y no con doble clic.</p>
+      <button class="btn btn-outline btn-sm" onclick="loadApoyos()"><span class="mi">refresh</span>Reintentar</button>
+    </div>`;
+    return;
+  }
+  if (filtered.length === 0) {
+    progList.innerHTML = `<div class="empty-state">
+      <span class="mi">search_off</span>
+      <h3>Sin resultados</h3>
+      <p>No encontramos apoyos que coincidan con tu búsqueda o filtro. Intenta con otra palabra o selecciona "Todos".</p>
+      <button class="btn btn-outline btn-sm" onclick="document.getElementById('progSearch').value='';setFilter('')"><span class="mi">filter_alt_off</span>Quitar filtros</button>
+    </div>`;
+    return;
+  }
+
+  progList.innerHTML = filtered.map(a => {
+    const c = a.cats[0] || '';
+    const color = CAT_COLORS[c] || CAT_COLORS[''];
+    const bg    = CAT_BG[c]    || CAT_BG[''];
+    const meta  = CAT[c]       || CAT[''];
+    return `<div class="prog-card" style="--cat-c:${color};--cat-bg:${bg}" onclick="openSheet(${a.id})">
+      <div class="prog-card-media" data-icon="${meta.icon}">
+        <img class="prog-card-img" src="multimedia/apoyo-${a.id}.jpg" alt="${esc(a.nombre)}" onerror="this.parentElement.classList.add('img-missing')">
+      </div>
+      <div class="prog-card-info">
+        <div class="prog-card-name">${esc(a.nombre)}</div>
+        ${a.direccionCorta ? `<div class="prog-card-dir"><span class="mi">account_balance</span>${esc(a.direccionCorta)}</div>` : ''}
+        ${grupoChips(a.cats, a.grupo)}
+      </div>
+      <span class="mi prog-card-chevron">chevron_right</span>
+    </div>`;
+  }).join('');
+}
+
+/* -- BOTTOM SHEET ----------------------- */
+function isEmptyish(v) {
+  if (!v) return true;
+  const t = v.trim().toLowerCase();
+  return t === '' || t === 'n/d' || t === 'sin mencionar' || t === 'sin monto' || t.startsWith('no especificado');
+}
+function sheetSec(icon, title, value) {
+  if (isEmptyish(value)) return '';
+  return `<div class="sheet-sec">
+      <div class="sheet-sec-title"><span class="mi">${icon}</span>${title}</div>
+      <div class="sheet-sec-body">${esc(value).replace(/\n/g,'<br>')}</div>
+    </div>`;
+}
+function reqSec(lista) {
+  if (!lista || !lista.length) return '';
+  const blocksHtml = lista.map(b => `
+    <div class="req-block">
+      ${b.titulo ? `<div class="req-block-title">${esc(b.titulo)}</div>` : ''}
+      <ul class="req-list">${b.items.map(it => `<li>${esc(it)}</li>`).join('')}</ul>
+    </div>`).join('');
+  return `<div class="sheet-sec">
+      <div class="sheet-sec-title"><span class="mi">checklist</span>Requisitos</div>
+      <div class="req-box">${blocksHtml}</div>
+    </div>`;
+}
+function muniDisplay(municipiosLista, municipioTexto) {
+  const parts = (municipiosLista && municipiosLista.length) ? municipiosLista : [municipioTexto || 'No especificado'];
+  if (parts.length <= 1) return esc(parts[0] || municipioTexto || 'No especificado');
+  const rest = parts.length - 1;
+  const short = `${parts[0]} y ${rest} más`;
+  const full = parts.join(', ');
+  return `<span class="muni-toggle" onclick="toggleMuni(this, event)" data-full="${esc(full)}" data-short="${esc(short)}">${esc(short)} <span class="mi muni-chevron">expand_more</span></span>`;
+}
+function toggleMuni(el, ev) {
+  if (ev) ev.stopPropagation();
+  const expanded = el.classList.toggle('expanded');
+  const text = expanded ? el.dataset.full : el.dataset.short;
+  const icon = expanded ? 'expand_less' : 'expand_more';
+  el.innerHTML = `${esc(text)} <span class="mi muni-chevron">${icon}</span>`;
+}
+function infoGrid(a) {
+  const items = [
+    {label:'Grupo de atención', icon:'groups',        value: esc(a.grupo || 'Población general')},
+    {label:'Género',            icon:'wc',             value: esc(a.genero || 'Indistinto')},
+    {label:'Monto',             icon:'payments',       value: esc(a.monto || 'No especificado')},
+    {label:'Etapa de vida',     icon:'cake',           value: esc(a.etapa_vida || 'Todas')},
+    {label:'Municipios',        icon:'location_on',    value: muniDisplay(a.municipiosLista, a.municipio), full: true},
+  ];
+  return `<div class="sheet-info-grid">${items.map(it => `
+    <div class="sheet-info-item${it.full ? ' sheet-info-full' : ''}">
+      <div class="sheet-info-label"><span class="mi">${it.icon}</span>${it.label}</div>
+      <div class="sheet-info-value">${it.value}</div>
+    </div>`).join('')}</div>`;
+}
+function tagsRow(cats) {
+  return `<div class="sheet-tags-row">${cats.map(k => {
+    const m = CAT[k] || CAT[''];
+    return `<span class="badge ${m.cls}"><span class="mi">${m.icon}</span>${m.label}</span>`;
+  }).join('')}</div>`;
+}
+function openSheet(id) {
+  const a = APOYOS.find(x => x.id === id);
+  if (!a) return;
+  const c = a.cats[0] || '';
+  const color = CAT_COLORS[c] || CAT_COLORS[''];
+  document.getElementById('sheetHead').style.background = `linear-gradient(135deg, ${color}, var(--blue-dark) 140%)`;
+  document.getElementById('sheetHead').innerHTML = `
+    <div class="sheet-title">${esc(a.nombre)}</div>
+    <div class="sheet-desc">${esc(a.desc)}</div>`;
+  document.getElementById('sheetBody').innerHTML = [
+    a.cats.length > 1 ? tagsRow(a.cats) : '',
+    infoGrid(a),
+    reqSec(a.requisitosLista),
+    sheetSec('storefront', 'Dónde solicitarlo', a.donde_solicitar),
+    (!isEmptyish(a.donde_entrega) && a.donde_entrega.trim() !== a.donde_solicitar.trim())
+      ? sheetSec('local_shipping', 'Dónde se entrega', a.donde_entrega) : '',
+    sheetSec('repeat', 'Periodicidad', a.periodicidad),
+    sheetSec('tune', 'Especificaciones', a.especificaciones),
+    sheetSec('call', 'Contacto', a.contacto),
+    sheetSec('info', 'Observaciones', a.observaciones),
+  ].join('');
+  document.getElementById('sheet').classList.add('open');
+  document.getElementById('sheetOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeSheet() {
+  document.getElementById('sheet').classList.remove('open');
+  document.getElementById('sheetOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+/* -- FORM ------------------------------- */
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  const orig = btn.innerHTML;
+  btn.innerHTML = '<span class="mi">hourglass_top</span>Enviando...';
+  btn.style.opacity = '.7';
+  setTimeout(() => {
+    btn.innerHTML = '<span class="mi mi-fill">check_circle</span>¡Mensaje enviado!';
+    btn.style.background = '#0F6E56'; btn.style.opacity = '1';
+    this.reset();
+    setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; }, 3500);
+  }, 1500);
+});
+
+/* -- SCROLL HEADER ---------------------- */
+window.addEventListener('scroll', () => {
+  document.getElementById('topnav').classList.toggle('scrolled', window.scrollY > 10);
+}, { passive: true });
+
+/* -- VIDEO LOOP CON FADE --------------- */
+const navVideo = document.getElementById('navVideo');
+if (navVideo) {
+  navVideo.addEventListener('timeupdate', () => {
+    if (navVideo.duration && navVideo.currentTime >= navVideo.duration - 0.8) {
+      navVideo.classList.add('fading');
+    }
+  });
+  navVideo.addEventListener('ended', () => {
+    navVideo.currentTime = 0;
+    navVideo.play();
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        navVideo.classList.remove('fading');
+      });
+    });
+  });
+}
+
+/* -- INIT ------------------------------- */
+loadApoyos();
+</script>
+</body>
+</html>
